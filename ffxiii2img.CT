@@ -234,6 +234,76 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>169</ID>
+              <Description>"Ability Name  #8"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>pointer</Address>
+              <Offsets>
+                <Offset>E0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>170</ID>
+              <Description>"Ability Name  #9"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>pointer</Address>
+              <Offsets>
+                <Offset>F0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>171</ID>
+              <Description>"Ability Name  #10"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>pointer</Address>
+              <Offsets>
+                <Offset>100</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>172</ID>
+              <Description>"Ability Name  #11"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>pointer</Address>
+              <Offsets>
+                <Offset>110</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>173</ID>
+              <Description>"Ability Name  #11"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>pointer</Address>
+              <Offsets>
+                <Offset>120</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>31</ID>
               <Description>"Crystogen Points"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -485,13 +555,22 @@ dealloc(newmem)
             <CheatEntry>
               <ID>26</ID>
               <Description>"ItemID"</Description>
-              <DropDownList DisplayValueAsItem="1">cc_gysahl:Gysahl Greens
+              <DropDownList DisplayValueAsItem="1">:=========================||Special Items||=====================================
+cc_gysahl:Gysahl Greens
+:=========================||Adornments||========================================
+e210:Aqua Ribbon
 e252:Lebreau's Olive Tattoo
+e308:Silver Gear
+:=========================||Consumables||=======================================
 it_libra:Librascope
 it_phenxtal:Phoenix Down
 it_potion:Potion
+:=========================||Key Items||=========================================
+key_f_kit:Medical Kit
 key_l_knife:Lightning's Knife
+key_s_neck:Snow's Necklace
 key_plsstone:Eternal Crystal
+opt_hmaa01_bj:Giant's Artefact
 tmap_hm:Map of New Bodhum
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
@@ -644,6 +723,21 @@ dealloc(newmem)
           <ID>130</ID>
           <Description>"Spoils Received  #1"</Description>
           <Options moManualExpandCollapse="1"/>
+          <DropDownList DisplayValueAsItem="1">:===========================||Consumables||=====================================
+it_potion:Potion
+it_antidote:Antidote
+it_holywater:Holy Water
+it_sedative:Painkiller
+it_stinkwater:Foul Liquid
+it_tonkati:Mallet
+it_wax:Wax
+it_elixir:Elixir
+it_phenxtal:Phoenix Down
+:===========================||Accessories||=====================================
+acc_000_000:Iron Bangle
+:===========================||Adornements||=====================================
+e308:Silver Gear
+</DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -670,6 +764,22 @@ dealloc(newmem)
         <CheatEntry>
           <ID>132</ID>
           <Description>"Spoils Received  #2"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <DropDownList DisplayValueAsItem="1">:===========================||Consumables||=====================================
+it_potion:Potion
+it_antidote:Antidote
+it_holywater:Holy Water
+it_sedative:Painkiller
+it_stinkwater:Foul Liquid
+it_tonkati:Mallet
+it_wax:Wax
+it_elixir:Elixir
+it_phenxtal:Phoenix Down
+:===========================||Accessories||=====================================
+acc_000_000:Iron Bangle
+:===========================||Adornements||=====================================
+e308:Silver Gear
+</DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -678,8 +788,20 @@ dealloc(newmem)
           <ZeroTerminate>1</ZeroTerminate>
           <Address>ffxiii2img.exe+4D51BC4</Address>
           <Offsets>
-            <Offset>88</Offset>
+            <Offset>90</Offset>
           </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>168</ID>
+              <Description>"Spoils Quantity  #2"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>ffxiii2img.exe+4D51BC4</Address>
+              <Offsets>
+                <Offset>A2</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>134</ID>
@@ -692,7 +814,7 @@ dealloc(newmem)
           <ZeroTerminate>1</ZeroTerminate>
           <Address>ffxiii2img.exe+4D51BC4</Address>
           <Offsets>
-            <Offset>A0</Offset>
+            <Offset>B0</Offset>
           </Offsets>
         </CheatEntry>
         <CheatEntry>
@@ -740,13 +862,17 @@ dealloc(newmem)
 c108_at010_00:Bowsword (Sword Attack 1)
 c108_at020_00:Bowsword (Sword Attack 2)
 c108_at010w_10:Bowsword (Bow Attack 1)
+c108_at015w_10:Bowsword (Bow Attack 3)
 c108_at020w_10:Bowsword (Bow Attack 2)
+c108_at310w_10:Bowsword (Bow Attack){???}
 c108_at520w_10:Blitz (Bowsword){Bow}
 c108_at520_00:Blitz (Bowsword){Sword}
 c108_at540_00:Blindside (Bowsword){Sword}
 c108_at540w_10:Blindside (Bowsword){Bow}
 c110_at010_00:Dual Swords (Attack 1)
+c110_at015_00:Dual Swords (Attack 3)
 c110_at020_00:Dual Swords (Attack 2)
+c110_at310_00:Dual Swords (???)
 C110_at540_00:Blindside (Dual Swords)
 ac100_00:Provoke
 ac110_00:Challenge
@@ -768,6 +894,7 @@ at520_00:Blitz
 de110_00:? / Counter
 m175_ac000:???
 ma000_00:Ruin
+ma000_00_cs:Ruin {???}
 ma000_00_air:Ruin (In-air)
 ma000_00_bt:Ruin (Blindside)
 ma020_00:Ruinga Explosion
