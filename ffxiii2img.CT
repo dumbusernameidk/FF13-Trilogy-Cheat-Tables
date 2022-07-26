@@ -402,6 +402,166 @@ dealloc(newmem)
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
+          <ID>189</ID>
+          <Description>"Monster Stats (Must Select To Update Pointers)"</Description>
+          <Options moHideChildren="1"/>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(MonsterStats,ffxiii2img.exe,8B 80 04 03 00 00 50 8B CE E8 F0)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(MonsterStats,MonsterStatsPointer)
+
+newmem:
+mov [MonsterStatsPointer], eax
+
+code:
+mov   eax, [eax+00000304]
+jmp   Exit
+
+MonsterStatsPointer:
+dd 00000000
+
+MonsterStats:
+jmp   newmem
+nop
+
+Exit:
+
+[DISABLE]
+MonsterStats:
+db 8B 80 04 03 00 00
+unregistersymbol(MonsterStats,MonsterStatsPointer)
+dealloc(newmem)
+</AssemblerScript>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>203</ID>
+              <Description>"Monster  #1"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>190</ID>
+                  <Description>"?"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>16</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>191</ID>
+                  <Description>"Monster Name"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>16</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>10</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>192</ID>
+                  <Description>"Adornement"</Description>
+                  <DropDownList DisplayValueAsItem="1">e210:Aqua Ribbon
+e252:Lebreau's Olive Tattoo
+e308:Silver Gear
+</DropDownList>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>16</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>20</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>193</ID>
+                  <Description>"?"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>16</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>30</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>194</ID>
+                  <Description>"Ability Name  #1"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>16</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>40</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>197</ID>
+                  <Description>"Health"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>304</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>198</ID>
+                  <Description>"ATB Level (Do Not Go Past 6)"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>30C</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>199</ID>
+                  <Description>"Strength"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>314</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>200</ID>
+                  <Description>"Magic"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>MonsterStatsPointer</Address>
+                  <Offsets>
+                    <Offset>318</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
           <ID>104</ID>
           <Description>"getPlayerCoords"</Description>
           <Options moHideChildren="1"/>
@@ -496,7 +656,7 @@ registersymbol(HealthWrite)
 newmem:
 cmp [esi+228], 40A60000
 je code
-mov [esi+0000002D0], 00
+mov [esi+0000002D0], 01
 
 code:
 //mov [esi+000002D0], edi
@@ -560,6 +720,7 @@ cc_gysahl:Gysahl Greens
 :=========================||Adornments||========================================
 e210:Aqua Ribbon
 e252:Lebreau's Olive Tattoo
+e301:Golden Flower
 e308:Silver Gear
 :=========================||Consumables||=======================================
 it_libra:Librascope
@@ -571,6 +732,7 @@ key_l_knife:Lightning's Knife
 key_s_neck:Snow's Necklace
 key_plsstone:Eternal Crystal
 opt_hmaa01_bj:Giant's Artefact
+opt_hmaa_re:'Leaving' Gate Seal
 tmap_hm:Map of New Bodhum
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
@@ -737,6 +899,10 @@ it_phenxtal:Phoenix Down
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e308:Silver Gear
+:===========================||Monster Crystals||================================
+mcr_k270:Nekton
+mcr_k271:Meonekton
+mcr_k665:Spiceacilian
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
@@ -779,6 +945,10 @@ it_phenxtal:Phoenix Down
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e308:Silver Gear
+:===========================||Monster Crystals||================================
+mcr_k270:Nekton
+mcr_k271:Meonekton
+mcr_k665:Spiceacilian
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
@@ -858,13 +1028,16 @@ e308:Silver Gear
             <CheatEntry>
               <ID>158</ID>
               <Description>"attacksReceived"</Description>
-              <DropDownList DisplayValueAsItem="1">:================================PlayerMoveList=================================
+              <DropDownList DisplayValueAsItem="1">:================================||PlayerMoveList||=============================
 c108_at010_00:Bowsword (Sword Attack 1)
 c108_at020_00:Bowsword (Sword Attack 2)
 c108_at010w_10:Bowsword (Bow Attack 1)
 c108_at015w_10:Bowsword (Bow Attack 3)
 c108_at020w_10:Bowsword (Bow Attack 2)
-c108_at310w_10:Bowsword (Bow Attack){???}
+c108_at200_00:Bowsword (Sword Attack){???}
+c108_at200w_10:Bowsword (Bow Attack){???}
+c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108_at310w_10:Bowsword (Bow Attack){In-air?}
 c108_at520w_10:Blitz (Bowsword){Bow}
 c108_at520_00:Blitz (Bowsword){Sword}
 c108_at540_00:Blindside (Bowsword){Sword}
@@ -872,7 +1045,9 @@ c108_at540w_10:Blindside (Bowsword){Bow}
 c110_at010_00:Dual Swords (Attack 1)
 c110_at015_00:Dual Swords (Attack 3)
 c110_at020_00:Dual Swords (Attack 2)
+c110_at200_00:Dual Swords (???)
 c110_at310_00:Dual Swords (???)
+c110_at520_00:Blitz (Dual Swords)
 C110_at540_00:Blindside (Dual Swords)
 ac100_00:Provoke
 ac110_00:Challenge
@@ -948,6 +1123,11 @@ mg710_00:Fogga
 mg720_00:Painga
 mg730_00:Cursega
 mg740_00:Dazega
+:================================||MonsterMoveList||============================
+k271_at010_00:Meonekton (Attack 1)
+k271_at020_00:Meonekton (Attack 2)
+k270_rk000:Spider Web
+k271_rk000:Black Hole
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
