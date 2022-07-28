@@ -11,6 +11,7 @@
         <CheatEntry>
           <ID>23</ID>
           <Description>"TP??"</Description>
+          <LastState Value="2100" RealAddress="15C58EB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -21,6 +22,7 @@
         <CheatEntry>
           <ID>116</ID>
           <Description>"TP??"</Description>
+          <LastState Value="5" RealAddress="15C58EEC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -31,6 +33,7 @@
         <CheatEntry>
           <ID>115</ID>
           <Description>"Gil"</Description>
+          <LastState Value="6076" RealAddress="15C5B8AC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -41,11 +44,23 @@
         <CheatEntry>
           <ID>42</ID>
           <Description>"Time Played"</Description>
+          <LastState Value="3869590832" RealAddress="15C5B8B8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
           <Offsets>
             <Offset>2AD8</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>205</ID>
+          <Description>"Steps?"</Description>
+          <LastState Value="0" RealAddress="15C5B8C0"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>2AE0</Offset>
           </Offsets>
         </CheatEntry>
       </CheatEntries>
@@ -58,6 +73,212 @@
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
+          <ID>395</ID>
+          <Description>"Character Changer"</Description>
+          <Options moHideChildren="1"/>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(PartyMembers,ffxiii2img.exe,89 4C 87 4C FE 87 85 00 00 00)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(PartyMembers,PartyPointer)
+
+newmem:
+mov   [PartyPointer], edi
+
+code:
+mov   [edi+eax*4+4C], ecx
+inc   byte ptr [edi+00000085]
+jmp   Exit
+
+PartyPointer:
+dd   00000000
+
+PartyMembers:
+jmp   newmem
+nop   5
+
+Exit:
+
+[DISABLE]
+PartyMembers:
+db 89 4C 87 4C FE 87 85 00 00 00
+unregistersymbol(PartyMembers,PartyPointer)
+dealloc(newmem)
+</AssemblerScript>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>396</ID>
+              <Description>"?"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Lightning {Internal Name: dummy}
+01:Fang
+02:Gadot
+03:Hope
+04:Lebreau
+05:Lightning
+06:Lightning
+07:Lightning
+08:Mog
+09:Serah
+0A:Sazh
+0B:Sazh {Internal Name: sazz_dlc}
+0C:Noel
+0D:Snow
+0E:Vanille
+FF:Empty
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>PartyPointer</Address>
+              <Offsets>
+                <Offset>34</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>398</ID>
+              <Description>"?"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Lightning {Internal Name: dummy}
+01:Fang
+02:Gadot
+03:Hope
+04:Lebreau
+05:Lightning
+06:Lightning
+07:Lightning
+08:Mog
+09:Serah
+0A:Sazh
+0B:Sazh {Internal Name: sazz_dlc}
+0C:Noel
+0D:Snow
+0E:Vanille
+FF:Empty
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>PartyPointer</Address>
+              <Offsets>
+                <Offset>50</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>397</ID>
+              <Description>"?"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Lightning {Internal Name: dummy}
+01:Fang
+02:Gadot
+03:Hope
+04:Lebreau
+05:Lightning
+06:Lightning
+07:Lightning
+08:Mog
+09:Serah
+0A:Sazh
+0B:Sazh {Internal Name: sazz_dlc}
+0C:Noel
+0D:Snow
+0E:Vanille
+FF:Empty
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>PartyPointer</Address>
+              <Offsets>
+                <Offset>5C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>402</ID>
+              <Description>"?"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Lightning {Internal Name: dummy}
+01:Fang
+02:Gadot
+03:Hope
+04:Lebreau
+05:Lightning
+06:Lightning
+07:Lightning
+08:Mog
+09:Serah
+0A:Sazh
+0B:Sazh {Internal Name: sazz_dlc}
+0C:Noel
+0D:Snow
+0E:Vanille
+FF:Empty
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>PartyPointer</Address>
+              <Offsets>
+                <Offset>30</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>403</ID>
+              <Description>"?"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Lightning {Internal Name: dummy}
+01:Fang
+02:Gadot
+03:Hope
+04:Lebreau
+05:Lightning
+06:Lightning
+07:Lightning
+08:Mog
+09:Serah
+0A:Sazh
+0B:Sazh {Internal Name: sazz_dlc}
+0C:Noel
+0D:Snow
+0E:Vanille
+FF:Empty
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>PartyPointer</Address>
+              <Offsets>
+                <Offset>4C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>404</ID>
+              <Description>"?"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Lightning {Internal Name: dummy}
+01:Fang
+02:Gadot
+03:Hope
+04:Lebreau
+05:Lightning
+06:Lightning
+07:Lightning
+08:Mog
+09:Serah
+0A:Sazh
+0B:Sazh {Internal Name: sazz_dlc}
+0C:Noel
+0D:Snow
+0E:Vanille
+FF:Empty
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>PartyPointer</Address>
+              <Offsets>
+                <Offset>58</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
           <ID>8</ID>
           <Description>"Character Stats (Must Select Character To Update Pointers Correctly)"</Description>
           <Options moHideChildren="1"/>
@@ -66,30 +287,29 @@
           <AssemblerScript>[ENABLE]
 aobscanmodule(CharacterStats,ffxiii2img.exe,8B 84 88 14 0E 00 00)
 alloc(newmem,$1000)
-label(code)
-label(Exit)
-registersymbol(CharacterStats)
-registersymbol(pointer)
+label(code,Exit)
+registersymbol(CharacterStats,Statspointer)
+
 newmem:
-mov [pointer], eax
+mov   [Statspointer], eax
 
 code:
-mov eax, [eax+ecx*4+00000E14]
-jmp Exit
+mov   eax, [eax+ecx*4+00000E14]
+jmp   Exit
 
-pointer:
-dd 00000000
+Statspointer:
+dd   00000000
 
 CharacterStats:
-jmp newmem
-nop 2
+jmp   newmem
+nop   2
 
 Exit:
 
 [DISABLE]
 CharacterStats:
 db 8B 84 88 14 0E 00 00
-unregistersymbol(CharacterStats,pointer)
+unregistersymbol(CharacterStats,Statspointer)
 dealloc(newmem)
 </AssemblerScript>
           <CheatEntries>
@@ -102,7 +322,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>30</Offset>
               </Offsets>
@@ -116,7 +336,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>40</Offset>
               </Offsets>
@@ -130,7 +350,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>50</Offset>
               </Offsets>
@@ -144,7 +364,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>70</Offset>
               </Offsets>
@@ -158,7 +378,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>80</Offset>
               </Offsets>
@@ -172,7 +392,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>90</Offset>
               </Offsets>
@@ -186,7 +406,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>A0</Offset>
               </Offsets>
@@ -200,7 +420,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>B0</Offset>
               </Offsets>
@@ -214,7 +434,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>C0</Offset>
               </Offsets>
@@ -228,7 +448,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>D0</Offset>
               </Offsets>
@@ -242,7 +462,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E0</Offset>
               </Offsets>
@@ -256,7 +476,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>F0</Offset>
               </Offsets>
@@ -270,7 +490,7 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>100</Offset>
               </Offsets>
@@ -284,21 +504,21 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>110</Offset>
               </Offsets>
             </CheatEntry>
             <CheatEntry>
               <ID>173</ID>
-              <Description>"Ability Name  #11"</Description>
+              <Description>"Ability Name  #12"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>120</Offset>
               </Offsets>
@@ -308,7 +528,7 @@ dealloc(newmem)
               <Description>"Crystogen Points"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>CA8</Offset>
               </Offsets>
@@ -318,7 +538,7 @@ dealloc(newmem)
               <Description>"Base Strength"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>CC0</Offset>
               </Offsets>
@@ -328,7 +548,7 @@ dealloc(newmem)
               <Description>"Base Magic"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>CC4</Offset>
               </Offsets>
@@ -338,7 +558,7 @@ dealloc(newmem)
               <Description>"Health"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E18</Offset>
               </Offsets>
@@ -348,7 +568,7 @@ dealloc(newmem)
               <Description>"ATB Level (Do Not Go Past 6)"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E20</Offset>
               </Offsets>
@@ -358,7 +578,7 @@ dealloc(newmem)
               <Description>"Strength"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E28</Offset>
               </Offsets>
@@ -368,7 +588,7 @@ dealloc(newmem)
               <Description>"Magic"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E2C</Offset>
               </Offsets>
@@ -378,15 +598,55 @@ dealloc(newmem)
               <Description>"All Resistances"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E3C</Offset>
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>391</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E40</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>390</ID>
+              <Description>"Physical"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E54</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>409</ID>
+              <Description>"Magic"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E58</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>41</ID>
               <Description>"Passive Ability  #1"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_hpp_2:HP +10%
+              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+auto_dlatt2:Strength +11%
+auto_dldrp:Diva's Gift II
+auto_dlgil:Goddess's Gospel II
+auto_dlmatt0:Magic +5%
+auto_dlmatt3:Magic +11%
+auto_mdefp_3:Resist Magic +15%
+auto_hpp_2:HP +10%
+auto_weekss:Weak Spot MIN
+auto_b_libra:Kill: Libra
+wp_at_atbup1:ATB Rate +25%
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -394,9 +654,87 @@ dealloc(newmem)
               <Unicode>0</Unicode>
               <CodePage>0</CodePage>
               <ZeroTerminate>1</ZeroTerminate>
-              <Address>pointer</Address>
+              <Address>Statspointer</Address>
               <Offsets>
                 <Offset>F30</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>406</ID>
+              <Description>"Passive Ability  #2"</Description>
+              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+auto_dlatt2:Strength +11%
+auto_dldrp:Diva's Gift II
+auto_dlgil:Goddess's Gospel II
+auto_dlmatt0:Magic +5%
+auto_dlmatt3:Magic +11%
+auto_mdefp_3:Resist Magic +15%
+auto_hpp_2:HP +10%
+auto_weekss:Weak Spot MIN
+auto_b_libra:Kill: Libra
+wp_at_atbup1:ATB Rate +25%
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>F40</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>407</ID>
+              <Description>"Passive Ability  #2"</Description>
+              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+auto_dlatt2:Strength +11%
+auto_dldrp:Diva's Gift II
+auto_dlgil:Goddess's Gospel II
+auto_dlmatt0:Magic +5%
+auto_dlmatt3:Magic +11%
+auto_mdefp_3:Resist Magic +15%
+auto_hpp_2:HP +10%
+auto_weekss:Weak Spot MIN
+auto_b_libra:Kill: Libra
+wp_at_atbup1:ATB Rate +25%
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>F50</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>408</ID>
+              <Description>"Passive Ability  #2"</Description>
+              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+auto_dlatt2:Strength +11%
+auto_dldrp:Diva's Gift II
+auto_dlgil:Goddess's Gospel II
+auto_dlmatt0:Magic +5%
+auto_dlmatt3:Magic +11%
+auto_mdefp_3:Resist Magic +15%
+auto_hpp_2:HP +10%
+auto_weekss:Weak Spot MIN
+auto_b_libra:Kill: Libra
+wp_at_atbup1:ATB Rate +25%
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>F60</Offset>
               </Offsets>
             </CheatEntry>
           </CheatEntries>
@@ -656,7 +994,7 @@ registersymbol(HealthWrite)
 newmem:
 cmp [esi+228], 40A60000
 je code
-mov [esi+0000002D0], 01
+mov [esi+0000002D0], 00
 
 code:
 //mov [esi+000002D0], edi
@@ -718,7 +1056,10 @@ dealloc(newmem)
               <DropDownList DisplayValueAsItem="1">:=========================||Special Items||=====================================
 cc_gysahl:Gysahl Greens
 :=========================||Adornments||========================================
+e003:Lucky Clover
+e083:Fragment Crystal
 e210:Aqua Ribbon
+e228:Orange Newsboy Cap
 e252:Lebreau's Olive Tattoo
 e301:Golden Flower
 e308:Silver Gear
@@ -726,14 +1067,26 @@ e308:Silver Gear
 it_libra:Librascope
 it_phenxtal:Phoenix Down
 it_potion:Potion
+it_universal:Remedy
 :=========================||Key Items||=========================================
+key_c_tab:Capsule
 key_f_kit:Medical Kit
 key_l_knife:Lightning's Knife
 key_s_neck:Snow's Necklace
+key_acdmycom:Academy Communicator
 key_plsstone:Eternal Crystal
+opt_bjaa01_gy:Eclipse Artefact
 opt_hmaa01_bj:Giant's Artefact
 opt_hmaa_re:'Leaving' Gate Seal
+opt_silver:Wild Artefact
+tmap_bj:Map of the Bresha Ruins
 tmap_hm:Map of New Bodhum
+:===========================||Materials||=======================================
+material_a000:Potent Droplet
+material_a010:Mana Droplet
+material_a035:Potent Bolt
+material_j020:Radial Bearing
+material_m077:Pot Shard
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -792,6 +1145,146 @@ dealloc(newmem)
 
 </AssemblerScript>
         </CheatEntry>
+        <CheatEntry>
+          <ID>232</ID>
+          <Description>"ShopData"</Description>
+          <Options moHideChildren="1"/>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(ShopDataWeaponsAndAccessories,ffxiii2img.exe,8B 40 0C 50 E8 F0 FA FF FF)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(ShopDataWeaponsAndAccessories,shopPointer)
+
+newmem:
+mov   [shopPointer], eax
+code:
+mov    eax, [eax+0C]
+push   eax
+call   ffxiii2img.exe+57F8B0
+jmp    Exit
+
+shopPointer:
+dd   00000000
+
+ShopDataWeaponsAndAccessories:
+jmp   newmem
+nop   4
+
+Exit:
+[DISABLE]
+ShopDataWeaponsAndAccessories:
+db 8B 40 0C 50 E8 F0 FA FF FF
+unregistersymbol(ShopDataWeaponsAndAccessories,shopPointer)
+dealloc(newmem)
+</AssemblerScript>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>234</ID>
+              <Description>"shopEntry"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>shopPointer</Address>
+              <Offsets>
+                <Offset>0</Offset>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>236</ID>
+              <Description>"shopEntryDescription"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>shopPointer</Address>
+              <Offsets>
+                <Offset>0</Offset>
+                <Offset>4</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>235</ID>
+              <Description>"buyPrice"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>shopPointer</Address>
+              <Offsets>
+                <Offset>C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>387</ID>
+              <Description>"ShopSellPrice"</Description>
+              <Options moHideChildren="1"/>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+aobscanmodule(ShopSellPrice,ffxiii2img.exe,8B 49 10 51 E8 49 FB FF FF)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(ShopSellPrice,SellPricePointer)
+
+newmem:
+mov   [SellPricePointer], ecx
+
+code:
+mov    ecx, [ecx+10]
+push   ecx
+call   ffxiii2img.exe+57F950
+jmp    Exit
+
+SellPricePointer:
+dd  00000000
+
+ShopSellPrice:
+jmp   newmem
+nop   4
+Exit:
+
+[DISABLE]
+ShopSellPrice:
+db 8B 49 10 51 E8 49 FB FF FF
+unregistersymbol(ShopSellPrice,SellPricePointer)
+dealloc(newmem)
+</AssemblerScript>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>388</ID>
+                  <Description>"shopEntry"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>16</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>SellPricePointer</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>389</ID>
+                  <Description>"Sell Price"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>SellPricePointer</Address>
+                  <Offsets>
+                    <Offset>10</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
@@ -804,6 +1297,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>124</ID>
           <Description>"Battle Duration"</Description>
+          <LastState Value="130457" RealAddress="15CAFE98"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -814,6 +1308,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>127</ID>
           <Description>"Target Time"</Description>
+          <LastState Value="194000" RealAddress="15CAFE9C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -824,6 +1319,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>126</ID>
           <Description>"Preemptive Bonus"</Description>
+          <LastState Value="0" RealAddress="15CAFEA0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -834,6 +1330,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>125</ID>
           <Description>"Enemy Points"</Description>
+          <LastState Value="56" RealAddress="15CAFEA4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -844,6 +1341,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>123</ID>
           <Description>"Score"</Description>
+          <LastState Value="24900" RealAddress="15CAFEA8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -854,6 +1352,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>128</ID>
           <Description>"Crystogen Points Earned"</Description>
+          <LastState Value="500" RealAddress="15CAFEB4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -864,6 +1363,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>129</ID>
           <Description>"Rating"</Description>
+          <LastState Value="600" RealAddress="15CAFEB8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -874,6 +1374,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>136</ID>
           <Description>"Gil"</Description>
+          <LastState Value="30" RealAddress="15CAFECC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -886,24 +1387,38 @@ dealloc(newmem)
           <Description>"Spoils Received  #1"</Description>
           <Options moManualExpandCollapse="1"/>
           <DropDownList DisplayValueAsItem="1">:===========================||Consumables||=====================================
-it_potion:Potion
-it_antidote:Antidote
+it_elixir:Elixir
 it_holywater:Holy Water
+it_phenxtal:Phoenix Down
 it_sedative:Painkiller
 it_stinkwater:Foul Liquid
 it_tonkati:Mallet
+it_universal:Remedy
 it_wax:Wax
-it_elixir:Elixir
-it_phenxtal:Phoenix Down
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
+e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
+mcr_k003:Gorgonopsid
+mcr_k041:Gremlin
+mcr_k043:Zwerg Scandroid
+mcr_k063:Pulse Soldier
+mcr_k173:Garchimacera
+mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
+mcr_k273:Cait Sith
+mcr_k400:Uridimmu
 mcr_k665:Spiceacilian
+:===========================||Materials||=======================================
+material_a000:Potent Droplet
+material_a035:Potent Bolt
+material_j020:Radial Bearing
+material_m077:Pot Shard
 </DropDownList>
+          <LastState RealAddress="15CAFED8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -918,6 +1433,7 @@ mcr_k665:Spiceacilian
             <CheatEntry>
               <ID>131</ID>
               <Description>"Spoils Quantity  #1"</Description>
+              <LastState Value="1" RealAddress="15CAFEEA"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -932,24 +1448,38 @@ mcr_k665:Spiceacilian
           <Description>"Spoils Received  #2"</Description>
           <Options moManualExpandCollapse="1"/>
           <DropDownList DisplayValueAsItem="1">:===========================||Consumables||=====================================
-it_potion:Potion
-it_antidote:Antidote
+it_elixir:Elixir
 it_holywater:Holy Water
+it_phenxtal:Phoenix Down
 it_sedative:Painkiller
 it_stinkwater:Foul Liquid
 it_tonkati:Mallet
+it_universal:Remedy
 it_wax:Wax
-it_elixir:Elixir
-it_phenxtal:Phoenix Down
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
+e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
+mcr_k003:Gorgonopsid
+mcr_k041:Gremlin
+mcr_k043:Zwerg Scandroid
+mcr_k063:Pulse Soldier
+mcr_k173:Garchimacera
+mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
+mcr_k273:Cait Sith
+mcr_k400:Uridimmu
 mcr_k665:Spiceacilian
+:===========================||Materials||=======================================
+material_a000:Potent Droplet
+material_a035:Potent Bolt
+material_j020:Radial Bearing
+material_m077:Pot Shard
 </DropDownList>
+          <LastState RealAddress="15CAFEF0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -964,6 +1494,7 @@ mcr_k665:Spiceacilian
             <CheatEntry>
               <ID>168</ID>
               <Description>"Spoils Quantity  #2"</Description>
+              <LastState Value="10" RealAddress="15CAFF02"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -976,6 +1507,40 @@ mcr_k665:Spiceacilian
         <CheatEntry>
           <ID>134</ID>
           <Description>"Spoils Received  #3"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <DropDownList DisplayValueAsItem="1">:===========================||Consumables||=====================================
+it_elixir:Elixir
+it_holywater:Holy Water
+it_phenxtal:Phoenix Down
+it_sedative:Painkiller
+it_stinkwater:Foul Liquid
+it_tonkati:Mallet
+it_universal:Remedy
+it_wax:Wax
+:===========================||Accessories||=====================================
+acc_000_000:Iron Bangle
+:===========================||Adornements||=====================================
+e083:Fragment Crystal
+e308:Silver Gear
+:===========================||Monster Crystals||================================
+mcr_k003:Gorgonopsid
+mcr_k041:Gremlin
+mcr_k043:Zwerg Scandroid
+mcr_k063:Pulse Soldier
+mcr_k173:Garchimacera
+mcr_k182:Hoplite
+mcr_k270:Nekton
+mcr_k271:Meonekton
+mcr_k273:Cait Sith
+mcr_k400:Uridimmu
+mcr_k665:Spiceacilian
+:===========================||Materials||=======================================
+material_a000:Potent Droplet
+material_a035:Potent Bolt
+material_j020:Radial Bearing
+material_m077:Pot Shard
+</DropDownList>
+          <LastState RealAddress="15CAFF08"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -984,12 +1549,87 @@ mcr_k665:Spiceacilian
           <ZeroTerminate>1</ZeroTerminate>
           <Address>ffxiii2img.exe+4D51BC4</Address>
           <Offsets>
-            <Offset>B0</Offset>
+            <Offset>A8</Offset>
           </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>405</ID>
+              <Description>"Spoils Quantity  #3"</Description>
+              <LastState Value="0" RealAddress="15CAFF1A"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>ffxiii2img.exe+4D51BC4</Address>
+              <Offsets>
+                <Offset>BA</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>410</ID>
+          <Description>"Spoils Received  #4"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <DropDownList DisplayValueAsItem="1">:===========================||Consumables||=====================================
+it_elixir:Elixir
+it_holywater:Holy Water
+it_phenxtal:Phoenix Down
+it_sedative:Painkiller
+it_stinkwater:Foul Liquid
+it_tonkati:Mallet
+it_universal:Remedy
+it_wax:Wax
+:===========================||Accessories||=====================================
+acc_000_000:Iron Bangle
+:===========================||Adornements||=====================================
+e083:Fragment Crystal
+e308:Silver Gear
+:===========================||Monster Crystals||================================
+mcr_k003:Gorgonopsid
+mcr_k041:Gremlin
+mcr_k043:Zwerg Scandroid
+mcr_k063:Pulse Soldier
+mcr_k173:Garchimacera
+mcr_k182:Hoplite
+mcr_k270:Nekton
+mcr_k271:Meonekton
+mcr_k273:Cait Sith
+mcr_k400:Uridimmu
+mcr_k665:Spiceacilian
+:===========================||Materials||=======================================
+material_a000:Potent Droplet
+material_a035:Potent Bolt
+material_j020:Radial Bearing
+material_m077:Pot Shard
+</DropDownList>
+          <LastState RealAddress="15CAFF20"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>16</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>ffxiii2img.exe+4D51BC4</Address>
+          <Offsets>
+            <Offset>C0</Offset>
+          </Offsets>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>411</ID>
+              <Description>"Spoils Quantity  #4"</Description>
+              <LastState Value="0" RealAddress="15CAFF32"/>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>ffxiii2img.exe+4D51BC4</Address>
+              <Offsets>
+                <Offset>D2</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>135</ID>
           <Description>"Recent Battle Total"</Description>
+          <LastState Value="304525" RealAddress="15CB00A0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1037,6 +1677,8 @@ c108_at020w_10:Bowsword (Bow Attack 2)
 c108_at200_00:Bowsword (Sword Attack){???}
 c108_at200w_10:Bowsword (Bow Attack){???}
 c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108at310_10:Bowsword (Sword Attack){???}
+c108at315_10:Bowsword (???)
 c108_at310w_10:Bowsword (Bow Attack){In-air?}
 c108_at520w_10:Blitz (Bowsword){Bow}
 c108_at520_00:Blitz (Bowsword){Sword}
@@ -1124,10 +1766,16 @@ mg720_00:Painga
 mg730_00:Cursega
 mg740_00:Dazega
 :================================||MonsterMoveList||============================
+k003_at010_00:Gorgonopsid (Attack 1)
+k003_at020_00:Gorgonopsid (Attack 2)
+k043at010_30:Zwerg Scandroid (Attack ?)
 k271_at010_00:Meonekton (Attack 1)
 k271_at020_00:Meonekton (Attack 2)
+k400_at010_00:Uridimmu (Attack 1)
+k043_rk000:Multicast
 k270_rk000:Spider Web
 k271_rk000:Black Hole
+k400_rk000:Feral Fangs
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1251,6 +1899,7 @@ k271_rk000:Black Hole
         <CheatEntry>
           <ID>110</ID>
           <Description>"?"</Description>
+          <LastState RealAddress="15C59D70"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1265,6 +1914,7 @@ k271_rk000:Black Hole
         <CheatEntry>
           <ID>111</ID>
           <Description>"?"</Description>
+          <LastState RealAddress="15C59D90"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1279,6 +1929,7 @@ k271_rk000:Black Hole
         <CheatEntry>
           <ID>112</ID>
           <Description>"?"</Description>
+          <LastState RealAddress="15C59DB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1293,6 +1944,7 @@ k271_rk000:Black Hole
         <CheatEntry>
           <ID>113</ID>
           <Description>"?"</Description>
+          <LastState RealAddress="15C59DC0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1307,6 +1959,7 @@ k271_rk000:Black Hole
         <CheatEntry>
           <ID>114</ID>
           <Description>"?"</Description>
+          <LastState RealAddress="15C59DD0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1320,128 +1973,291 @@ k271_rk000:Black Hole
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
+    <CheatEntry>
+      <ID>399</ID>
+      <Description>"crash 1 fix"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ffxiii2img.exe
+  Version: 
+  Date   : 2022-07-27
+  Author : zacha
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(crashfix,ffxiii2img.exe,89 7E 04 89 3E 8B 0D * * * * 3B CF 75 13) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+test esi, esi
+jne code
+pop edi
+pop esi
+pop ebp
+pop ebx
+ret
+
+code:
+mov [esi+04],edi
+mov [esi],edi
+jmp return
+
+crashfix:
+  jmp newmem
+return:
+registersymbol(crashfix)
+
+[DISABLE]
+
+crashfix:
+  db 89 7E 04 89 3E
+
+unregistersymbol(crashfix)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ffxiii2img.exe+178422
+
+ffxiii2img.exe+178406: 8B 56 04           - mov edx,[esi+04]
+ffxiii2img.exe+178409: 89 50 04           - mov [eax+04],edx
+ffxiii2img.exe+17840C: 8B 46 04           - mov eax,[esi+04]
+ffxiii2img.exe+17840F: 3B C7              - cmp eax,edi
+ffxiii2img.exe+178411: 74 04              - je ffxiii2img.exe+178417
+ffxiii2img.exe+178413: 8B 0E              - mov ecx,[esi]
+ffxiii2img.exe+178415: 89 08              - mov [eax],ecx
+ffxiii2img.exe+178417: 89 3E              - mov [esi],edi
+ffxiii2img.exe+178419: 89 7E 04           - mov [esi+04],edi
+ffxiii2img.exe+17841C: 29 2D 24 07 7D 02  - sub [ffxiii2img.exe+2120724],ebp
+// ---------- INJECTING HERE ----------
+ffxiii2img.exe+178422: 89 7E 04           - mov [esi+04],edi
+// ---------- DONE INJECTING  ----------
+ffxiii2img.exe+178425: 89 3E              - mov [esi],edi
+ffxiii2img.exe+178427: 8B 0D 2C 07 7D 02  - mov ecx,[ffxiii2img.exe+212072C]
+ffxiii2img.exe+17842D: 3B CF              - cmp ecx,edi
+ffxiii2img.exe+17842F: 75 13              - jne ffxiii2img.exe+178444
+ffxiii2img.exe+178431: 89 35 2C 07 7D 02  - mov [ffxiii2img.exe+212072C],esi
+ffxiii2img.exe+178437: 89 35 28 07 7D 02  - mov [ffxiii2img.exe+2120728],esi
+ffxiii2img.exe+17843D: 89 3E              - mov [esi],edi
+ffxiii2img.exe+17843F: 89 7E 04           - mov [esi+04],edi
+ffxiii2img.exe+178442: EB 0C              - jmp ffxiii2img.exe+178450
+ffxiii2img.exe+178444: 56                 - push esi
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>400</ID>
+      <Description>"crash 2 fix"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ffxiii2img.exe
+  Version: 
+  Date   : 2022-07-27
+  Author : zacha
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(testfix,ffxiii2img.exe,89 4E 18 52 8D 4E 28) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+test esi, esi
+jne code
+pop esi
+pop ebp
+pop ebx
+pop edi
+add esp, 18
+ret 0010
+
+code:
+  mov [esi+18],ecx
+  push edx
+  lea ecx,[esi+28]
+  jmp return
+
+testfix:
+  jmp newmem
+  nop 2
+return:
+registersymbol(testfix)
+
+[DISABLE]
+
+testfix:
+  db 89 4E 18 52 8D 4E 28
+
+unregistersymbol(testfix)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ffxiii2img.exe+178CEC
+
+ffxiii2img.exe+178CD2: 53                             - push ebx
+ffxiii2img.exe+178CD3: 55                             - push ebp
+ffxiii2img.exe+178CD4: 56                             - push esi
+ffxiii2img.exe+178CD5: 50                             - push eax
+ffxiii2img.exe+178CD6: E8 A5 F6 FF FF                 - call ffxiii2img.exe+178380
+ffxiii2img.exe+178CDB: 8B 4C 24 30                    - mov ecx,[esp+30]
+ffxiii2img.exe+178CDF: 8B 54 24 38                    - mov edx,[esp+38]
+ffxiii2img.exe+178CE3: 8B 5C 24 34                    - mov ebx,[esp+34]
+ffxiii2img.exe+178CE7: 8B F0                          - mov esi,eax
+ffxiii2img.exe+178CE9: 83 C4 04                       - add esp,04
+// ---------- INJECTING HERE ----------
+ffxiii2img.exe+178CEC: 89 4E 18                       - mov [esi+18],ecx
+// ---------- DONE INJECTING  ----------
+ffxiii2img.exe+178CEF: 52                             - push edx
+ffxiii2img.exe+178CF0: 8D 4E 28                       - lea ecx,[esi+28]
+ffxiii2img.exe+178CF3: 89 5E 14                       - mov [esi+14],ebx
+ffxiii2img.exe+178CF6: C7 46 1C FF FF FF FF           - mov [esi+1C],FFFFFFFF
+ffxiii2img.exe+178CFD: E8 DE B7 FF FF                 - call ffxiii2img.exe+1744E0
+ffxiii2img.exe+178D02: 89 7E 30                       - mov [esi+30],edi
+ffxiii2img.exe+178D05: F6 47 34 01                    - test byte ptr [edi+34],01
+ffxiii2img.exe+178D09: 74 0A                          - je ffxiii2img.exe+178D15
+ffxiii2img.exe+178D0B: 81 8E A0 00 00 00 00 40 00 00  - or [esi+000000A0],00004000
+ffxiii2img.exe+178D15: 8D 6F 10                       - lea ebp,[edi+10]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>401</ID>
+      <Description>"crash 3 fix"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : ffxiii2img.exe
+  Version: 
+  Date   : 2022-07-27
+  Author : zacha
+
+  This script does blah blah blah
+}
+
+[ENABLE]
+
+aobscanmodule(asdasf,ffxiii2img.exe,89 4E 1C 50 8D 4E 28) // should be unique
+alloc(newmem,$1000)
+
+label(code)
+label(return)
+
+newmem:
+test esi, esi
+jne code
+pop edi
+pop esi
+pop ebp
+pop ebx
+ret 0014
+
+code:
+  mov [esi+1C],ecx
+  push eax
+  lea ecx,[esi+28]
+  jmp return
+
+asdasf:
+  jmp newmem
+  nop 2
+return:
+registersymbol(asdasf)
+
+[DISABLE]
+
+asdasf:
+  db 89 4E 1C 50 8D 4E 28
+
+unregistersymbol(asdasf)
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: ffxiii2img.exe+178DB5
+
+ffxiii2img.exe+178D97: 57                             - push edi
+ffxiii2img.exe+178D98: 50                             - push eax
+ffxiii2img.exe+178D99: 8B F9                          - mov edi,ecx
+ffxiii2img.exe+178D9B: E8 E0 F5 FF FF                 - call ffxiii2img.exe+178380
+ffxiii2img.exe+178DA0: 8B 4C 24 20                    - mov ecx,[esp+20]
+ffxiii2img.exe+178DA4: 8B 54 24 18                    - mov edx,[esp+18]
+ffxiii2img.exe+178DA8: 8B 5C 24 1C                    - mov ebx,[esp+1C]
+ffxiii2img.exe+178DAC: 8B F0                          - mov esi,eax
+ffxiii2img.exe+178DAE: 8B 44 24 24                    - mov eax,[esp+24]
+ffxiii2img.exe+178DB2: 83 C4 04                       - add esp,04
+// ---------- INJECTING HERE ----------
+ffxiii2img.exe+178DB5: 89 4E 1C                       - mov [esi+1C],ecx
+// ---------- DONE INJECTING  ----------
+ffxiii2img.exe+178DB8: 50                             - push eax
+ffxiii2img.exe+178DB9: 8D 4E 28                       - lea ecx,[esi+28]
+ffxiii2img.exe+178DBC: 89 5E 14                       - mov [esi+14],ebx
+ffxiii2img.exe+178DBF: 89 56 18                       - mov [esi+18],edx
+ffxiii2img.exe+178DC2: E8 19 B7 FF FF                 - call ffxiii2img.exe+1744E0
+ffxiii2img.exe+178DC7: 89 7E 30                       - mov [esi+30],edi
+ffxiii2img.exe+178DCA: F6 47 34 01                    - test byte ptr [edi+34],01
+ffxiii2img.exe+178DCE: 74 0A                          - je ffxiii2img.exe+178DDA
+ffxiii2img.exe+178DD0: 81 8E A0 00 00 00 00 40 00 00  - or [esi+000000A0],00004000
+ffxiii2img.exe+178DDA: 8B 6F 10                       - mov ebp,[edi+10]
+}
+</AssemblerScript>
+    </CheatEntry>
   </CheatEntries>
   <CheatCodes>
     <CodeEntry>
-      <Description>Change of add [esi+000002E8],eax</Description>
-      <AddressString>ffxiii2img.exe+4BC46</AddressString>
-      <Before>
-        <Byte>9E</Byte>
-        <Byte>F8</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-      </Before>
-      <Actual>
-        <Byte>01</Byte>
-        <Byte>86</Byte>
-        <Byte>E8</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-      </Actual>
-      <After>
-        <Byte>79</Byte>
-        <Byte>04</Byte>
-        <Byte>33</Byte>
-        <Byte>C0</Byte>
-        <Byte>EB</Byte>
-      </After>
-    </CodeEntry>
-    <CodeEntry>
-      <Description>Change of mov [esi+000002F8],ebx</Description>
-      <AddressString>ffxiii2img.exe+4BC40</AddressString>
-      <Before>
-        <Byte>C0</Byte>
-        <Byte>EB</Byte>
-        <Byte>08</Byte>
-        <Byte>2B</Byte>
-        <Byte>C1</Byte>
-      </Before>
-      <Actual>
-        <Byte>89</Byte>
-        <Byte>9E</Byte>
-        <Byte>F8</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-      </Actual>
-      <After>
-        <Byte>01</Byte>
-        <Byte>86</Byte>
-        <Byte>E8</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
-      </After>
-    </CodeEntry>
-    <CodeEntry>
-      <Description>Change of sub eax,ecx</Description>
-      <AddressString>ffxiii2img.exe+4BC3E</AddressString>
-      <Before>
-        <Byte>00</Byte>
-        <Byte>33</Byte>
-        <Byte>C0</Byte>
-        <Byte>EB</Byte>
-        <Byte>08</Byte>
-      </Before>
-      <Actual>
-        <Byte>2B</Byte>
-        <Byte>C1</Byte>
-      </Actual>
-      <After>
-        <Byte>89</Byte>
-        <Byte>9E</Byte>
-        <Byte>F8</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
-      </After>
-    </CodeEntry>
-    <CodeEntry>
-      <Description>Change of jns ffxiii2img.exe+4BC52</Description>
-      <AddressString>ffxiii2img.exe+4BC4C</AddressString>
-      <Before>
-        <Byte>86</Byte>
-        <Byte>E8</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-      </Before>
-      <Actual>
-        <Byte>79</Byte>
-        <Byte>04</Byte>
-      </Actual>
-      <After>
-        <Byte>33</Byte>
-        <Byte>C0</Byte>
-        <Byte>EB</Byte>
-        <Byte>24</Byte>
-        <Byte>6A</Byte>
-      </After>
-    </CodeEntry>
-    <CodeEntry>
-      <Description>Change of mov ecx,[esi+000002F8]</Description>
-      <AddressString>ffxiii2img.exe+4BC22</AddressString>
+      <Description>Change of movq xmm0,[eax]</Description>
+      <AddressString>ffxiii2img.exe+597DE0</AddressString>
       <Before>
         <Byte>E8</Byte>
-        <Byte>9E</Byte>
-        <Byte>D4</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
+        <Byte>30</Byte>
+        <Byte>F8</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
       </Before>
       <Actual>
-        <Byte>8B</Byte>
-        <Byte>8E</Byte>
-        <Byte>F8</Byte>
-        <Byte>02</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-      </Actual>
-      <After>
-        <Byte>33</Byte>
-        <Byte>DB</Byte>
-        <Byte>3B</Byte>
-        <Byte>CB</Byte>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
         <Byte>7E</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>66</Byte>
+        <Byte>0F</Byte>
+        <Byte>D6</Byte>
+        <Byte>06</Byte>
+        <Byte>F3</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movq xmm0,[eax+08]</Description>
+      <AddressString>ffxiii2img.exe+597DE8</AddressString>
+      <Before>
+        <Byte>90</Byte>
+        <Byte>66</Byte>
+        <Byte>0F</Byte>
+        <Byte>D6</Byte>
+        <Byte>06</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>7E</Byte>
+        <Byte>40</Byte>
+        <Byte>08</Byte>
+      </Actual>
+      <After>
+        <Byte>8D</Byte>
+        <Byte>44</Byte>
+        <Byte>24</Byte>
+        <Byte>18</Byte>
+        <Byte>50</Byte>
       </After>
     </CodeEntry>
   </CheatCodes>
