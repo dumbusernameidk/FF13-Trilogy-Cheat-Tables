@@ -11,7 +11,6 @@
         <CheatEntry>
           <ID>23</ID>
           <Description>"TP??"</Description>
-          <LastState Value="2100" RealAddress="155BFEB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -22,7 +21,6 @@
         <CheatEntry>
           <ID>116</ID>
           <Description>"TP??"</Description>
-          <LastState Value="5" RealAddress="155BFEEC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -33,7 +31,6 @@
         <CheatEntry>
           <ID>115</ID>
           <Description>"Gil"</Description>
-          <LastState Value="0" RealAddress="155C28AC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -44,7 +41,6 @@
         <CheatEntry>
           <ID>42</ID>
           <Description>"Time Played"</Description>
-          <LastState Value="0" RealAddress="155C28B8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -55,7 +51,6 @@
         <CheatEntry>
           <ID>205</ID>
           <Description>"Steps?"</Description>
-          <LastState Value="0" RealAddress="155C28C0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -1136,8 +1131,8 @@ label(code,Exit)
 registersymbol(getPlayerCoords,CoordsPointer)
 
 newmem:
-cmp [eax+264], 01
-je code
+cmp [eax+FF0], 0E633194
+jne code
 mov [CoordsPointer], eax
 
 code:
@@ -1282,6 +1277,7 @@ cc_gysahl:Gysahl Greens
 :=========================||Adornments||========================================
 e003:Lucky Clover
 e083:Fragment Crystal
+e092:Carbuncle  Figurine
 e210:Aqua Ribbon
 e228:Orange Newsboy Cap
 e252:Lebreau's Olive Tattoo
@@ -1303,19 +1299,29 @@ key_plsstone:Eternal Crystal
 opt_bjaa01_gy:Eclipse Artefact
 opt_bjaa02_sn:Reunion Artefact
 opt_bjaa_re:'Scars' Gate Seal
+opt_gwca01_gh:Artefact of Origins
+opt_gyaa01_gw:Hollow Artefact
+opt_gyaa_re:'Visions' Gate Seal
 opt_hmaa01_bj:Giant's Artefact
 opt_hmaa_re:'Leaving' Gate Seal
 opt_silver:Wild Artefact
 tmap_bj:Map of the Bresha Ruins
+tmap_gw:Map of Oerba
 tmap_gy:Map of the Yaschas Massif
 tmap_hm:Map of New Bodhum
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
+material_a001:Potent Sliver
+material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
+material_a020:Power Bolt
 material_a025:Mana Bolt
+material_a026:Mana Chip
 material_a035:Potent Bolt
+material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1564,7 +1570,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>124</ID>
           <Description>"Battle Duration"</Description>
-          <LastState Value="332929" RealAddress="15616E98"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1575,7 +1580,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>127</ID>
           <Description>"Target Time"</Description>
-          <LastState Value="358000" RealAddress="15616E9C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1586,7 +1590,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>126</ID>
           <Description>"Preemptive Bonus"</Description>
-          <LastState Value="0" RealAddress="15616EA0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1597,7 +1600,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>125</ID>
           <Description>"Enemy Points"</Description>
-          <LastState Value="70" RealAddress="15616EA4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1608,7 +1610,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>123</ID>
           <Description>"Score"</Description>
-          <LastState Value="18560" RealAddress="15616EA8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1619,7 +1620,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>128</ID>
           <Description>"Crystogen Points Earned"</Description>
-          <LastState Value="0" RealAddress="15616EB4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1630,7 +1630,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>129</ID>
           <Description>"Rating"</Description>
-          <LastState Value="0" RealAddress="15616EB8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1641,7 +1640,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>136</ID>
           <Description>"Gil"</Description>
-          <LastState Value="30" RealAddress="15616ECC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1672,23 +1670,30 @@ mcr_k003:Gorgonopsid
 mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
+mcr_k102:Frag Leech
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k493:Clione
+mcr_k495:Chelicerata
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
+material_a001:Potent Sliver
+material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
 material_a025:Mana Bolt
+material_a026:Mana Chip
 material_a035:Potent Bolt
+material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
-          <LastState RealAddress="15616ED8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1703,7 +1708,6 @@ material_m077:Pot Shard
             <CheatEntry>
               <ID>131</ID>
               <Description>"Spoils Quantity  #1"</Description>
-              <LastState Value="0" RealAddress="15616EEA"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1736,23 +1740,30 @@ mcr_k003:Gorgonopsid
 mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
+mcr_k102:Frag Leech
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k493:Clione
+mcr_k495:Chelicerata
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
+material_a001:Potent Sliver
+material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
 material_a025:Mana Bolt
+material_a026:Mana Chip
 material_a035:Potent Bolt
+material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
-          <LastState RealAddress="15616EF0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1767,7 +1778,6 @@ material_m077:Pot Shard
             <CheatEntry>
               <ID>168</ID>
               <Description>"Spoils Quantity  #2"</Description>
-              <LastState Value="0" RealAddress="15616F02"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1800,23 +1810,30 @@ mcr_k003:Gorgonopsid
 mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
+mcr_k102:Frag Leech
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k493:Clione
+mcr_k495:Chelicerata
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
+material_a001:Potent Sliver
+material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
 material_a025:Mana Bolt
+material_a026:Mana Chip
 material_a035:Potent Bolt
+material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
-          <LastState RealAddress="15616F08"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1831,7 +1848,6 @@ material_m077:Pot Shard
             <CheatEntry>
               <ID>405</ID>
               <Description>"Spoils Quantity  #3"</Description>
-              <LastState Value="0" RealAddress="15616F1A"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1864,23 +1880,30 @@ mcr_k003:Gorgonopsid
 mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
+mcr_k102:Frag Leech
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k493:Clione
+mcr_k495:Chelicerata
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
+material_a001:Potent Sliver
+material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
 material_a025:Mana Bolt
+material_a026:Mana Chip
 material_a035:Potent Bolt
+material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
-          <LastState RealAddress="15616F20"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -1895,7 +1918,6 @@ material_m077:Pot Shard
             <CheatEntry>
               <ID>411</ID>
               <Description>"Spoils Quantity  #4"</Description>
-              <LastState Value="0" RealAddress="15616F32"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -1908,7 +1930,6 @@ material_m077:Pot Shard
         <CheatEntry>
           <ID>135</ID>
           <Description>"Recent Battle Total"</Description>
-          <LastState Value="309724" RealAddress="156170A0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2179,7 +2200,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>110</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="155C0D70"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2194,7 +2214,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>111</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="155C0D90"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2209,7 +2228,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>112</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="155C0DB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2224,7 +2242,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>113</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="155C0DC0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2239,7 +2256,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>114</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="155C0DD0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2370,56 +2386,5 @@ dealloc(newmem)
 </AssemblerScript>
     </CheatEntry>
   </CheatEntries>
-  <CheatCodes>
-    <CodeEntry>
-      <Description>Change of movq xmm0,[eax]</Description>
-      <AddressString>ffxiii2img.exe+597DE0</AddressString>
-      <Before>
-        <Byte>E8</Byte>
-        <Byte>30</Byte>
-        <Byte>F8</Byte>
-        <Byte>FF</Byte>
-        <Byte>FF</Byte>
-      </Before>
-      <Actual>
-        <Byte>F3</Byte>
-        <Byte>0F</Byte>
-        <Byte>7E</Byte>
-        <Byte>00</Byte>
-      </Actual>
-      <After>
-        <Byte>66</Byte>
-        <Byte>0F</Byte>
-        <Byte>D6</Byte>
-        <Byte>06</Byte>
-        <Byte>F3</Byte>
-      </After>
-    </CodeEntry>
-    <CodeEntry>
-      <Description>Change of movq xmm0,[eax+08]</Description>
-      <AddressString>ffxiii2img.exe+597DE8</AddressString>
-      <Before>
-        <Byte>90</Byte>
-        <Byte>66</Byte>
-        <Byte>0F</Byte>
-        <Byte>D6</Byte>
-        <Byte>06</Byte>
-      </Before>
-      <Actual>
-        <Byte>F3</Byte>
-        <Byte>0F</Byte>
-        <Byte>7E</Byte>
-        <Byte>40</Byte>
-        <Byte>08</Byte>
-      </Actual>
-      <After>
-        <Byte>8D</Byte>
-        <Byte>44</Byte>
-        <Byte>24</Byte>
-        <Byte>18</Byte>
-        <Byte>50</Byte>
-      </After>
-    </CodeEntry>
-  </CheatCodes>
   <UserdefinedSymbols/>
 </CheatTable>
