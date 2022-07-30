@@ -727,6 +727,16 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>428</ID>
+              <Description>"Lightning"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E64</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>420</ID>
               <Description>"Poison"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -755,6 +765,7 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
@@ -783,6 +794,7 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
@@ -811,6 +823,7 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
@@ -839,6 +852,7 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
@@ -867,6 +881,7 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
@@ -1131,7 +1146,7 @@ label(code,Exit)
 registersymbol(getPlayerCoords,CoordsPointer)
 
 newmem:
-cmp [eax+FF0], 0E633194
+cmp [eax+264], #9
 jne code
 mov [CoordsPointer], eax
 
@@ -1276,14 +1291,18 @@ dealloc(newmem)
 cc_gysahl:Gysahl Greens
 :=========================||Adornments||========================================
 e003:Lucky Clover
+e048:Crystal Heart
 e083:Fragment Crystal
 e092:Carbuncle  Figurine
 e210:Aqua Ribbon
 e228:Orange Newsboy Cap
+e236:Whimsical Headdress
 e252:Lebreau's Olive Tattoo
 e301:Golden Flower
 e308:Silver Gear
 :=========================||Consumables||=======================================
+it_holywater:Holy Water
+it_hpotion:Wound Potion
 it_libra:Librascope
 it_phenxtal:Phoenix Down
 it_potion:Potion
@@ -1294,12 +1313,16 @@ key_f_kit:Medical Kit
 key_l_knife:Lightning's Knife
 key_miss_art:Tablet of Paddra
 key_s_neck:Snow's Necklace
+key_unk_y_opt:Mysterious Artefact
+key_white_ystn:Ivory Crystal
 key_acdmycom:Academy Communicator
 key_plsstone:Eternal Crystal
 opt_bjaa01_gy:Eclipse Artefact
 opt_bjaa02_sn:Reunion Artefact
 opt_bjaa_re:'Scars' Gate Seal
+opt_ghsn01_cs:Illusionary Artefact
 opt_gwca01_gh:Artefact of Origins
+opt_gwca_re:'Encounters' Gate Seal
 opt_gyaa01_gw:Hollow Artefact
 opt_gyaa_re:'Visions' Gate Seal
 opt_hmaa01_bj:Giant's Artefact
@@ -1309,18 +1332,26 @@ tmap_bj:Map of the Bresha Ruins
 tmap_gw:Map of Oerba
 tmap_gy:Map of the Yaschas Massif
 tmap_hm:Map of New Bodhum
+tmap_sn:map of Sunleth Waterscape
+tmap_sp:Map of the Void Beyond
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
+material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
+material_a015:Vitality Droplet
 material_a020:Power Bolt
 material_a025:Mana Bolt
 material_a026:Mana Chip
+material_a031:Vitality Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m004:Shattered Bone
+material_m009:Moistened Scale
+material_m025:Molted Tail
 material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
@@ -1663,6 +1694,7 @@ it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
+e048:Crystal Heart
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -1671,18 +1703,26 @@ mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
 mcr_k102:Frag Leech
+mcr_k127:Ceratosaur
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
+mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k442:Gahongas
+mcr_k444:Necrosis
 mcr_k493:Clione
 mcr_k495:Chelicerata
+mcr_k642:Fachan
+mcr_k654:Oannes
+mcr_k661:Spiranthes
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
+material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
@@ -1691,6 +1731,9 @@ material_a026:Mana Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m004:Shattered Bone
+material_m009:Moistened Scale
+material_m025:Molted Tail
 material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
@@ -1733,6 +1776,7 @@ it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
+e048:Crystal Heart
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -1741,18 +1785,26 @@ mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
 mcr_k102:Frag Leech
+mcr_k127:Ceratosaur
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
+mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k442:Gahongas
+mcr_k444:Necrosis
 mcr_k493:Clione
 mcr_k495:Chelicerata
+mcr_k642:Fachan
+mcr_k654:Oannes
+mcr_k661:Spiranthes
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
+material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
@@ -1761,6 +1813,9 @@ material_a026:Mana Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m004:Shattered Bone
+material_m009:Moistened Scale
+material_m025:Molted Tail
 material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
@@ -1803,6 +1858,7 @@ it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
+e048:Crystal Heart
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -1811,18 +1867,26 @@ mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
 mcr_k102:Frag Leech
+mcr_k127:Ceratosaur
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
+mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k442:Gahongas
+mcr_k444:Necrosis
 mcr_k493:Clione
 mcr_k495:Chelicerata
+mcr_k642:Fachan
+mcr_k654:Oannes
+mcr_k661:Spiranthes
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
+material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
@@ -1831,6 +1895,9 @@ material_a026:Mana Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m004:Shattered Bone
+material_m009:Moistened Scale
+material_m025:Molted Tail
 material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
@@ -1873,6 +1940,7 @@ it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
+e048:Crystal Heart
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -1881,18 +1949,26 @@ mcr_k041:Gremlin
 mcr_k043:Zwerg Scandroid
 mcr_k063:Pulse Soldier
 mcr_k102:Frag Leech
+mcr_k127:Ceratosaur
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k270:Nekton
 mcr_k271:Meonekton
+mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k442:Gahongas
+mcr_k444:Necrosis
 mcr_k493:Clione
 mcr_k495:Chelicerata
+mcr_k642:Fachan
+mcr_k654:Oannes
+mcr_k661:Spiranthes
 mcr_k665:Spiceacilian
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
+material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a010:Mana Droplet
 material_a011:Mana Silver
@@ -1901,6 +1977,9 @@ material_a026:Mana Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_j020:Radial Bearing
+material_m004:Shattered Bone
+material_m009:Moistened Scale
+material_m025:Molted Tail
 material_m057:Cie'th Tear
 material_m077:Pot Shard
 </DropDownList>
@@ -2121,7 +2200,7 @@ k400_rk000:Feral Fangs
               </Offsets>
             </CheatEntry>
             <CheatEntry>
-              <ID>157</ID>
+              <ID>427</ID>
               <Description>"currentHealth"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -2144,7 +2223,7 @@ k400_rk000:Feral Fangs
             </CheatEntry>
             <CheatEntry>
               <ID>162</ID>
-              <Description>"staggerPoint?"</Description>
+              <Description>"?"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>ffxiii2img.exe+211E5FC</Address>
