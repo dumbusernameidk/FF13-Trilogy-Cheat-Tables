@@ -11,7 +11,7 @@
         <CheatEntry>
           <ID>23</ID>
           <Description>"TP??"</Description>
-          <LastState Value="2100" RealAddress="15320EB0"/>
+          <LastState Value="2100" RealAddress="15CB5EB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -22,7 +22,7 @@
         <CheatEntry>
           <ID>116</ID>
           <Description>"TP??"</Description>
-          <LastState Value="5" RealAddress="15320EEC"/>
+          <LastState Value="5" RealAddress="15CB5EEC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -33,7 +33,7 @@
         <CheatEntry>
           <ID>115</ID>
           <Description>"Gil"</Description>
-          <LastState Value="42291" RealAddress="153238AC"/>
+          <LastState Value="0" RealAddress="15CB88AC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -44,7 +44,7 @@
         <CheatEntry>
           <ID>42</ID>
           <Description>"Time Played"</Description>
-          <LastState Value="16576081366" RealAddress="153238B8"/>
+          <LastState Value="0" RealAddress="15CB88B8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -55,12 +55,23 @@
         <CheatEntry>
           <ID>205</ID>
           <Description>"Steps?"</Description>
-          <LastState Value="1169" RealAddress="153238C0"/>
+          <LastState Value="0" RealAddress="15CB88C0"/>
           <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>8 Bytes</VariableType>
+          <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
           <Offsets>
             <Offset>2AE0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>474</ID>
+          <Description>"Casino Coins"</Description>
+          <LastState Value="0" RealAddress="15CC7B08"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>11D28</Offset>
           </Offsets>
         </CheatEntry>
       </CheatEntries>
@@ -846,6 +857,48 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>454</ID>
+              <Description>"Ability Name  #36"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>2A0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>470</ID>
+              <Description>"Ability Name  #37"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>2B0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>471</ID>
+              <Description>"Ability Name  #38"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>2C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>31</ID>
               <Description>"Crystogen Points"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1028,27 +1081,32 @@ dealloc(newmem)
             <CheatEntry>
               <ID>41</ID>
               <Description>"Passive Ability  #1"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+auto_b_libra:Kill: Libra
+auto_defp_3:Resist Physical +15%
+auto_fdefp_3:Resist Fire +33%
+auto_hpp_2:HP +10%
+auto_hpp_5:HP +16%
+auto_idefp_3:Resist Ice +33%
+auto_ldefp_3:Resist Lightning +33%
+auto_mdefp_3:Resist Magic +15%
+auto_p_prot:Critical: Protect
+auto_p_shel:Critical: Shell
+auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_wk4:Resist Imperil +66%
+awp_c000_050:Attack: ATB Charge II
+wp_at_atbup1:ATB Rate +25%
+wp_an_chain1:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
-auto_adefp_3:Resist Wind +33%
-auto_fdefp_3:Resist Fire +33%
-auto_idefp_3:Resist Ice +33%
-auto_ldefp_3:Resist Lightning +33%
-auto_mdefp_3:Resist Magic +15%
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_wk4:Resist Imperil +66%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
 auto_medi:Improved Potions
+auto_mgtime:Buff: Duration +20%
 auto_weekss:Weak Spot MIN
-auto_b_libra:Kill: Libra
-awp_c000_050:Attack: ATB Charge II
-wp_at_atbup1:ATB Rate +25%
+wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1064,27 +1122,32 @@ wp_at_atbup1:ATB Rate +25%
             <CheatEntry>
               <ID>406</ID>
               <Description>"Passive Ability  #3"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+auto_b_libra:Kill: Libra
+auto_defp_3:Resist Physical +15%
+auto_fdefp_3:Resist Fire +33%
+auto_hpp_2:HP +10%
+auto_hpp_5:HP +16%
+auto_idefp_3:Resist Ice +33%
+auto_ldefp_3:Resist Lightning +33%
+auto_mdefp_3:Resist Magic +15%
+auto_p_prot:Critical: Protect
+auto_p_shel:Critical: Shell
+auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_wk4:Resist Imperil +66%
+awp_c000_050:Attack: ATB Charge II
+wp_at_atbup1:ATB Rate +25%
+wp_an_chain1:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
-auto_adefp_3:Resist Wind +33%
-auto_fdefp_3:Resist Fire +33%
-auto_idefp_3:Resist Ice +33%
-auto_ldefp_3:Resist Lightning +33%
-auto_mdefp_3:Resist Magic +15%
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_wk4:Resist Imperil +66%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
 auto_medi:Improved Potions
+auto_mgtime:Buff: Duration +20%
 auto_weekss:Weak Spot MIN
-auto_b_libra:Kill: Libra
-awp_c000_050:Attack: ATB Charge II
-wp_at_atbup1:ATB Rate +25%
+wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1100,27 +1163,32 @@ wp_at_atbup1:ATB Rate +25%
             <CheatEntry>
               <ID>407</ID>
               <Description>"Passive Ability  #4"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+auto_b_libra:Kill: Libra
+auto_defp_3:Resist Physical +15%
+auto_fdefp_3:Resist Fire +33%
+auto_hpp_2:HP +10%
+auto_hpp_5:HP +16%
+auto_idefp_3:Resist Ice +33%
+auto_ldefp_3:Resist Lightning +33%
+auto_mdefp_3:Resist Magic +15%
+auto_p_prot:Critical: Protect
+auto_p_shel:Critical: Shell
+auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_wk4:Resist Imperil +66%
+awp_c000_050:Attack: ATB Charge II
+wp_at_atbup1:ATB Rate +25%
+wp_an_chain1:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
-auto_adefp_3:Resist Wind +33%
-auto_fdefp_3:Resist Fire +33%
-auto_idefp_3:Resist Ice +33%
-auto_ldefp_3:Resist Lightning +33%
-auto_mdefp_3:Resist Magic +15%
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_wk4:Resist Imperil +66%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
 auto_medi:Improved Potions
+auto_mgtime:Buff: Duration +20%
 auto_weekss:Weak Spot MIN
-auto_b_libra:Kill: Libra
-awp_c000_050:Attack: ATB Charge II
-wp_at_atbup1:ATB Rate +25%
+wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1136,27 +1204,32 @@ wp_at_atbup1:ATB Rate +25%
             <CheatEntry>
               <ID>408</ID>
               <Description>"Passive Ability  #5"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+auto_b_libra:Kill: Libra
+auto_defp_3:Resist Physical +15%
+auto_fdefp_3:Resist Fire +33%
+auto_hpp_2:HP +10%
+auto_hpp_5:HP +16%
+auto_idefp_3:Resist Ice +33%
+auto_ldefp_3:Resist Lightning +33%
+auto_mdefp_3:Resist Magic +15%
+auto_p_prot:Critical: Protect
+auto_p_shel:Critical: Shell
+auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_wk4:Resist Imperil +66%
+awp_c000_050:Attack: ATB Charge II
+wp_at_atbup1:ATB Rate +25%
+wp_an_chain1:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
-auto_adefp_3:Resist Wind +33%
-auto_fdefp_3:Resist Fire +33%
-auto_idefp_3:Resist Ice +33%
-auto_ldefp_3:Resist Lightning +33%
-auto_mdefp_3:Resist Magic +15%
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_wk4:Resist Imperil +66%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
 auto_medi:Improved Potions
+auto_mgtime:Buff: Duration +20%
 auto_weekss:Weak Spot MIN
-auto_b_libra:Kill: Libra
-awp_c000_050:Attack: ATB Charge II
-wp_at_atbup1:ATB Rate +25%
+wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1172,27 +1245,32 @@ wp_at_atbup1:ATB Rate +25%
             <CheatEntry>
               <ID>419</ID>
               <Description>"Passive Ability  #6"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+auto_b_libra:Kill: Libra
+auto_defp_3:Resist Physical +15%
+auto_fdefp_3:Resist Fire +33%
+auto_hpp_2:HP +10%
+auto_hpp_5:HP +16%
+auto_idefp_3:Resist Ice +33%
+auto_ldefp_3:Resist Lightning +33%
+auto_mdefp_3:Resist Magic +15%
+auto_p_prot:Critical: Protect
+auto_p_shel:Critical: Shell
+auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_wk4:Resist Imperil +66%
+awp_c000_050:Attack: ATB Charge II
+wp_at_atbup1:ATB Rate +25%
+wp_an_chain1:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
-auto_adefp_3:Resist Wind +33%
-auto_fdefp_3:Resist Fire +33%
-auto_idefp_3:Resist Ice +33%
-auto_ldefp_3:Resist Lightning +33%
-auto_mdefp_3:Resist Magic +15%
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_wk4:Resist Imperil +66%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
 auto_medi:Improved Potions
+auto_mgtime:Buff: Duration +20%
 auto_weekss:Weak Spot MIN
-auto_b_libra:Kill: Libra
-awp_c000_050:Attack: ATB Charge II
-wp_at_atbup1:ATB Rate +25%
+wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1208,27 +1286,32 @@ wp_at_atbup1:ATB Rate +25%
             <CheatEntry>
               <ID>429</ID>
               <Description>"Passive Ability  #7"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_defp_3:Resist Physical +15%
+              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+auto_b_libra:Kill: Libra
+auto_defp_3:Resist Physical +15%
+auto_fdefp_3:Resist Fire +33%
+auto_hpp_2:HP +10%
+auto_hpp_5:HP +16%
+auto_idefp_3:Resist Ice +33%
+auto_ldefp_3:Resist Lightning +33%
+auto_mdefp_3:Resist Magic +15%
+auto_p_prot:Critical: Protect
+auto_p_shel:Critical: Shell
+auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_wk4:Resist Imperil +66%
+awp_c000_050:Attack: ATB Charge II
+wp_at_atbup1:ATB Rate +25%
+wp_an_chain1:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
-auto_adefp_3:Resist Wind +33%
-auto_fdefp_3:Resist Fire +33%
-auto_idefp_3:Resist Ice +33%
-auto_ldefp_3:Resist Lightning +33%
-auto_mdefp_3:Resist Magic +15%
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_wk4:Resist Imperil +66%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
 auto_medi:Improved Potions
+auto_mgtime:Buff: Duration +20%
 auto_weekss:Weak Spot MIN
-auto_b_libra:Kill: Libra
-awp_c000_050:Attack: ATB Charge II
-wp_at_atbup1:ATB Rate +25%
+wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1665,8 +1748,11 @@ cs_chip_00:Casino Ticket
 e003:Lucky Clover
 e010:Single Horn
 e048:Crystal Heart
+e050:Crystal Petal
+e060:Mark of the l'Cie
 e083:Fragment Crystal
 e092:Carbuncle  Figurine
+e109:Lightning Mask
 e200:Blue Flower
 e210:Aqua Ribbon
 e228:Orange Newsboy Cap
@@ -1703,6 +1789,7 @@ key_moko_wool:Fluffy Wool
 key_nuku_wool:Thick Wool
 key_s_neck:Snow's Necklace
 key_search_pow:Old Battery
+key_unk_s_opt:Mysterious Artefact
 key_unk_y_opt:Mysterious Artefact
 key_white_ystn:Ivory Crystal
 key_y_baggage:Wedding Jewelry
@@ -1711,11 +1798,16 @@ key_lockjail:Holding Cell Key
 key_lostcom:Army Comm Device
 key_plsstone:Eternal Crystal
 key_yukimi:Silver Petal
+opt_acea01_gt:Tower Artefact
 opt_bjaa01_gy:Eclipse Artefact
 opt_bjaa02_sn:Reunion Artefact
 opt_bjaa_re:'Scars' Gate Seal
 opt_bjda_re:'Labyrinth' Gate Seal
+opt_clza_re:'Prediction' Gate Seal
+opt_gdza_re:'The Calm' Gate Seal
+opt_ghaa_re:'The Fall' Gate Seal
 opt_ghsn01_cs:Illusionary Artefact
+opt_ghsn02_ac:Restoration Artefact
 opt_gwca01_gh:Artefact of Origins
 opt_gwca_re:'Encounters' Gate Seal
 opt_gyaa01_gw:Hollow Artefact
@@ -1725,9 +1817,12 @@ opt_hmaa01_bj:Giant's Artefact
 opt_hmaa_re:'Leaving' Gate Seal
 opt_snda01_cl:Combat Artefact
 opt_snda02_gd:Thundering Artefact
+opt_snda_re:'Farewells' Gate Seal
 opt_silver:Wild Artefact
+tmap_ac:Map of Academia
 tmap_bj:Map of the Bresha Ruins
 tmap_cl:Map of the Coliseum
+tmap_cs:Map of Serendipity
 tmap_gd:Map of the Steppe
 tmap_gw:Map of Oerba
 tmap_gy:Map of the Yaschas Massif
@@ -1757,7 +1852,9 @@ material_a031:Vitality Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_b005:Mutant Extract
 material_j020:Radial Bearing
+material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
@@ -1766,6 +1863,8 @@ material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m049:Fractured Horn
 material_m057:Cie'th Tear
+material_m059:Tear of Remorse
+material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
@@ -2016,7 +2115,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>124</ID>
           <Description>"Battle Duration"</Description>
-          <LastState Value="15473" RealAddress="15377E98"/>
+          <LastState Value="250132" RealAddress="15D0CE98"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2027,7 +2126,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>127</ID>
           <Description>"Target Time"</Description>
-          <LastState Value="90000" RealAddress="15377E9C"/>
+          <LastState Value="358000" RealAddress="15D0CE9C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2038,7 +2137,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>126</ID>
           <Description>"Preemptive Bonus"</Description>
-          <LastState Value="2000" RealAddress="15377EA0"/>
+          <LastState Value="0" RealAddress="15D0CEA0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2049,7 +2148,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>125</ID>
           <Description>"Enemy Points"</Description>
-          <LastState Value="6" RealAddress="15377EA4"/>
+          <LastState Value="70" RealAddress="15D0CEA4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2060,7 +2159,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>123</ID>
           <Description>"Score"</Description>
-          <LastState Value="16500" RealAddress="15377EA8"/>
+          <LastState Value="32500" RealAddress="15D0CEA8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2071,7 +2170,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>128</ID>
           <Description>"Crystogen Points Earned"</Description>
-          <LastState Value="144" RealAddress="15377EB4"/>
+          <LastState Value="0" RealAddress="15D0CEB4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2082,7 +2181,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>129</ID>
           <Description>"Rating"</Description>
-          <LastState Value="261" RealAddress="15377EB8"/>
+          <LastState Value="0" RealAddress="15D0CEB8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2093,7 +2192,7 @@ dealloc(newmem)
         <CheatEntry>
           <ID>136</ID>
           <Description>"Gil"</Description>
-          <LastState Value="50" RealAddress="15377ECC"/>
+          <LastState Value="50" RealAddress="15D0CECC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2119,6 +2218,7 @@ it_wax:Wax
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
+e050:Crystal Petal
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -2136,6 +2236,7 @@ mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
+mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k257:Gigantuar
@@ -2147,6 +2248,7 @@ mcr_k400:Uridimmu
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k444:Necrosis
+mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
@@ -2178,7 +2280,9 @@ material_a031:Vitality Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_b005:Mutant Extract
 material_j020:Radial Bearing
+material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
@@ -2186,11 +2290,13 @@ material_m020:Sinister Fang
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
+material_m059:Tear of Remorse
+material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
 </DropDownList>
-          <LastState RealAddress="15377ED8"/>
+          <LastState RealAddress="15D0CED8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2205,7 +2311,7 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>131</ID>
               <Description>"Spoils Quantity  #1"</Description>
-              <LastState Value="3" RealAddress="15377EEA"/>
+              <LastState Value="1" RealAddress="15D0CEEA"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2233,6 +2339,7 @@ it_wax:Wax
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
+e050:Crystal Petal
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -2250,6 +2357,7 @@ mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
+mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k257:Gigantuar
@@ -2261,6 +2369,7 @@ mcr_k400:Uridimmu
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k444:Necrosis
+mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
@@ -2292,7 +2401,9 @@ material_a031:Vitality Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_b005:Mutant Extract
 material_j020:Radial Bearing
+material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
@@ -2300,11 +2411,13 @@ material_m020:Sinister Fang
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
+material_m059:Tear of Remorse
+material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
 </DropDownList>
-          <LastState RealAddress="15377EF0"/>
+          <LastState RealAddress="15D0CEF0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2319,7 +2432,7 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>168</ID>
               <Description>"Spoils Quantity  #2"</Description>
-              <LastState Value="0" RealAddress="15377F02"/>
+              <LastState Value="2" RealAddress="15D0CF02"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2347,6 +2460,7 @@ it_wax:Wax
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
+e050:Crystal Petal
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -2364,6 +2478,7 @@ mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
+mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k257:Gigantuar
@@ -2375,6 +2490,7 @@ mcr_k400:Uridimmu
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k444:Necrosis
+mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
@@ -2406,7 +2522,9 @@ material_a031:Vitality Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_b005:Mutant Extract
 material_j020:Radial Bearing
+material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
@@ -2414,11 +2532,13 @@ material_m020:Sinister Fang
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
+material_m059:Tear of Remorse
+material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
 </DropDownList>
-          <LastState RealAddress="15377F08"/>
+          <LastState RealAddress="15D0CF08"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2433,7 +2553,7 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>405</ID>
               <Description>"Spoils Quantity  #3"</Description>
-              <LastState Value="0" RealAddress="15377F1A"/>
+              <LastState Value="0" RealAddress="15D0CF1A"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2461,6 +2581,7 @@ it_wax:Wax
 acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
+e050:Crystal Petal
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
@@ -2478,6 +2599,7 @@ mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
+mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k257:Gigantuar
@@ -2489,6 +2611,7 @@ mcr_k400:Uridimmu
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k444:Necrosis
+mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
@@ -2520,7 +2643,9 @@ material_a031:Vitality Chip
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_b005:Mutant Extract
 material_j020:Radial Bearing
+material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
@@ -2528,11 +2653,13 @@ material_m020:Sinister Fang
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
+material_m059:Tear of Remorse
+material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
 </DropDownList>
-          <LastState RealAddress="15377F20"/>
+          <LastState RealAddress="15D0CF20"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2547,7 +2674,7 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>411</ID>
               <Description>"Spoils Quantity  #4"</Description>
-              <LastState Value="0" RealAddress="15377F32"/>
+              <LastState Value="0" RealAddress="15D0CF32"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2560,7 +2687,7 @@ material_o002:Cobaltite
         <CheatEntry>
           <ID>135</ID>
           <Description>"Recent Battle Total"</Description>
-          <LastState Value="375505" RealAddress="153780A0"/>
+          <LastState Value="353044" RealAddress="15D0D0A0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2829,9 +2956,57 @@ k400_rk000:Feral Fangs
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
+          <ID>468</ID>
+          <Description>"currentMusic"</Description>
+          <LastState RealAddress="0D887730"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>16</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>ffxiii2img.exe+4D514D0</Address>
+          <Offsets>
+            <Offset>140</Offset>
+            <Offset>28</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>469</ID>
+          <Description>"?"</Description>
+          <LastState RealAddress="0D887740"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>16</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>ffxiii2img.exe+4D514D0</Address>
+          <Offsets>
+            <Offset>150</Offset>
+            <Offset>28</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>472</ID>
+          <Description>"?"</Description>
+          <LastState RealAddress="0D8877C0"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>16</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>ffxiii2img.exe+4D514D0</Address>
+          <Offsets>
+            <Offset>1D0</Offset>
+            <Offset>28</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>110</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15321D70"/>
+          <LastState RealAddress="15CB6D70"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2846,7 +3021,7 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>111</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15321D90"/>
+          <LastState RealAddress="15CB6D90"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2861,7 +3036,7 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>112</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15321DB0"/>
+          <LastState RealAddress="15CB6DB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2876,7 +3051,7 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>113</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15321DC0"/>
+          <LastState RealAddress="15CB6DC0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2891,7 +3066,7 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>114</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15321DD0"/>
+          <LastState RealAddress="15CB6DD0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -3022,32 +3197,5 @@ dealloc(newmem)
 </AssemblerScript>
     </CheatEntry>
   </CheatEntries>
-  <CheatCodes>
-    <CodeEntry>
-      <Description>Change of call ffxiii2img.exe+39A880</Description>
-      <AddressString>ffxiii2img.exe+1669F4</AddressString>
-      <Before>
-        <Byte>68</Byte>
-        <Byte>5C</Byte>
-        <Byte>EE</Byte>
-        <Byte>18</Byte>
-        <Byte>01</Byte>
-      </Before>
-      <Actual>
-        <Byte>E8</Byte>
-        <Byte>87</Byte>
-        <Byte>3E</Byte>
-        <Byte>23</Byte>
-        <Byte>00</Byte>
-      </Actual>
-      <After>
-        <Byte>83</Byte>
-        <Byte>C4</Byte>
-        <Byte>04</Byte>
-        <Byte>E8</Byte>
-        <Byte>AF</Byte>
-      </After>
-    </CodeEntry>
-  </CheatCodes>
   <UserdefinedSymbols/>
 </CheatTable>
