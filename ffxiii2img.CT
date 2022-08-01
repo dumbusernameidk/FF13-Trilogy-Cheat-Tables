@@ -11,7 +11,6 @@
         <CheatEntry>
           <ID>23</ID>
           <Description>"TP??"</Description>
-          <LastState Value="2100" RealAddress="15CB5EB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -22,7 +21,6 @@
         <CheatEntry>
           <ID>116</ID>
           <Description>"TP??"</Description>
-          <LastState Value="5" RealAddress="15CB5EEC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -33,7 +31,6 @@
         <CheatEntry>
           <ID>115</ID>
           <Description>"Gil"</Description>
-          <LastState Value="0" RealAddress="15CB88AC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -44,7 +41,6 @@
         <CheatEntry>
           <ID>42</ID>
           <Description>"Time Played"</Description>
-          <LastState Value="0" RealAddress="15CB88B8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -55,7 +51,6 @@
         <CheatEntry>
           <ID>205</ID>
           <Description>"Steps?"</Description>
-          <LastState Value="0" RealAddress="15CB88C0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -66,7 +61,6 @@
         <CheatEntry>
           <ID>474</ID>
           <Description>"Casino Coins"</Description>
-          <LastState Value="0" RealAddress="15CC7B08"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -899,6 +893,90 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>475</ID>
+              <Description>"Ability Name  #39"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>2D0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>476</ID>
+              <Description>"Ability Name  #40"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>2E0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>477</ID>
+              <Description>"Ability Name  #41"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>2F0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>478</ID>
+              <Description>"Ability Name  #42"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>300</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>479</ID>
+              <Description>"Ability Name  #43"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>310</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>480</ID>
+              <Description>"Ability Name  #44"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>320</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>31</ID>
               <Description>"Crystogen Points"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1092,19 +1170,24 @@ auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
+auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+auto_blood:Woundward II
+auto_crack:Pressure II
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_riz:Improved Raise Lv. 1
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1133,19 +1216,24 @@ auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
+auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+auto_blood:Woundward II
+auto_crack:Pressure II
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_riz:Improved Raise Lv. 1
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1174,19 +1262,24 @@ auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
+auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+auto_blood:Woundward II
+auto_crack:Pressure II
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_riz:Improved Raise Lv. 1
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1215,19 +1308,24 @@ auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
+auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+auto_blood:Woundward II
+auto_crack:Pressure II
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_riz:Improved Raise Lv. 1
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1256,19 +1354,24 @@ auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
+auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+auto_blood:Woundward II
+auto_crack:Pressure II
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_riz:Improved Raise Lv. 1
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1297,19 +1400,24 @@ auto_ldefp_3:Resist Lightning +33%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
+auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
 auto_sdefp_dp4:Resist Deprotect +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+auto_blood:Woundward II
+auto_crack:Pressure II
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_riz:Improved Raise Lv. 1
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1744,11 +1852,14 @@ dealloc(newmem)
               <DropDownList DisplayValueAsItem="1">:=========================||Special Items||=====================================
 cc_gysahl:Gysahl Greens
 cs_chip_00:Casino Ticket
+cs_chip_02:Platinum Casino Ticket
 :=========================||Adornments||========================================
 e003:Lucky Clover
 e010:Single Horn
+e031:Train Conductor Beret
 e048:Crystal Heart
 e050:Crystal Petal
+e051:Crystal Apple
 e060:Mark of the l'Cie
 e083:Fragment Crystal
 e092:Carbuncle  Figurine
@@ -1760,18 +1871,25 @@ e236:Whimsical Headdress
 e252:Lebreau's Olive Tattoo
 e301:Golden Flower
 e308:Silver Gear
+e314:Sky Blue Newsboy Cap
 e331:Dragon Hide Backpack
 :=========================||Consumables||=======================================
+it_antidote:Antidote
 it_holywater:Holy Water
 it_hpotion:Wound Potion
 it_libra:Librascope
 it_phenxtal:Phoenix Down
 it_potion:Potion
+it_sedative:Painkiller
+it_tonkait:Mallet
 it_unico:Unicorn Horn
 it_universal:Remedy
+it_wax:Wax
 :=========================||Key Items||=========================================
 key_a_secret:Personal Notes
 key_access_50:Access Key 50
+key_access_52:Access Key 52
+key_access_la:Top Floor Access Key
 key_black_flw:Terrorists' Mark
 key_c_tab:Capsule
 key_f_colonel:Commander's Report
@@ -1808,6 +1926,7 @@ opt_gdza_re:'The Calm' Gate Seal
 opt_ghaa_re:'The Fall' Gate Seal
 opt_ghsn01_cs:Illusionary Artefact
 opt_ghsn02_ac:Restoration Artefact
+opt_gtda_re:'Silence' Gate Seal
 opt_gwca01_gh:Artefact of Origins
 opt_gwca_re:'Encounters' Gate Seal
 opt_gyaa01_gw:Hollow Artefact
@@ -1824,6 +1943,7 @@ tmap_bj:Map of the Bresha Ruins
 tmap_cl:Map of the Coliseum
 tmap_cs:Map of Serendipity
 tmap_gd:Map of the Steppe
+tmap_gt:Map of Augusta Tower
 tmap_gw:Map of Oerba
 tmap_gy:Map of the Yaschas Massif
 tmap_hm:Map of New Bodhum
@@ -1842,23 +1962,29 @@ material_a011:Mana Sliver
 material_a013:Mana Essence
 material_a015:Vitality Droplet
 material_a016:Vitality Sliver
+material_a017:Vitality Orb
 material_a020:Power Bolt
 material_a021:Power Chip
+material_a022:Power Engine
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
+material_a027:Mana Engine
 material_a030:Vitality Bolt
 material_a031:Vitality Chip
+material_a032:Vitality Engine
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_b005:Mutant Extract
+material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m049:Fractured Horn
@@ -1868,6 +1994,7 @@ material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
+material_o011:Gold Nugget
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -2115,7 +2242,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>124</ID>
           <Description>"Battle Duration"</Description>
-          <LastState Value="250132" RealAddress="15D0CE98"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2126,7 +2252,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>127</ID>
           <Description>"Target Time"</Description>
-          <LastState Value="358000" RealAddress="15D0CE9C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2137,7 +2262,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>126</ID>
           <Description>"Preemptive Bonus"</Description>
-          <LastState Value="0" RealAddress="15D0CEA0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2148,7 +2272,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>125</ID>
           <Description>"Enemy Points"</Description>
-          <LastState Value="70" RealAddress="15D0CEA4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2159,7 +2282,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>123</ID>
           <Description>"Score"</Description>
-          <LastState Value="32500" RealAddress="15D0CEA8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2170,7 +2292,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>128</ID>
           <Description>"Crystogen Points Earned"</Description>
-          <LastState Value="0" RealAddress="15D0CEB4"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2181,7 +2302,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>129</ID>
           <Description>"Rating"</Description>
-          <LastState Value="0" RealAddress="15D0CEB8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2192,7 +2312,6 @@ dealloc(newmem)
         <CheatEntry>
           <ID>136</ID>
           <Description>"Gil"</Description>
-          <LastState Value="50" RealAddress="15D0CECC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2219,12 +2338,14 @@ acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
+e051:Crystal Apple
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
 mcr_k043:Zwerg Scandroid
@@ -2239,6 +2360,7 @@ mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2256,6 +2378,7 @@ mcr_k495:Chelicerata
 mcr_k642:Fachan
 mcr_k654:Oannes
 mcr_k661:Spiranthes
+mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
 mcr_k871:Green Chocobo
@@ -2276,17 +2399,21 @@ material_a021:Power Chip
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
+material_a027:Mana Engine
 material_a031:Vitality Chip
+material_a032:Vitality Engine
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_b005:Mutant Extract
+material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
@@ -2295,8 +2422,8 @@ material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
+material_o011:Gold Nugget
 </DropDownList>
-          <LastState RealAddress="15D0CED8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2311,7 +2438,6 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>131</ID>
               <Description>"Spoils Quantity  #1"</Description>
-              <LastState Value="1" RealAddress="15D0CEEA"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2340,12 +2466,14 @@ acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
+e051:Crystal Apple
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
 mcr_k043:Zwerg Scandroid
@@ -2360,6 +2488,7 @@ mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2377,6 +2506,7 @@ mcr_k495:Chelicerata
 mcr_k642:Fachan
 mcr_k654:Oannes
 mcr_k661:Spiranthes
+mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
 mcr_k871:Green Chocobo
@@ -2397,17 +2527,21 @@ material_a021:Power Chip
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
+material_a027:Mana Engine
 material_a031:Vitality Chip
+material_a032:Vitality Engine
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_b005:Mutant Extract
+material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
@@ -2416,8 +2550,8 @@ material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
+material_o011:Gold Nugget
 </DropDownList>
-          <LastState RealAddress="15D0CEF0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2432,7 +2566,6 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>168</ID>
               <Description>"Spoils Quantity  #2"</Description>
-              <LastState Value="2" RealAddress="15D0CF02"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2461,12 +2594,14 @@ acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
+e051:Crystal Apple
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
 mcr_k043:Zwerg Scandroid
@@ -2481,6 +2616,7 @@ mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2498,6 +2634,7 @@ mcr_k495:Chelicerata
 mcr_k642:Fachan
 mcr_k654:Oannes
 mcr_k661:Spiranthes
+mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
 mcr_k871:Green Chocobo
@@ -2518,17 +2655,21 @@ material_a021:Power Chip
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
+material_a027:Mana Engine
 material_a031:Vitality Chip
+material_a032:Vitality Engine
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_b005:Mutant Extract
+material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
@@ -2537,8 +2678,8 @@ material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
+material_o011:Gold Nugget
 </DropDownList>
-          <LastState RealAddress="15D0CF08"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2553,7 +2694,6 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>405</ID>
               <Description>"Spoils Quantity  #3"</Description>
-              <LastState Value="0" RealAddress="15D0CF1A"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2582,12 +2722,14 @@ acc_000_000:Iron Bangle
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
+e051:Crystal Apple
 e083:Fragment Crystal
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
 mcr_k043:Zwerg Scandroid
@@ -2602,6 +2744,7 @@ mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2619,6 +2762,7 @@ mcr_k495:Chelicerata
 mcr_k642:Fachan
 mcr_k654:Oannes
 mcr_k661:Spiranthes
+mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
 mcr_k871:Green Chocobo
@@ -2639,17 +2783,21 @@ material_a021:Power Chip
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
+material_a027:Mana Engine
 material_a031:Vitality Chip
+material_a032:Vitality Engine
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_b005:Mutant Extract
+material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m057:Cie'th Tear
@@ -2658,8 +2806,8 @@ material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
 material_o002:Cobaltite
+material_o011:Gold Nugget
 </DropDownList>
-          <LastState RealAddress="15D0CF20"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2674,7 +2822,6 @@ material_o002:Cobaltite
             <CheatEntry>
               <ID>411</ID>
               <Description>"Spoils Quantity  #4"</Description>
-              <LastState Value="0" RealAddress="15D0CF32"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2687,7 +2834,6 @@ material_o002:Cobaltite
         <CheatEntry>
           <ID>135</ID>
           <Description>"Recent Battle Total"</Description>
-          <LastState Value="353044" RealAddress="15D0D0A0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51BC4</Address>
@@ -2958,7 +3104,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>468</ID>
           <Description>"currentMusic"</Description>
-          <LastState RealAddress="0D887730"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2973,8 +3118,7 @@ k400_rk000:Feral Fangs
         </CheatEntry>
         <CheatEntry>
           <ID>469</ID>
-          <Description>"?"</Description>
-          <LastState RealAddress="0D887740"/>
+          <Description>"currentBattleMusic?"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -2988,25 +3132,8 @@ k400_rk000:Feral Fangs
           </Offsets>
         </CheatEntry>
         <CheatEntry>
-          <ID>472</ID>
-          <Description>"?"</Description>
-          <LastState RealAddress="0D8877C0"/>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>String</VariableType>
-          <Length>16</Length>
-          <Unicode>0</Unicode>
-          <CodePage>0</CodePage>
-          <ZeroTerminate>1</ZeroTerminate>
-          <Address>ffxiii2img.exe+4D514D0</Address>
-          <Offsets>
-            <Offset>1D0</Offset>
-            <Offset>28</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
           <ID>110</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15CB6D70"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -3021,7 +3148,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>111</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15CB6D90"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -3036,7 +3162,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>112</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15CB6DB0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -3051,7 +3176,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>113</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15CB6DC0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -3066,7 +3190,6 @@ k400_rk000:Feral Fangs
         <CheatEntry>
           <ID>114</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="15CB6DD0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
