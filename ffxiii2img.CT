@@ -977,6 +977,34 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>481</ID>
+              <Description>"Ability Name  #45"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>330</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>482</ID>
+              <Description>"Ability Name  #46"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>340</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>31</ID>
               <Description>"Crystogen Points"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1167,6 +1195,7 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
@@ -1213,6 +1242,7 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
@@ -1259,6 +1289,7 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
@@ -1305,6 +1336,7 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
@@ -1351,6 +1383,7 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
@@ -1397,6 +1430,7 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
@@ -1852,32 +1886,45 @@ dealloc(newmem)
               <DropDownList DisplayValueAsItem="1">:=========================||Special Items||=====================================
 cc_gysahl:Gysahl Greens
 cs_chip_00:Casino Ticket
+cs_chip_01:Gold Casino Ticket
 cs_chip_02:Platinum Casino Ticket
 :=========================||Adornments||========================================
 e003:Lucky Clover
 e010:Single Horn
 e031:Train Conductor Beret
+e034:Chef's Hat
 e048:Crystal Heart
 e050:Crystal Petal
 e051:Crystal Apple
+e052:Crystal Star
 e060:Mark of the l'Cie
+e067:Behemoth Crest
+e074:Flower Pattern
 e083:Fragment Crystal
-e092:Carbuncle  Figurine
+e092:Carbuncle Figurine
 e109:Lightning Mask
 e200:Blue Flower
 e210:Aqua Ribbon
+e212:Gold Gear
+e227:Snowy Fairy Wings
 e228:Orange Newsboy Cap
 e236:Whimsical Headdress
+e237:Strawberry Ice Cream
+e238:Rum Raisin Ice Cream
+e248:Brown Bushy Mustache
 e252:Lebreau's Olive Tattoo
 e301:Golden Flower
 e308:Silver Gear
 e314:Sky Blue Newsboy Cap
+e319:Mint Chip Ice Cream
+e327:Gadot's Red Emblem
 e331:Dragon Hide Backpack
 :=========================||Consumables||=======================================
 it_antidote:Antidote
 it_holywater:Holy Water
 it_hpotion:Wound Potion
 it_libra:Librascope
+it_phenxbl:Phoenix Blood
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_sedative:Painkiller
@@ -1892,6 +1939,7 @@ key_access_52:Access Key 52
 key_access_la:Top Floor Access Key
 key_black_flw:Terrorists' Mark
 key_c_tab:Capsule
+key_common_art:Bulb of Hope
 key_f_colonel:Commander's Report
 key_f_kioku:Recording Device
 key_f_kit:Medical Kit
@@ -1905,16 +1953,19 @@ key_l_knife:Lightning's Knife
 key_miss_art:Tablet of Paddra
 key_moko_wool:Fluffy Wool
 key_nuku_wool:Thick Wool
+key_rem_ring:Sealed Tablet
 key_s_neck:Snow's Necklace
 key_search_pow:Old Battery
 key_unk_s_opt:Mysterious Artefact
 key_unk_y_opt:Mysterious Artefact
 key_white_ystn:Ivory Crystal
 key_y_baggage:Wedding Jewelry
+key_y_diary:Comm Device
 key_acdmycom:Academy Communicator
 key_lockjail:Holding Cell Key
 key_lostcom:Army Comm Device
 key_plsstone:Eternal Crystal
+key_osonae:Picture Frame
 key_yukimi:Silver Petal
 opt_acea01_gt:Tower Artefact
 opt_bjaa01_gy:Eclipse Artefact
@@ -1926,12 +1977,15 @@ opt_gdza_re:'The Calm' Gate Seal
 opt_ghaa_re:'The Fall' Gate Seal
 opt_ghsn01_cs:Illusionary Artefact
 opt_ghsn02_ac:Restoration Artefact
+opt_gtca01_aa:Artefact of Rebirth
+opt_gtca_re:'Facts' Gate Seal
 opt_gtda_re:'Silence' Gate Seal
 opt_gwca01_gh:Artefact of Origins
 opt_gwca_re:'Encounters' Gate Seal
 opt_gyaa01_gw:Hollow Artefact
 opt_gyaa_re:'Visions' Gate Seal
 opt_gyca_re:'Maleficence' Gate Seal
+opt_gyba_re:'Reminiscence' Gate Seal
 opt_hmaa01_bj:Giant's Artefact
 opt_hmaa_re:'Leaving' Gate Seal
 opt_snda01_cl:Combat Artefact
@@ -1949,20 +2003,24 @@ tmap_gy:Map of the Yaschas Massif
 tmap_hm:Map of New Bodhum
 tmap_sn:map of Sunleth Waterscape
 tmap_sp:Map of the Void Beyond
+tmap_vp:Map of the Vile Peaks
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
 material_a002:Potent Orb
+material_a003:Potent Essence
 material_a004:Potent Crystal
 material_a005:Power Droplet
 material_a006:Power Sliver
 material_a007:Power Orb
+material_a008:Power Essence
 material_a010:Mana Droplet
 material_a011:Mana Sliver
 material_a013:Mana Essence
 material_a015:Vitality Droplet
 material_a016:Vitality Sliver
 material_a017:Vitality Orb
+material_a018:Vitality Essence
 material_a020:Power Bolt
 material_a021:Power Chip
 material_a022:Power Engine
@@ -1973,6 +2031,7 @@ material_a027:Mana Engine
 material_a030:Vitality Bolt
 material_a031:Vitality Chip
 material_a032:Vitality Engine
+material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
@@ -1984,6 +2043,7 @@ material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
@@ -1993,6 +2053,7 @@ material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
+material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
 </DropDownList>
@@ -2328,6 +2389,7 @@ it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
 it_phenxtal:Phoenix Down
+it_potion:Potion
 it_sedative:Painkiller
 it_stinkwater:Foul Liquid
 it_tonkati:Mallet
@@ -2355,11 +2417,13 @@ mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
 mcr_k079:Flanitor
 mcr_k094:Goblin
+mcr_k099:Crawler
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -2367,8 +2431,11 @@ mcr_k271:Meonekton
 mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k432:Seeping Brie
+mcr_k434:Flandit
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
+mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
@@ -2376,32 +2443,42 @@ mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k495:Chelicerata
 mcr_k642:Fachan
+mcr_k643:Unsaganashi
 mcr_k654:Oannes
+mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
 material_a002:Potent Orb
+material_a003:Potent Essence
 material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a007:Power Orb
+material_a008:Power Essence
 material_a010:Mana Droplet
 material_a011:Mana Sliver
 material_a013:Mana Essence
+material_a015:Vitality Droplet
 material_a016:Vitality Sliver
+material_a017:Vitality Orb
+material_a018:Vitality Essence
 material_a020:Power Bolt
 material_a021:Power Chip
+material_a022:Power Engine
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
 material_a031:Vitality Chip
 material_a032:Vitality Engine
+material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
@@ -2413,6 +2490,7 @@ material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
@@ -2421,6 +2499,7 @@ material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
+material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
 </DropDownList>
@@ -2456,6 +2535,7 @@ it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
 it_phenxtal:Phoenix Down
+it_potion:Potion
 it_sedative:Painkiller
 it_stinkwater:Foul Liquid
 it_tonkati:Mallet
@@ -2483,11 +2563,13 @@ mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
 mcr_k079:Flanitor
 mcr_k094:Goblin
+mcr_k099:Crawler
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -2495,8 +2577,11 @@ mcr_k271:Meonekton
 mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k432:Seeping Brie
+mcr_k434:Flandit
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
+mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
@@ -2504,32 +2589,42 @@ mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k495:Chelicerata
 mcr_k642:Fachan
+mcr_k643:Unsaganashi
 mcr_k654:Oannes
+mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
 material_a002:Potent Orb
+material_a003:Potent Essence
 material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a007:Power Orb
+material_a008:Power Essence
 material_a010:Mana Droplet
 material_a011:Mana Sliver
 material_a013:Mana Essence
+material_a015:Vitality Droplet
 material_a016:Vitality Sliver
+material_a017:Vitality Orb
+material_a018:Vitality Essence
 material_a020:Power Bolt
 material_a021:Power Chip
+material_a022:Power Engine
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
 material_a031:Vitality Chip
 material_a032:Vitality Engine
+material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
@@ -2541,6 +2636,7 @@ material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
@@ -2549,6 +2645,7 @@ material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
+material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
 </DropDownList>
@@ -2584,6 +2681,7 @@ it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
 it_phenxtal:Phoenix Down
+it_potion:Potion
 it_sedative:Painkiller
 it_stinkwater:Foul Liquid
 it_tonkati:Mallet
@@ -2611,11 +2709,13 @@ mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
 mcr_k079:Flanitor
 mcr_k094:Goblin
+mcr_k099:Crawler
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -2623,8 +2723,11 @@ mcr_k271:Meonekton
 mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k432:Seeping Brie
+mcr_k434:Flandit
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
+mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
@@ -2632,32 +2735,42 @@ mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k495:Chelicerata
 mcr_k642:Fachan
+mcr_k643:Unsaganashi
 mcr_k654:Oannes
+mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
 material_a002:Potent Orb
+material_a003:Potent Essence
 material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a007:Power Orb
+material_a008:Power Essence
 material_a010:Mana Droplet
 material_a011:Mana Sliver
 material_a013:Mana Essence
+material_a015:Vitality Droplet
 material_a016:Vitality Sliver
+material_a017:Vitality Orb
+material_a018:Vitality Essence
 material_a020:Power Bolt
 material_a021:Power Chip
+material_a022:Power Engine
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
 material_a031:Vitality Chip
 material_a032:Vitality Engine
+material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
@@ -2669,6 +2782,7 @@ material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
@@ -2677,6 +2791,7 @@ material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
+material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
 </DropDownList>
@@ -2712,6 +2827,7 @@ it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
 it_phenxtal:Phoenix Down
+it_potion:Potion
 it_sedative:Painkiller
 it_stinkwater:Foul Liquid
 it_tonkati:Mallet
@@ -2739,11 +2855,13 @@ mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
 mcr_k079:Flanitor
 mcr_k094:Goblin
+mcr_k099:Crawler
 mcr_k102:Frag Leech
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -2751,8 +2869,11 @@ mcr_k271:Meonekton
 mcr_k275:Miniflan
 mcr_k273:Cait Sith
 mcr_k400:Uridimmu
+mcr_k432:Seeping Brie
+mcr_k434:Flandit
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
+mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
@@ -2760,32 +2881,42 @@ mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k495:Chelicerata
 mcr_k642:Fachan
+mcr_k643:Unsaganashi
 mcr_k654:Oannes
+mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
 material_a000:Potent Droplet
 material_a001:Potent Sliver
 material_a002:Potent Orb
+material_a003:Potent Essence
 material_a004:Potent Crystal
 material_a006:Power Sliver
 material_a007:Power Orb
+material_a008:Power Essence
 material_a010:Mana Droplet
 material_a011:Mana Sliver
 material_a013:Mana Essence
+material_a015:Vitality Droplet
 material_a016:Vitality Sliver
+material_a017:Vitality Orb
+material_a018:Vitality Essence
 material_a020:Power Bolt
 material_a021:Power Chip
+material_a022:Power Engine
 material_a023:Power Booster
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
 material_a031:Vitality Chip
 material_a032:Vitality Engine
+material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
@@ -2797,6 +2928,7 @@ material_m004:Shattered Bone
 material_m009:Moistened Scale
 material_m014:Iron Shell
 material_m020:Sinister Fang
+material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
@@ -2805,6 +2937,7 @@ material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
 material_m077:Pot Shard
+material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
 </DropDownList>
@@ -3318,6 +3451,17 @@ db 89 4E 1C 50 8D 4E 28
 unregistersymbol(characterSlotIndexCrash3)
 dealloc(newmem)
 </AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>483</ID>
+      <Description>"test"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"ffxiii2img.exe"+00E528D8</Address>
+      <Offsets>
+        <Offset>8</Offset>
+        <Offset>84</Offset>
+        <Offset>760</Offset>
+      </Offsets>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
