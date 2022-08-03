@@ -30,6 +30,16 @@
         </CheatEntry>
         <CheatEntry>
           <ID>115</ID>
+          <Description>"Consecutive Preemptive Strike Chain?"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>24B4</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>495</ID>
           <Description>"Gil"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -1005,6 +1015,118 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>487</ID>
+              <Description>"Ability Name  #47"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>350</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>488</ID>
+              <Description>"Ability Name  #48"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>360</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>489</ID>
+              <Description>"Ability Name  #49"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>370</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>490</ID>
+              <Description>"Ability Name  #50"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>380</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>491</ID>
+              <Description>"Ability Name  #51"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>390</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>492</ID>
+              <Description>"Ability Name  #52"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>3A0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>496</ID>
+              <Description>"Ability Name  #53"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>3B0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>497</ID>
+              <Description>"Ability Name  #54"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>3C0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>31</ID>
               <Description>"Crystogen Points"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1155,6 +1277,16 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>486</ID>
+              <Description>"Fog"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E74</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>448</ID>
               <Description>"Imperil"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1162,6 +1294,16 @@ dealloc(newmem)
               <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E7C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>485</ID>
+              <Description>"Pain"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E80</Offset>
               </Offsets>
             </CheatEntry>
             <CheatEntry>
@@ -1185,9 +1327,33 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>493</ID>
+              <Description>"Dispel"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>EF4</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>484</ID>
+              <Description>"Elemental Resistances?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>F04</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>41</ID>
               <Description>"Passive Ability  #1"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements +20%
+auto_adefp_3:Resist Wind +33%
+auto_amdef_s3:Resist Damage +15%
+auto_amt_2:Enervation
+auto_at_1:Strength: +40%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1197,17 +1363,28 @@ auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mt_1:Magic: +40%
+auto_p_brav:Critical: Bravery
+auto_p_fait:Critical: Faith
+auto_p_forc:Critical: Vigilance
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_de4:Resist Dispel +66%
 auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_fg4:Resist Fog +66%
+auto_sdefp_pn4:Resist Pain +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+wea_atbup_1:ATB Rate: +5%
+wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
 auto_crack:Pressure II
+auto_cup1:Chain Bonus Lv. 1
+auto_cup3:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
@@ -1234,7 +1411,11 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>406</ID>
               <Description>"Passive Ability  #3"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements +20%
+auto_adefp_3:Resist Wind +33%
+auto_amdef_s3:Resist Damage +15%
+auto_amt_2:Enervation
+auto_at_1:Strength: +40%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1244,17 +1425,28 @@ auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mt_1:Magic: +40%
+auto_p_brav:Critical: Bravery
+auto_p_fait:Critical: Faith
+auto_p_forc:Critical: Vigilance
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_de4:Resist Dispel +66%
 auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_fg4:Resist Fog +66%
+auto_sdefp_pn4:Resist Pain +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+wea_atbup_1:ATB Rate: +5%
+wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
 auto_crack:Pressure II
+auto_cup1:Chain Bonus Lv. 1
+auto_cup3:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
@@ -1281,7 +1473,11 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>407</ID>
               <Description>"Passive Ability  #4"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements +20%
+auto_adefp_3:Resist Wind +33%
+auto_amdef_s3:Resist Damage +15%
+auto_amt_2:Enervation
+auto_at_1:Strength: +40%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1291,17 +1487,28 @@ auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mt_1:Magic: +40%
+auto_p_brav:Critical: Bravery
+auto_p_fait:Critical: Faith
+auto_p_forc:Critical: Vigilance
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_de4:Resist Dispel +66%
 auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_fg4:Resist Fog +66%
+auto_sdefp_pn4:Resist Pain +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+wea_atbup_1:ATB Rate: +5%
+wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
 auto_crack:Pressure II
+auto_cup1:Chain Bonus Lv. 1
+auto_cup3:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
@@ -1328,7 +1535,11 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>408</ID>
               <Description>"Passive Ability  #5"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements +20%
+auto_adefp_3:Resist Wind +33%
+auto_amdef_s3:Resist Damage +15%
+auto_amt_2:Enervation
+auto_at_1:Strength: +40%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1338,17 +1549,28 @@ auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mt_1:Magic: +40%
+auto_p_brav:Critical: Bravery
+auto_p_fait:Critical: Faith
+auto_p_forc:Critical: Vigilance
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_de4:Resist Dispel +66%
 auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_fg4:Resist Fog +66%
+auto_sdefp_pn4:Resist Pain +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+wea_atbup_1:ATB Rate: +5%
+wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
 auto_crack:Pressure II
+auto_cup1:Chain Bonus Lv. 1
+auto_cup3:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
@@ -1375,7 +1597,11 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>419</ID>
               <Description>"Passive Ability  #6"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements +20%
+auto_adefp_3:Resist Wind +33%
+auto_amdef_s3:Resist Damage +15%
+auto_amt_2:Enervation
+auto_at_1:Strength: +40%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1385,17 +1611,28 @@ auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mt_1:Magic: +40%
+auto_p_brav:Critical: Bravery
+auto_p_fait:Critical: Faith
+auto_p_forc:Critical: Vigilance
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_de4:Resist Dispel +66%
 auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_fg4:Resist Fog +66%
+auto_sdefp_pn4:Resist Pain +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+wea_atbup_1:ATB Rate: +5%
+wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
 auto_crack:Pressure II
+auto_cup1:Chain Bonus Lv. 1
+auto_cup3:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
@@ -1422,7 +1659,11 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>429</ID>
               <Description>"Passive Ability  #7"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_adefp_3:Resist Wind +33%
+              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements +20%
+auto_adefp_3:Resist Wind +33%
+auto_amdef_s3:Resist Damage +15%
+auto_amt_2:Enervation
+auto_at_1:Strength: +40%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1432,17 +1673,28 @@ auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mt_1:Magic: +40%
+auto_p_brav:Critical: Bravery
+auto_p_fait:Critical: Faith
+auto_p_forc:Critical: Vigilance
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
 auto_sdefp_bi4:Resist Poison +66%
+auto_sdefp_de4:Resist Dispel +66%
 auto_sdefp_dp4:Resist Deprotect +66%
+auto_sdefp_fg4:Resist Fog +66%
+auto_sdefp_pn4:Resist Pain +66%
 auto_sdefp_wk4:Resist Imperil +66%
 awp_c000_050:Attack: ATB Charge II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
+wea_atbup_1:ATB Rate: +5%
+wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
 auto_crack:Pressure II
+auto_cup1:Chain Bonus Lv. 1
+auto_cup3:Chain Bonus Lv. 1
 auto_dlatt2:Strength +11%
 auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
@@ -1893,6 +2145,7 @@ e003:Lucky Clover
 e010:Single Horn
 e031:Train Conductor Beret
 e034:Chef's Hat
+e046:Crystal Rose
 e048:Crystal Heart
 e050:Crystal Petal
 e051:Crystal Apple
@@ -1902,6 +2155,8 @@ e067:Behemoth Crest
 e074:Flower Pattern
 e083:Fragment Crystal
 e092:Carbuncle Figurine
+e107:Caius's Sword
+e108:Serah Mask
 e109:Lightning Mask
 e200:Blue Flower
 e210:Aqua Ribbon
@@ -1918,6 +2173,7 @@ e308:Silver Gear
 e314:Sky Blue Newsboy Cap
 e319:Mint Chip Ice Cream
 e327:Gadot's Red Emblem
+e329:NORA Symbol
 e331:Dragon Hide Backpack
 :=========================||Consumables||=======================================
 it_antidote:Antidote
@@ -1967,12 +2223,15 @@ key_lostcom:Army Comm Device
 key_plsstone:Eternal Crystal
 key_osonae:Picture Frame
 key_yukimi:Silver Petal
+opt_aaea02_sp:Vagabond Artefact
+opt_aaea_re:'Promises' Gate Seal
 opt_acea01_gt:Tower Artefact
 opt_bjaa01_gy:Eclipse Artefact
 opt_bjaa02_sn:Reunion Artefact
 opt_bjaa_re:'Scars' Gate Seal
 opt_bjda_re:'Labyrinth' Gate Seal
 opt_clza_re:'Prediction' Gate Seal
+opt_ddha_re:'Determination' Gate Seal
 opt_gdza_re:'The Calm' Gate Seal
 opt_ghaa_re:'The Fall' Gate Seal
 opt_ghsn01_cs:Illusionary Artefact
@@ -1988,6 +2247,7 @@ opt_gyca_re:'Maleficence' Gate Seal
 opt_gyba_re:'Reminiscence' Gate Seal
 opt_hmaa01_bj:Giant's Artefact
 opt_hmaa_re:'Leaving' Gate Seal
+opt_hmha01_ac:Artefact of the Ark
 opt_snda01_cl:Combat Artefact
 opt_snda02_gd:Thundering Artefact
 opt_snda_re:'Farewells' Gate Seal
@@ -1996,10 +2256,12 @@ tmap_ac:Map of Academia
 tmap_bj:Map of the Bresha Ruins
 tmap_cl:Map of the Coliseum
 tmap_cs:Map of Serendipity
+tmap_dd:Map of a Dying World
 tmap_gd:Map of the Steppe
 tmap_gt:Map of Augusta Tower
 tmap_gw:Map of Oerba
 tmap_gy:Map of the Yaschas Massif
+tmap_hh:Map of New Bodhum 700 AF
 tmap_hm:Map of New Bodhum
 tmap_sn:map of Sunleth Waterscape
 tmap_sp:Map of the Void Beyond
@@ -2016,6 +2278,7 @@ material_a007:Power Orb
 material_a008:Power Essence
 material_a010:Mana Droplet
 material_a011:Mana Sliver
+material_a012:Mana Orb
 material_a013:Mana Essence
 material_a015:Vitality Droplet
 material_a016:Vitality Sliver
@@ -2035,12 +2298,14 @@ material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_a038:Potent Booster
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
 material_m022:Scaled Wing
@@ -2048,10 +2313,12 @@ material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
 material_m049:Fractured Horn
+material_m054:Enigmatic Fluid
 material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
+material_m073:Malodorous Fruit
 material_m077:Pot Shard
 material_o001:Rhodochrosite
 material_o002:Cobaltite
@@ -2388,6 +2655,7 @@ dealloc(newmem)
 it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
+it_phenxbl:Phoenix Blood
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_sedative:Painkiller
@@ -2397,6 +2665,7 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -2415,6 +2684,7 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -2425,6 +2695,7 @@ mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
+mcr_k215:Cryohedron
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2441,7 +2712,9 @@ mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
+mcr_k494:Pleuston
 mcr_k495:Chelicerata
+mcr_k496:Pantopoda
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
 mcr_k654:Oannes
@@ -2450,6 +2723,7 @@ mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k851:Apotamkin
 mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
@@ -2482,18 +2756,21 @@ material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_a038:Potent Booster
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
 material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
+material_m054:Enigmatic Fluid
 material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
@@ -2534,6 +2811,7 @@ material_o011:Gold Nugget
 it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
+it_phenxbl:Phoenix Blood
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_sedative:Painkiller
@@ -2543,6 +2821,7 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -2561,6 +2840,7 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -2571,6 +2851,7 @@ mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
+mcr_k215:Cryohedron
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2587,7 +2868,9 @@ mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
+mcr_k494:Pleuston
 mcr_k495:Chelicerata
+mcr_k496:Pantopoda
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
 mcr_k654:Oannes
@@ -2596,6 +2879,7 @@ mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k851:Apotamkin
 mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
@@ -2628,18 +2912,21 @@ material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_a038:Potent Booster
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
 material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
+material_m054:Enigmatic Fluid
 material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
@@ -2680,6 +2967,7 @@ material_o011:Gold Nugget
 it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
+it_phenxbl:Phoenix Blood
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_sedative:Painkiller
@@ -2689,6 +2977,7 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -2707,6 +2996,7 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -2717,6 +3007,7 @@ mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
+mcr_k215:Cryohedron
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2733,7 +3024,9 @@ mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
+mcr_k494:Pleuston
 mcr_k495:Chelicerata
+mcr_k496:Pantopoda
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
 mcr_k654:Oannes
@@ -2742,6 +3035,7 @@ mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k851:Apotamkin
 mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
@@ -2774,18 +3068,21 @@ material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_a038:Potent Booster
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
 material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
+material_m054:Enigmatic Fluid
 material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
@@ -2826,6 +3123,7 @@ material_o011:Gold Nugget
 it_antidote:Antidote
 it_elixir:Elixir
 it_holywater:Holy Water
+it_phenxbl:Phoenix Blood
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_sedative:Painkiller
@@ -2835,6 +3133,7 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -2853,6 +3152,7 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -2863,6 +3163,7 @@ mcr_k173:Garchimacera
 mcr_k182:Hoplite
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
+mcr_k215:Cryohedron
 mcr_k257:Gigantuar
 mcr_k270:Nekton
 mcr_k271:Meonekton
@@ -2879,7 +3180,9 @@ mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
 mcr_k463:Mandrake
 mcr_k493:Clione
+mcr_k494:Pleuston
 mcr_k495:Chelicerata
+mcr_k496:Pantopoda
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
 mcr_k654:Oannes
@@ -2888,6 +3191,7 @@ mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k851:Apotamkin
 mcr_k868:Black Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
@@ -2920,18 +3224,21 @@ material_a033:Vitality Booster
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
+material_a038:Potent Booster
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
 material_m022:Scaled Wing
 material_m023:Abominable Wing
 material_m025:Molted Tail
 material_m047:Transparent Ooze
+material_m054:Enigmatic Fluid
 material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
