@@ -1127,6 +1127,20 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>498</ID>
+              <Description>"Ability Name  #55"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>3D0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>31</ID>
               <Description>"Crystogen Points"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1307,6 +1321,16 @@ dealloc(newmem)
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>509</ID>
+              <Description>"Curse"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E84</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>420</ID>
               <Description>"Poison"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -1324,6 +1348,16 @@ dealloc(newmem)
               <Address>Statspointer</Address>
               <Offsets>
                 <Offset>E94</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>510</ID>
+              <Description>"Deshell"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>Statspointer</Address>
+              <Offsets>
+                <Offset>E98</Offset>
               </Offsets>
             </CheatEntry>
             <CheatEntry>
@@ -1354,6 +1388,7 @@ auto_adefp_3:Resist Wind +33%
 auto_amdef_s3:Resist Damage +15%
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
+auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1361,22 +1396,36 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
 auto_p_fait:Critical: Faith
 auto_p_forc:Critical: Vigilance
+auto_p_hast:Critical: Haste
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_de4:Resist Dispel +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_fg4:Resist Fog +66%
-auto_sdefp_pn4:Resist Pain +66%
-auto_sdefp_wk4:Resist Imperil +66%
+auto_sdefp_bi4:Resist Poison: +66%
+auto_sdefp_bi5:Resist Poison: +100%
+auto_sdefp_cs4:Resist Curse: +66%
+auto_sdefp_cs5:Resist Curse: +100%
+auto_sdefp_de4:Resist Dispel: +66%
+auto_sdefp_de5:Resist Dispel: +100%
+auto_sdefp_dp4:Resist Deprotect: +66%
+auto_sdefp_dp5:Resist Deprotect: +100%
+auto_sdefp_ds4:Resist Deshell: +66%
+auto_sdefp_ds5:Resist Deshell: +100%
+auto_sdefp_fg4:Resist Fog: +66%
+auto_sdefp_fg5:Resist Fog: +100%
+auto_sdefp_pn4:Resist Pain: +66%
+auto_sdefp_pn5:Resist Pain: +100%
+auto_sdefp_wk4:Resist Imperil: +66%
+auto_sdefp_wk5:Resist Imperil: +100%
 awp_c000_050:Attack: ATB Charge II
+awp_c003_050:Critical: Shield II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
@@ -1390,10 +1439,13 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_hpdown:Debilitation
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_poison:Perpetual Poison
 auto_riz:Improved Raise Lv. 1
+auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1416,6 +1468,7 @@ auto_adefp_3:Resist Wind +33%
 auto_amdef_s3:Resist Damage +15%
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
+auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1423,22 +1476,36 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
 auto_p_fait:Critical: Faith
 auto_p_forc:Critical: Vigilance
+auto_p_hast:Critical: Haste
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_de4:Resist Dispel +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_fg4:Resist Fog +66%
-auto_sdefp_pn4:Resist Pain +66%
-auto_sdefp_wk4:Resist Imperil +66%
+auto_sdefp_bi4:Resist Poison: +66%
+auto_sdefp_bi5:Resist Poison: +100%
+auto_sdefp_cs4:Resist Curse: +66%
+auto_sdefp_cs5:Resist Curse: +100%
+auto_sdefp_de4:Resist Dispel: +66%
+auto_sdefp_de5:Resist Dispel: +100%
+auto_sdefp_dp4:Resist Deprotect: +66%
+auto_sdefp_dp5:Resist Deprotect: +100%
+auto_sdefp_ds4:Resist Deshell: +66%
+auto_sdefp_ds5:Resist Deshell: +100%
+auto_sdefp_fg4:Resist Fog: +66%
+auto_sdefp_fg5:Resist Fog: +100%
+auto_sdefp_pn4:Resist Pain: +66%
+auto_sdefp_pn5:Resist Pain: +100%
+auto_sdefp_wk4:Resist Imperil: +66%
+auto_sdefp_wk5:Resist Imperil: +100%
 awp_c000_050:Attack: ATB Charge II
+awp_c003_050:Critical: Shield II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
@@ -1452,10 +1519,13 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_hpdown:Debilitation
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_poison:Perpetual Poison
 auto_riz:Improved Raise Lv. 1
+auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1478,6 +1548,7 @@ auto_adefp_3:Resist Wind +33%
 auto_amdef_s3:Resist Damage +15%
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
+auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1485,22 +1556,36 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
 auto_p_fait:Critical: Faith
 auto_p_forc:Critical: Vigilance
+auto_p_hast:Critical: Haste
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_de4:Resist Dispel +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_fg4:Resist Fog +66%
-auto_sdefp_pn4:Resist Pain +66%
-auto_sdefp_wk4:Resist Imperil +66%
+auto_sdefp_bi4:Resist Poison: +66%
+auto_sdefp_bi5:Resist Poison: +100%
+auto_sdefp_cs4:Resist Curse: +66%
+auto_sdefp_cs5:Resist Curse: +100%
+auto_sdefp_de4:Resist Dispel: +66%
+auto_sdefp_de5:Resist Dispel: +100%
+auto_sdefp_dp4:Resist Deprotect: +66%
+auto_sdefp_dp5:Resist Deprotect: +100%
+auto_sdefp_ds4:Resist Deshell: +66%
+auto_sdefp_ds5:Resist Deshell: +100%
+auto_sdefp_fg4:Resist Fog: +66%
+auto_sdefp_fg5:Resist Fog: +100%
+auto_sdefp_pn4:Resist Pain: +66%
+auto_sdefp_pn5:Resist Pain: +100%
+auto_sdefp_wk4:Resist Imperil: +66%
+auto_sdefp_wk5:Resist Imperil: +100%
 awp_c000_050:Attack: ATB Charge II
+awp_c003_050:Critical: Shield II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
@@ -1514,10 +1599,13 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_hpdown:Debilitation
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_poison:Perpetual Poison
 auto_riz:Improved Raise Lv. 1
+auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1540,6 +1628,7 @@ auto_adefp_3:Resist Wind +33%
 auto_amdef_s3:Resist Damage +15%
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
+auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1547,22 +1636,36 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
 auto_p_fait:Critical: Faith
 auto_p_forc:Critical: Vigilance
+auto_p_hast:Critical: Haste
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_de4:Resist Dispel +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_fg4:Resist Fog +66%
-auto_sdefp_pn4:Resist Pain +66%
-auto_sdefp_wk4:Resist Imperil +66%
+auto_sdefp_bi4:Resist Poison: +66%
+auto_sdefp_bi5:Resist Poison: +100%
+auto_sdefp_cs4:Resist Curse: +66%
+auto_sdefp_cs5:Resist Curse: +100%
+auto_sdefp_de4:Resist Dispel: +66%
+auto_sdefp_de5:Resist Dispel: +100%
+auto_sdefp_dp4:Resist Deprotect: +66%
+auto_sdefp_dp5:Resist Deprotect: +100%
+auto_sdefp_ds4:Resist Deshell: +66%
+auto_sdefp_ds5:Resist Deshell: +100%
+auto_sdefp_fg4:Resist Fog: +66%
+auto_sdefp_fg5:Resist Fog: +100%
+auto_sdefp_pn4:Resist Pain: +66%
+auto_sdefp_pn5:Resist Pain: +100%
+auto_sdefp_wk4:Resist Imperil: +66%
+auto_sdefp_wk5:Resist Imperil: +100%
 awp_c000_050:Attack: ATB Charge II
+awp_c003_050:Critical: Shield II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
@@ -1576,10 +1679,13 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_hpdown:Debilitation
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_poison:Perpetual Poison
 auto_riz:Improved Raise Lv. 1
+auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1602,6 +1708,7 @@ auto_adefp_3:Resist Wind +33%
 auto_amdef_s3:Resist Damage +15%
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
+auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1609,22 +1716,36 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
 auto_p_fait:Critical: Faith
 auto_p_forc:Critical: Vigilance
+auto_p_hast:Critical: Haste
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_de4:Resist Dispel +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_fg4:Resist Fog +66%
-auto_sdefp_pn4:Resist Pain +66%
-auto_sdefp_wk4:Resist Imperil +66%
+auto_sdefp_bi4:Resist Poison: +66%
+auto_sdefp_bi5:Resist Poison: +100%
+auto_sdefp_cs4:Resist Curse: +66%
+auto_sdefp_cs5:Resist Curse: +100%
+auto_sdefp_de4:Resist Dispel: +66%
+auto_sdefp_de5:Resist Dispel: +100%
+auto_sdefp_dp4:Resist Deprotect: +66%
+auto_sdefp_dp5:Resist Deprotect: +100%
+auto_sdefp_ds4:Resist Deshell: +66%
+auto_sdefp_ds5:Resist Deshell: +100%
+auto_sdefp_fg4:Resist Fog: +66%
+auto_sdefp_fg5:Resist Fog: +100%
+auto_sdefp_pn4:Resist Pain: +66%
+auto_sdefp_pn5:Resist Pain: +100%
+auto_sdefp_wk4:Resist Imperil: +66%
+auto_sdefp_wk5:Resist Imperil: +100%
 awp_c000_050:Attack: ATB Charge II
+awp_c003_050:Critical: Shield II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
@@ -1638,10 +1759,13 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_hpdown:Debilitation
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_poison:Perpetual Poison
 auto_riz:Improved Raise Lv. 1
+auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -1664,6 +1788,7 @@ auto_adefp_3:Resist Wind +33%
 auto_amdef_s3:Resist Damage +15%
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
+auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical +15%
 auto_fdefp_3:Resist Fire +33%
@@ -1671,22 +1796,36 @@ auto_hpp_2:HP +10%
 auto_hpp_5:HP +16%
 auto_idefp_3:Resist Ice +33%
 auto_ldefp_3:Resist Lightning +33%
+auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic +15%
+auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
 auto_p_fait:Critical: Faith
 auto_p_forc:Critical: Vigilance
+auto_p_hast:Critical: Haste
 auto_p_prot:Critical: Protect
 auto_p_shel:Critical: Shell
 auto_p_veil:Critical: Veil
-auto_sdefp_bi4:Resist Poison +66%
-auto_sdefp_de4:Resist Dispel +66%
-auto_sdefp_dp4:Resist Deprotect +66%
-auto_sdefp_fg4:Resist Fog +66%
-auto_sdefp_pn4:Resist Pain +66%
-auto_sdefp_wk4:Resist Imperil +66%
+auto_sdefp_bi4:Resist Poison: +66%
+auto_sdefp_bi5:Resist Poison: +100%
+auto_sdefp_cs4:Resist Curse: +66%
+auto_sdefp_cs5:Resist Curse: +100%
+auto_sdefp_de4:Resist Dispel: +66%
+auto_sdefp_de5:Resist Dispel: +100%
+auto_sdefp_dp4:Resist Deprotect: +66%
+auto_sdefp_dp5:Resist Deprotect: +100%
+auto_sdefp_ds4:Resist Deshell: +66%
+auto_sdefp_ds5:Resist Deshell: +100%
+auto_sdefp_fg4:Resist Fog: +66%
+auto_sdefp_fg5:Resist Fog: +100%
+auto_sdefp_pn4:Resist Pain: +66%
+auto_sdefp_pn5:Resist Pain: +100%
+auto_sdefp_wk4:Resist Imperil: +66%
+auto_sdefp_wk5:Resist Imperil: +100%
 awp_c000_050:Attack: ATB Charge II
+awp_c003_050:Critical: Shield II
 wp_at_atbup1:ATB Rate +25%
 wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
@@ -1700,10 +1839,13 @@ auto_dldrp:Diva's Gift II
 auto_dlgil:Goddess's Gospel II
 auto_dlmatt0:Magic +5%
 auto_dlmatt3:Magic +11%
+auto_hpdown:Debilitation
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration +20%
+auto_poison:Perpetual Poison
 auto_riz:Improved Raise Lv. 1
+auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
 </DropDownList>
@@ -2143,6 +2285,7 @@ cs_chip_02:Platinum Casino Ticket
 :=========================||Adornments||========================================
 e003:Lucky Clover
 e010:Single Horn
+e026:Coronet
 e031:Train Conductor Beret
 e034:Chef's Hat
 e046:Crystal Rose
@@ -2150,6 +2293,7 @@ e048:Crystal Heart
 e050:Crystal Petal
 e051:Crystal Apple
 e052:Crystal Star
+e053:Musical Bell
 e060:Mark of the l'Cie
 e067:Behemoth Crest
 e074:Flower Pattern
@@ -2168,6 +2312,8 @@ e237:Strawberry Ice Cream
 e238:Rum Raisin Ice Cream
 e248:Brown Bushy Mustache
 e252:Lebreau's Olive Tattoo
+e261:Long Gui Backpack
+e285:Afro &amp; Red Chick
 e301:Golden Flower
 e308:Silver Gear
 e314:Sky Blue Newsboy Cap
@@ -2177,6 +2323,7 @@ e329:NORA Symbol
 e331:Dragon Hide Backpack
 :=========================||Consumables||=======================================
 it_antidote:Antidote
+it_elixir:Elixir
 it_holywater:Holy Water
 it_hpotion:Wound Potion
 it_libra:Librascope
@@ -2208,29 +2355,38 @@ key_green_ystn:Emerald Crystal
 key_l_knife:Lightning's Knife
 key_miss_art:Tablet of Paddra
 key_moko_wool:Fluffy Wool
+key_mon_data:Monster Analysis Report
 key_nuku_wool:Thick Wool
 key_rem_ring:Sealed Tablet
 key_s_neck:Snow's Necklace
 key_search_pow:Old Battery
+key_sone_info:Thorne's Information
 key_unk_s_opt:Mysterious Artefact
 key_unk_y_opt:Mysterious Artefact
+key_wep_sozai:Weapon Material
 key_white_ystn:Ivory Crystal
 key_y_baggage:Wedding Jewelry
 key_y_diary:Comm Device
 key_acdmycom:Academy Communicator
+key_kansoku:Old Device
 key_lockjail:Holding Cell Key
 key_lostcom:Army Comm Device
+key_para52f:Paradox Agent Type B
 key_plsstone:Eternal Crystal
 key_osonae:Picture Frame
 key_yukimi:Silver Petal
 opt_aaea02_sp:Vagabond Artefact
 opt_aaea_re:'Promises' Gate Seal
 opt_acea01_gt:Tower Artefact
+opt_acea_re:'Flight' Gate Seal
+opt_acfa_re:'Final Battle' Gate Seal
 opt_bjaa01_gy:Eclipse Artefact
 opt_bjaa02_sn:Reunion Artefact
 opt_bjaa_re:'Scars' Gate Seal
+opt_bjba_re:'Disaster' Gate Seal
 opt_bjda_re:'Labyrinth' Gate Seal
 opt_clza_re:'Prediction' Gate Seal
+opt_csza_re:'Eternity' Gate Seal
 opt_ddha_re:'Determination' Gate Seal
 opt_gdza_re:'The Calm' Gate Seal
 opt_ghaa_re:'The Fall' Gate Seal
@@ -2241,6 +2397,8 @@ opt_gtca_re:'Facts' Gate Seal
 opt_gtda_re:'Silence' Gate Seal
 opt_gwca01_gh:Artefact of Origins
 opt_gwca_re:'Encounters' Gate Seal
+opt_gwda_re:'How Things Were' Gate Seal
+opt_gwea_re:'Hometown' Gate Seal
 opt_gyaa01_gw:Hollow Artefact
 opt_gyaa_re:'Visions' Gate Seal
 opt_gyca_re:'Maleficence' Gate Seal
@@ -2251,8 +2409,10 @@ opt_hmha01_ac:Artefact of the Ark
 opt_snda01_cl:Combat Artefact
 opt_snda02_gd:Thundering Artefact
 opt_snda_re:'Farewells' Gate Seal
+opt_spza_re:'Sisters' Gate Seal
 opt_silver:Wild Artefact
 tmap_ac:Map of Academia
+tmap_af:Map of Academia 500 AF
 tmap_bj:Map of the Bresha Ruins
 tmap_cl:Map of the Coliseum
 tmap_cs:Map of Serendipity
@@ -2299,12 +2459,16 @@ material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
+material_a039:Potent Generator
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
+material_j021:Thrust Bearing
+material_j042:Superconductor
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m011:Abyssal Scale
 material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
@@ -2318,8 +2482,11 @@ material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
+material_m067:Sunpetal
 material_m073:Malodorous Fruit
+material_m075:Starblossom Seed
 material_m077:Pot Shard
+material_o000:Millerite
 material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
@@ -2665,17 +2832,21 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_000_500:Royal Armlet
+acc_030_000:Hermes Sandals
 acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
 e051:Crystal Apple
 e083:Fragment Crystal
+e285:Afro &amp; Red Chick
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k037:Triffid
 mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
@@ -2684,15 +2855,19 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
 mcr_k102:Frag Leech
+mcr_k123:Bloodfang Bass
+mcr_k124:Breshan Bass
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
@@ -2704,27 +2879,36 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
+mcr_k454:Debris
+mcr_k456:Zaghnal
 mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k494:Pleuston
 mcr_k495:Chelicerata
 mcr_k496:Pantopoda
+mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k652:Swampmonk
 mcr_k654:Oannes
 mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k673:Scutari
 mcr_k851:Apotamkin
+mcr_k853:Grenade
+mcr_k861:Pink Lily
 mcr_k868:Black Chocobo
+mcr_k870:Red Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
@@ -2757,12 +2941,16 @@ material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
+material_a039:Potent Generator
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
+material_j021:Thrust Bearing
+material_j042:Superconductor
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m011:Abyssal Scale
 material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
@@ -2775,7 +2963,10 @@ material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
+material_m067:Sunpetal
+material_m075:Starblossom Seed
 material_m077:Pot Shard
+material_o000:Millerite
 material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
@@ -2821,17 +3012,21 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_000_500:Royal Armlet
+acc_030_000:Hermes Sandals
 acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
 e051:Crystal Apple
 e083:Fragment Crystal
+e285:Afro &amp; Red Chick
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k037:Triffid
 mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
@@ -2840,15 +3035,19 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
 mcr_k102:Frag Leech
+mcr_k123:Bloodfang Bass
+mcr_k124:Breshan Bass
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
@@ -2860,27 +3059,36 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
+mcr_k454:Debris
+mcr_k456:Zaghnal
 mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k494:Pleuston
 mcr_k495:Chelicerata
 mcr_k496:Pantopoda
+mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k652:Swampmonk
 mcr_k654:Oannes
 mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k673:Scutari
 mcr_k851:Apotamkin
+mcr_k853:Grenade
+mcr_k861:Pink Lily
 mcr_k868:Black Chocobo
+mcr_k870:Red Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
@@ -2913,12 +3121,16 @@ material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
+material_a039:Potent Generator
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
+material_j021:Thrust Bearing
+material_j042:Superconductor
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m011:Abyssal Scale
 material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
@@ -2931,7 +3143,10 @@ material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
+material_m067:Sunpetal
+material_m075:Starblossom Seed
 material_m077:Pot Shard
+material_o000:Millerite
 material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
@@ -2977,17 +3192,21 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_000_500:Royal Armlet
+acc_030_000:Hermes Sandals
 acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
 e051:Crystal Apple
 e083:Fragment Crystal
+e285:Afro &amp; Red Chick
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k037:Triffid
 mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
@@ -2996,15 +3215,19 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
 mcr_k102:Frag Leech
+mcr_k123:Bloodfang Bass
+mcr_k124:Breshan Bass
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
@@ -3016,27 +3239,36 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
+mcr_k454:Debris
+mcr_k456:Zaghnal
 mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k494:Pleuston
 mcr_k495:Chelicerata
 mcr_k496:Pantopoda
+mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k652:Swampmonk
 mcr_k654:Oannes
 mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k673:Scutari
 mcr_k851:Apotamkin
+mcr_k853:Grenade
+mcr_k861:Pink Lily
 mcr_k868:Black Chocobo
+mcr_k870:Red Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
@@ -3069,12 +3301,16 @@ material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
+material_a039:Potent Generator
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
+material_j021:Thrust Bearing
+material_j042:Superconductor
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m011:Abyssal Scale
 material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
@@ -3087,7 +3323,10 @@ material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
+material_m067:Sunpetal
+material_m075:Starblossom Seed
 material_m077:Pot Shard
+material_o000:Millerite
 material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
@@ -3133,17 +3372,21 @@ it_universal:Remedy
 it_wax:Wax
 :===========================||Accessories||=====================================
 acc_000_000:Iron Bangle
+acc_000_500:Royal Armlet
+acc_030_000:Hermes Sandals
 acc_065_000:Martyr's Emblem
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
 e051:Crystal Apple
 e083:Fragment Crystal
+e285:Afro &amp; Red Chick
 e308:Silver Gear
 :===========================||Monster Crystals||================================
 mcr_k002:Silver Lobo
 mcr_k003:Gorgonopsid
 mcr_k008:Flanbanero
+mcr_k037:Triffid
 mcr_k040:Vespid Soldier
 mcr_k041:Gremlin
 mcr_k042:Imp
@@ -3152,15 +3395,19 @@ mcr_k054:Munchkin
 mcr_k056:Goblin Chieftain
 mcr_k063:Pulse Soldier
 mcr_k064:Pulse Knight
+mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
 mcr_k102:Frag Leech
+mcr_k123:Bloodfang Bass
+mcr_k124:Breshan Bass
 mcr_k127:Ceratosaur
 mcr_k128:Ceratoraptor
 mcr_k173:Garchimacera
 mcr_k182:Hoplite
+mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
@@ -3172,27 +3419,36 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
 mcr_k443:Clematis
 mcr_k444:Necrosis
 mcr_k445:Koboldroid Yin
 mcr_k447:Buccaboo
+mcr_k454:Debris
+mcr_k456:Zaghnal
 mcr_k463:Mandrake
 mcr_k493:Clione
 mcr_k494:Pleuston
 mcr_k495:Chelicerata
 mcr_k496:Pantopoda
+mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k652:Swampmonk
 mcr_k654:Oannes
 mcr_k656:Bunkerbeast
 mcr_k661:Spiranthes
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k673:Scutari
 mcr_k851:Apotamkin
+mcr_k853:Grenade
+mcr_k861:Pink Lily
 mcr_k868:Black Chocobo
+mcr_k870:Red Chocobo
 mcr_k871:Green Chocobo
 mcr_k882:Chocobo
 :===========================||Materials||=======================================
@@ -3225,12 +3481,16 @@ material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
+material_a039:Potent Generator
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
+material_j021:Thrust Bearing
+material_j042:Superconductor
 material_m000:Begrimed Claw
 material_m004:Shattered Bone
 material_m009:Moistened Scale
+material_m011:Abyssal Scale
 material_m013:Segmented Carapace
 material_m014:Iron Shell
 material_m020:Sinister Fang
@@ -3243,7 +3503,10 @@ material_m057:Cie'th Tear
 material_m059:Tear of Remorse
 material_m060:Tear of Woe
 material_m061:Chocobo Plume
+material_m067:Sunpetal
+material_m075:Starblossom Seed
 material_m077:Pot Shard
+material_o000:Millerite
 material_o001:Rhodochrosite
 material_o002:Cobaltite
 material_o011:Gold Nugget
@@ -3760,15 +4023,117 @@ dealloc(newmem)
 </AssemblerScript>
     </CheatEntry>
     <CheatEntry>
-      <ID>483</ID>
-      <Description>"test"</Description>
-      <VariableType>4 Bytes</VariableType>
-      <Address>"ffxiii2img.exe"+00E528D8</Address>
-      <Offsets>
-        <Offset>8</Offset>
-        <Offset>84</Offset>
-        <Offset>760</Offset>
-      </Offsets>
+      <ID>508</ID>
+      <Description>"Fragment Skills"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>503</ID>
+          <Description>"Mog's Manifestation"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>0</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>502</ID>
+          <Description>"Bargain Hunter"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>1</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>504</ID>
+          <Description>"Haggler"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>2</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>501</ID>
+          <Description>"?"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>500</ID>
+          <Description>"Anti-grav Jump"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>4</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>505</ID>
+          <Description>"?"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>5</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>506</ID>
+          <Description>"?"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>507</ID>
+          <Description>"?"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
