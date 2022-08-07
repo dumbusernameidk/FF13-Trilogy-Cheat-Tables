@@ -9,28 +9,8 @@
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
         <CheatEntry>
-          <ID>23</ID>
-          <Description>"TP??"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>ffxiii2img.exe+4D51F98</Address>
-          <Offsets>
-            <Offset>D0</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>116</ID>
-          <Description>"TP??"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>ffxiii2img.exe+4D51F98</Address>
-          <Offsets>
-            <Offset>10C</Offset>
-          </Offsets>
-        </CheatEntry>
-        <CheatEntry>
           <ID>115</ID>
-          <Description>"Consecutive Preemptive Strike Chain?"</Description>
+          <Description>"Consecutive Preemptive Strike Chain"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiii2img.exe+4D51F98</Address>
@@ -87,6 +67,161 @@
           <Offsets>
             <Offset>8C4</Offset>
           </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>540</ID>
+          <Description>"Casino DLC"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>541</ID>
+              <Description>"Serendipity Poker"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>542</ID>
+                  <Description>"getPokerStats"</Description>
+                  <Options moHideChildren="1"/>
+                  <LastState/>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+aobscanmodule(SerendipityPokerStats,ffxiii2img.exe,8B 86 CC 0D 00 00 8D)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(SerendipityPokerStats,PokerPointer)
+
+newmem:
+cmp  esp, 5AFF7C8
+jne   code
+mov  [PokerPointer], esi
+
+code:
+mov   eax, [esi+00000DCC]
+jmp   Exit
+
+PokerPointer:
+dd  00000000
+
+SerendipityPokerStats:
+jmp  newmem
+nop
+
+Exit:
+
+[DISABLE]
+SerendipityPokerStats:
+db 8B 86 CC 0D 00 00
+unregistersymbol(SerendipityPokerStats,PokerPointer)
+dealloc(newmem)
+</AssemblerScript>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>554</ID>
+                      <Description>"Current Pot Amount"</Description>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>ffxiii2img.exe+4D33F7C</Address>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>545</ID>
+                      <Description>"Player's Current Coins"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DC8</Offset>
+                        <Offset>5C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>544</ID>
+                      <Description>"Player's Current Bet Amount"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DCC</Offset>
+                        <Offset>5C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>548</ID>
+                      <Description>"Player  #1 Current Coins"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DC8</Offset>
+                        <Offset>5C</Offset>
+                        <Offset>58</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>550</ID>
+                      <Description>"Player  #1 Current Bet Amount"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DCC</Offset>
+                        <Offset>5C</Offset>
+                        <Offset>58</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>549</ID>
+                      <Description>"Player  #2 Current Coins"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DC8</Offset>
+                        <Offset>58</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>546</ID>
+                      <Description>"Player  #2 Current Bet Amount"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DCC</Offset>
+                        <Offset>58</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>547</ID>
+                      <Description>"Player  #3 Current Coins"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DC8</Offset>
+                        <Offset>5C</Offset>
+                        <Offset>5C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                    <CheatEntry>
+                      <ID>543</ID>
+                      <Description>"Player  #3 Current Bet Amount"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>4 Bytes</VariableType>
+                      <Address>PokerPointer</Address>
+                      <Offsets>
+                        <Offset>DCC</Offset>
+                        <Offset>5C</Offset>
+                        <Offset>5C</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
@@ -1393,23 +1528,29 @@ dealloc(newmem)
             <CheatEntry>
               <ID>41</ID>
               <Description>"Passive Ability  #1"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements: +20%
+              <DropDownList DisplayValueAsItem="1">auto_6def_2:Resist Elements: +13%
+auto_6def_3:Resist Elements: +20%
 auto_adefp_3:Resist Wind: +33%
+auto_amdef_s2:Resist Damage: +10%
 auto_amdef_s3:Resist Damage: +15%
+auto_amt_1:Enervation
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
 auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical: +15%
 auto_def_s4:Resilience: +40%
+auto_drop_0:Item Scavenger II
 auto_fdefp_3:Resist Fire: +33%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
+auto_hpp_2:HP: +10%
+auto_hpp_5:HP: +16%
+auto_hpp_8:HP: +25%
 auto_idefp_3:Resist Ice: +33%
 auto_ldefp_3:Resist Lightning: +33%
 auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic: +15%
+auto_mdefp_6:Resist Magic: +26%
 auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
@@ -1443,15 +1584,23 @@ wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
 wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
+auto_btime:Debuff: Duration -33%
 auto_crack:Pressure II
 auto_cup1:Chain Bonus Lv. 1
 auto_cup3:Chain Bonus Lv. 1
+auto_dlatt1:Strength: +7%
 auto_dlatt2:Strength: +11%
 auto_dldrp:Diva's Gift II
+auto_dldrps:Diva's Gift
 auto_dlgil:Goddess's Gospel II
+auto_dlgils:Goddess's Gospel
 auto_dlmatt0:Magic: +5%
+auto_dlmatt1:Magic: +7%
 auto_dlmatt3:Magic: +11%
+auto_enh:Enhanced Synergist
+auto_gilup:Gilfinder II
 auto_hpdown:Debilitation
+auto_jam:Enhanced Saboteur
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration: +20%
@@ -1460,6 +1609,7 @@ auto_riz:Improved Raise Lv. 1
 auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
+wp_flag:Fragment Energy
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1475,23 +1625,29 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>406</ID>
               <Description>"Passive Ability  #3"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements: +20%
+              <DropDownList DisplayValueAsItem="1">auto_6def_2:Resist Elements: +13%
+auto_6def_3:Resist Elements: +20%
 auto_adefp_3:Resist Wind: +33%
+auto_amdef_s2:Resist Damage: +10%
 auto_amdef_s3:Resist Damage: +15%
+auto_amt_1:Enervation
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
 auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical: +15%
 auto_def_s4:Resilience: +40%
+auto_drop_0:Item Scavenger II
 auto_fdefp_3:Resist Fire: +33%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
+auto_hpp_2:HP: +10%
+auto_hpp_5:HP: +16%
+auto_hpp_8:HP: +25%
 auto_idefp_3:Resist Ice: +33%
 auto_ldefp_3:Resist Lightning: +33%
 auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic: +15%
+auto_mdefp_6:Resist Magic: +26%
 auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
@@ -1525,15 +1681,23 @@ wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
 wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
+auto_btime:Debuff: Duration -33%
 auto_crack:Pressure II
 auto_cup1:Chain Bonus Lv. 1
 auto_cup3:Chain Bonus Lv. 1
+auto_dlatt1:Strength: +7%
 auto_dlatt2:Strength: +11%
 auto_dldrp:Diva's Gift II
+auto_dldrps:Diva's Gift
 auto_dlgil:Goddess's Gospel II
+auto_dlgils:Goddess's Gospel
 auto_dlmatt0:Magic: +5%
+auto_dlmatt1:Magic: +7%
 auto_dlmatt3:Magic: +11%
+auto_enh:Enhanced Synergist
+auto_gilup:Gilfinder II
 auto_hpdown:Debilitation
+auto_jam:Enhanced Saboteur
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration: +20%
@@ -1542,6 +1706,7 @@ auto_riz:Improved Raise Lv. 1
 auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
+wp_flag:Fragment Energy
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1557,23 +1722,29 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>407</ID>
               <Description>"Passive Ability  #4"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements: +20%
+              <DropDownList DisplayValueAsItem="1">auto_6def_2:Resist Elements: +13%
+auto_6def_3:Resist Elements: +20%
 auto_adefp_3:Resist Wind: +33%
+auto_amdef_s2:Resist Damage: +10%
 auto_amdef_s3:Resist Damage: +15%
+auto_amt_1:Enervation
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
 auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical: +15%
 auto_def_s4:Resilience: +40%
+auto_drop_0:Item Scavenger II
 auto_fdefp_3:Resist Fire: +33%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
+auto_hpp_2:HP: +10%
+auto_hpp_5:HP: +16%
+auto_hpp_8:HP: +25%
 auto_idefp_3:Resist Ice: +33%
 auto_ldefp_3:Resist Lightning: +33%
 auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic: +15%
+auto_mdefp_6:Resist Magic: +26%
 auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
@@ -1607,15 +1778,23 @@ wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
 wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
+auto_btime:Debuff: Duration -33%
 auto_crack:Pressure II
 auto_cup1:Chain Bonus Lv. 1
 auto_cup3:Chain Bonus Lv. 1
+auto_dlatt1:Strength: +7%
 auto_dlatt2:Strength: +11%
 auto_dldrp:Diva's Gift II
+auto_dldrps:Diva's Gift
 auto_dlgil:Goddess's Gospel II
+auto_dlgils:Goddess's Gospel
 auto_dlmatt0:Magic: +5%
+auto_dlmatt1:Magic: +7%
 auto_dlmatt3:Magic: +11%
+auto_enh:Enhanced Synergist
+auto_gilup:Gilfinder II
 auto_hpdown:Debilitation
+auto_jam:Enhanced Saboteur
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration: +20%
@@ -1624,6 +1803,7 @@ auto_riz:Improved Raise Lv. 1
 auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
+wp_flag:Fragment Energy
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1639,23 +1819,29 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>408</ID>
               <Description>"Passive Ability  #5"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements: +20%
+              <DropDownList DisplayValueAsItem="1">auto_6def_2:Resist Elements: +13%
+auto_6def_3:Resist Elements: +20%
 auto_adefp_3:Resist Wind: +33%
+auto_amdef_s2:Resist Damage: +10%
 auto_amdef_s3:Resist Damage: +15%
+auto_amt_1:Enervation
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
 auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical: +15%
 auto_def_s4:Resilience: +40%
+auto_drop_0:Item Scavenger II
 auto_fdefp_3:Resist Fire: +33%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
+auto_hpp_2:HP: +10%
+auto_hpp_5:HP: +16%
+auto_hpp_8:HP: +25%
 auto_idefp_3:Resist Ice: +33%
 auto_ldefp_3:Resist Lightning: +33%
 auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic: +15%
+auto_mdefp_6:Resist Magic: +26%
 auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
@@ -1689,15 +1875,23 @@ wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
 wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
+auto_btime:Debuff: Duration -33%
 auto_crack:Pressure II
 auto_cup1:Chain Bonus Lv. 1
 auto_cup3:Chain Bonus Lv. 1
+auto_dlatt1:Strength: +7%
 auto_dlatt2:Strength: +11%
 auto_dldrp:Diva's Gift II
+auto_dldrps:Diva's Gift
 auto_dlgil:Goddess's Gospel II
+auto_dlgils:Goddess's Gospel
 auto_dlmatt0:Magic: +5%
+auto_dlmatt1:Magic: +7%
 auto_dlmatt3:Magic: +11%
+auto_enh:Enhanced Synergist
+auto_gilup:Gilfinder II
 auto_hpdown:Debilitation
+auto_jam:Enhanced Saboteur
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration: +20%
@@ -1706,6 +1900,7 @@ auto_riz:Improved Raise Lv. 1
 auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
+wp_flag:Fragment Energy
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1721,23 +1916,29 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>419</ID>
               <Description>"Passive Ability  #6"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements: +20%
+              <DropDownList DisplayValueAsItem="1">auto_6def_2:Resist Elements: +13%
+auto_6def_3:Resist Elements: +20%
 auto_adefp_3:Resist Wind: +33%
+auto_amdef_s2:Resist Damage: +10%
 auto_amdef_s3:Resist Damage: +15%
+auto_amt_1:Enervation
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
 auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical: +15%
 auto_def_s4:Resilience: +40%
+auto_drop_0:Item Scavenger II
 auto_fdefp_3:Resist Fire: +33%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
+auto_hpp_2:HP: +10%
+auto_hpp_5:HP: +16%
+auto_hpp_8:HP: +25%
 auto_idefp_3:Resist Ice: +33%
 auto_ldefp_3:Resist Lightning: +33%
 auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic: +15%
+auto_mdefp_6:Resist Magic: +26%
 auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
@@ -1771,15 +1972,23 @@ wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
 wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
+auto_btime:Debuff: Duration -33%
 auto_crack:Pressure II
 auto_cup1:Chain Bonus Lv. 1
 auto_cup3:Chain Bonus Lv. 1
+auto_dlatt1:Strength: +7%
 auto_dlatt2:Strength: +11%
 auto_dldrp:Diva's Gift II
+auto_dldrps:Diva's Gift
 auto_dlgil:Goddess's Gospel II
+auto_dlgils:Goddess's Gospel
 auto_dlmatt0:Magic: +5%
+auto_dlmatt1:Magic: +7%
 auto_dlmatt3:Magic: +11%
+auto_enh:Enhanced Synergist
+auto_gilup:Gilfinder II
 auto_hpdown:Debilitation
+auto_jam:Enhanced Saboteur
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration: +20%
@@ -1788,6 +1997,7 @@ auto_riz:Improved Raise Lv. 1
 auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
+wp_flag:Fragment Energy
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -1803,23 +2013,29 @@ wea_ndrai1:Vampiric Strike: 3%
             <CheatEntry>
               <ID>429</ID>
               <Description>"Passive Ability  #7"</Description>
-              <DropDownList DisplayValueAsItem="1">auto_6def_3:Resist Elements: +20%
+              <DropDownList DisplayValueAsItem="1">auto_6def_2:Resist Elements: +13%
+auto_6def_3:Resist Elements: +20%
 auto_adefp_3:Resist Wind: +33%
+auto_amdef_s2:Resist Damage: +10%
 auto_amdef_s3:Resist Damage: +15%
+auto_amt_1:Enervation
 auto_amt_2:Enervation
 auto_at_1:Strength: +40%
 auto_att_5:Strength: +16%
 auto_b_libra:Kill: Libra
 auto_defp_3:Resist Physical: +15%
 auto_def_s4:Resilience: +40%
+auto_drop_0:Item Scavenger II
 auto_fdefp_3:Resist Fire: +33%
-auto_hpp_2:HP +10%
-auto_hpp_5:HP +16%
+auto_hpp_2:HP: +10%
+auto_hpp_5:HP: +16%
+auto_hpp_8:HP: +25%
 auto_idefp_3:Resist Ice: +33%
 auto_ldefp_3:Resist Lightning: +33%
 auto_matt_5:Magic: +16%
 auto_matt_8:Magic: +35%
 auto_mdefp_3:Resist Magic: +15%
+auto_mdefp_6:Resist Magic: +26%
 auto_mdefp_8:Resist Magic: +75%
 auto_mt_1:Magic: +40%
 auto_p_brav:Critical: Bravery
@@ -1853,15 +2069,23 @@ wp_an_chain1:Chain Bonus Lv. 1
 wea_atbup_1:ATB Rate: +5%
 wea_atbup_3:ATB Rate: +10%
 auto_blood:Woundward II
+auto_btime:Debuff: Duration -33%
 auto_crack:Pressure II
 auto_cup1:Chain Bonus Lv. 1
 auto_cup3:Chain Bonus Lv. 1
+auto_dlatt1:Strength: +7%
 auto_dlatt2:Strength: +11%
 auto_dldrp:Diva's Gift II
+auto_dldrps:Diva's Gift
 auto_dlgil:Goddess's Gospel II
+auto_dlgils:Goddess's Gospel
 auto_dlmatt0:Magic: +5%
+auto_dlmatt1:Magic: +7%
 auto_dlmatt3:Magic: +11%
+auto_enh:Enhanced Synergist
+auto_gilup:Gilfinder II
 auto_hpdown:Debilitation
+auto_jam:Enhanced Saboteur
 auto_keep:Immovable II
 auto_medi:Improved Potions
 auto_mgtime:Buff: Duration: +20%
@@ -1870,6 +2094,7 @@ auto_riz:Improved Raise Lv. 1
 auto_syncup:Feral Speed II
 auto_weekss:Weak Spot MIN
 wea_ndrai1:Vampiric Strike: 3%
+wp_flag:Fragment Energy
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -2202,8 +2427,7 @@ dealloc(newmem)
           <AssemblerScript Async="1">[ENABLE]
 aobscanmodule(HealthWrite,ffxiii2img.exe,89 BE D0 02 00 00 E8)
 alloc(newmem,$1000)
-label(code)
-label(Exit)
+label(code,Exit)
 registersymbol(HealthWrite)
 
 newmem:
@@ -2220,12 +2444,38 @@ jmp newmem
 nop
 
 Exit:
+//============================================================================//
+aobscanmodule(MaxHealthWoundDamage,ffxiii2img.exe,18 C1 E6 06 03 F7 89 04 B3 5F 5E)
+alloc(newmem1,$1000)
+label(code1,Exit1)
+registersymbol(MaxHealthWoundDamage)
+
+newmem1:
+cmp   [ebx+0000060], 00
+je    code1
+mov   [ebx+esi*4], eax
+
+code1:
+//mov   [ebx+esi*4], eax
+pop   edi
+pop   esi
+jmp   Exit1
+
+MaxHealthWoundDamage+06:
+jmp newmem1
+
+Exit1:
 
 [DISABLE]
 HealthWrite:
 db 89 BE D0 02 00 00
 unregistersymbol(HealthWrite)
 dealloc(newmem)
+
+MaxHealthWoundDamage+06:
+db 89 04 B3 5F 5E
+unregistersymbol(MaxHealthWoundDamage)
+dealloc(newmem1)
 </AssemblerScript>
         </CheatEntry>
         <CheatEntry>
@@ -2307,7 +2557,10 @@ cs_chip_02:Platinum Casino Ticket
 :=========================||Adornments||========================================
 e003:Lucky Clover
 e010:Single Horn
+e015:Halo
+e023:Cie'th Wing
 e026:Coronet
+e030:Train Conductor Cap
 e031:Train Conductor Beret
 e034:Chef's Hat
 e046:Crystal Rose
@@ -2318,8 +2571,11 @@ e052:Crystal Star
 e053:Musical Bell
 e060:Mark of the l'Cie
 e067:Behemoth Crest
+e068:Canned Sheep Logo
 e074:Flower Pattern
+e078:Frying Pan
 e083:Fragment Crystal
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e107:Caius's Sword
 e108:Serah Mask
@@ -2334,18 +2590,27 @@ e237:Strawberry Ice Cream
 e238:Rum Raisin Ice Cream
 e248:Brown Bushy Mustache
 e252:Lebreau's Olive Tattoo
+e256:Pink Tattoo
+e258:Green NORA Symbol
 e261:Long Gui Backpack
 e266:Red Commando Badge
+e267:Guard's Medic Badge
 e268:Blue Pilot's Badge
 e271:Blue PSICOM Spaulders
 e285:Afro &amp; Red Chick
+e296:Lower Rank Insignia
+e298:Gold Brooch
 e301:Golden Flower
 e308:Silver Gear
 e314:Sky Blue Newsboy Cap
+e317:Party Hat
 e319:Mint Chip Ice Cream
 e327:Gadot's Red Emblem
 e329:NORA Symbol
 e331:Dragon Hide Backpack
+e342:Electric Guitar
+e343:Upper Rank Insignia
+e344:PSICOM Officer Pin
 :=========================||Consumables||=======================================
 it_antidote:Antidote
 it_elixir:Elixir
@@ -2397,6 +2662,7 @@ key_white_ystn:Ivory Crystal
 key_y_baggage:Wedding Jewelry
 key_y_diary:Comm Device
 key_acdmycom:Academy Communicator
+key_fortune:Fortune Medal
 key_kansoku:Old Device
 key_lockjail:Holding Cell Key
 key_lostcom:Army Comm Device
@@ -2486,18 +2752,22 @@ material_a020:Power Bolt
 material_a021:Power Chip
 material_a022:Power Engine
 material_a023:Power Booster
+material_a024:Power Generator
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
+material_a029:Mana Generator
 material_a030:Vitality Bolt
 material_a031:Vitality Chip
 material_a032:Vitality Engine
 material_a033:Vitality Booster
+material_a034:Vitality Generator
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
 material_a039:Potent Generator
+material_b002:Chronomist
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
@@ -2528,6 +2798,7 @@ material_m078:Fractal Pot
 material_o000:Millerite
 material_o001:Rhodochrosite
 material_o002:Cobaltite
+material_o007:Adamantite
 material_o011:Gold Nugget
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
@@ -2878,6 +3149,8 @@ acc_023_000:Ribbon
 acc_030_000:Hermes Sandals
 acc_064_000:Martyr's Badge
 acc_065_000:Martyr's Emblem
+acc_069_000:Impeder's Opal
+acc_070_000:Supporter's Amethyst
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -2903,6 +3176,7 @@ mcr_k064:Pulse Knight
 mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k069:Navidon
+mcr_k077:Proto-behemoth
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -2920,6 +3194,7 @@ mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
+mcr_k253:Cactuar
 mcr_k256:Cactrot
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -2930,6 +3205,7 @@ mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k436:Flangonzola
 mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
@@ -2982,6 +3258,7 @@ material_a008:Power Essence
 material_a009:Power Crystal
 material_a010:Mana Droplet
 material_a011:Mana Sliver
+material_a012:Mana Orb
 material_a013:Mana Essence
 material_a014:Mana Crystal
 material_a015:Vitality Droplet
@@ -2992,17 +3269,21 @@ material_a020:Power Bolt
 material_a021:Power Chip
 material_a022:Power Engine
 material_a023:Power Booster
+material_a024:Power Generator
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
+material_a029:Mana Generator
 material_a031:Vitality Chip
 material_a032:Vitality Engine
 material_a033:Vitality Booster
+material_a034:Vitality Generator
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
 material_a039:Potent Generator
+material_b002:Chronomist
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
@@ -3080,6 +3361,8 @@ acc_023_000:Ribbon
 acc_030_000:Hermes Sandals
 acc_064_000:Martyr's Badge
 acc_065_000:Martyr's Emblem
+acc_069_000:Impeder's Opal
+acc_070_000:Supporter's Amethyst
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -3105,6 +3388,7 @@ mcr_k064:Pulse Knight
 mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k069:Navidon
+mcr_k077:Proto-behemoth
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -3122,6 +3406,7 @@ mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
+mcr_k253:Cactuar
 mcr_k256:Cactrot
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -3132,6 +3417,7 @@ mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k436:Flangonzola
 mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
@@ -3184,6 +3470,7 @@ material_a008:Power Essence
 material_a009:Power Crystal
 material_a010:Mana Droplet
 material_a011:Mana Sliver
+material_a012:Mana Orb
 material_a013:Mana Essence
 material_a014:Mana Crystal
 material_a015:Vitality Droplet
@@ -3194,17 +3481,21 @@ material_a020:Power Bolt
 material_a021:Power Chip
 material_a022:Power Engine
 material_a023:Power Booster
+material_a024:Power Generator
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
+material_a029:Mana Generator
 material_a031:Vitality Chip
 material_a032:Vitality Engine
 material_a033:Vitality Booster
+material_a034:Vitality Generator
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
 material_a039:Potent Generator
+material_b002:Chronomist
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
@@ -3282,6 +3573,8 @@ acc_023_000:Ribbon
 acc_030_000:Hermes Sandals
 acc_064_000:Martyr's Badge
 acc_065_000:Martyr's Emblem
+acc_069_000:Impeder's Opal
+acc_070_000:Supporter's Amethyst
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -3307,6 +3600,7 @@ mcr_k064:Pulse Knight
 mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k069:Navidon
+mcr_k077:Proto-behemoth
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -3324,6 +3618,7 @@ mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
+mcr_k253:Cactuar
 mcr_k256:Cactrot
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -3334,6 +3629,7 @@ mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k436:Flangonzola
 mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
@@ -3386,6 +3682,7 @@ material_a008:Power Essence
 material_a009:Power Crystal
 material_a010:Mana Droplet
 material_a011:Mana Sliver
+material_a012:Mana Orb
 material_a013:Mana Essence
 material_a014:Mana Crystal
 material_a015:Vitality Droplet
@@ -3396,17 +3693,21 @@ material_a020:Power Bolt
 material_a021:Power Chip
 material_a022:Power Engine
 material_a023:Power Booster
+material_a024:Power Generator
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
+material_a029:Mana Generator
 material_a031:Vitality Chip
 material_a032:Vitality Engine
 material_a033:Vitality Booster
+material_a034:Vitality Generator
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
 material_a039:Potent Generator
+material_b002:Chronomist
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
@@ -3484,6 +3785,8 @@ acc_023_000:Ribbon
 acc_030_000:Hermes Sandals
 acc_064_000:Martyr's Badge
 acc_065_000:Martyr's Emblem
+acc_069_000:Impeder's Opal
+acc_070_000:Supporter's Amethyst
 :===========================||Adornements||=====================================
 e048:Crystal Heart
 e050:Crystal Petal
@@ -3509,6 +3812,7 @@ mcr_k064:Pulse Knight
 mcr_k065:Pulse Gladiator
 mcr_k066:Bomb
 mcr_k069:Navidon
+mcr_k077:Proto-behemoth
 mcr_k079:Flanitor
 mcr_k094:Goblin
 mcr_k099:Crawler
@@ -3526,6 +3830,7 @@ mcr_k190:Microchu
 mcr_k206:Ahriman
 mcr_k211:Zwerg Metro
 mcr_k215:Cryohedron
+mcr_k253:Cactuar
 mcr_k256:Cactrot
 mcr_k257:Gigantuar
 mcr_k270:Nekton
@@ -3536,6 +3841,7 @@ mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
 mcr_k434:Flandit
+mcr_k436:Flangonzola
 mcr_k438:Yeoman
 mcr_k441:Gandayaks
 mcr_k442:Gahongas
@@ -3588,6 +3894,7 @@ material_a008:Power Essence
 material_a009:Power Crystal
 material_a010:Mana Droplet
 material_a011:Mana Sliver
+material_a012:Mana Orb
 material_a013:Mana Essence
 material_a014:Mana Crystal
 material_a015:Vitality Droplet
@@ -3598,17 +3905,21 @@ material_a020:Power Bolt
 material_a021:Power Chip
 material_a022:Power Engine
 material_a023:Power Booster
+material_a024:Power Generator
 material_a025:Mana Bolt
 material_a026:Mana Chip
 material_a027:Mana Engine
+material_a029:Mana Generator
 material_a031:Vitality Chip
 material_a032:Vitality Engine
 material_a033:Vitality Booster
+material_a034:Vitality Generator
 material_a035:Potent Bolt
 material_a036:Potent Chip
 material_a037:Potent Engine
 material_a038:Potent Booster
 material_a039:Potent Generator
+material_b002:Chronomist
 material_b005:Mutant Extract
 material_j014:Analog Circuit
 material_j020:Radial Bearing
@@ -4490,6 +4801,22 @@ dealloc(newmem)
           </Offsets>
         </CheatEntry>
         <CheatEntry>
+          <ID>557</ID>
+          <Description>"Rolling in CP"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Off
+1:Obtain more CP
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>6</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F38</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
           <ID>511</ID>
           <Description>"Monster Collector"</Description>
           <DropDownList DisplayValueAsItem="1">0:Off
@@ -4522,8 +4849,94 @@ dealloc(newmem)
             <Offset>18F39</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>555</ID>
+          <Description>"Battlemania"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Off
+1:Attract tougher enemies
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>3</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F39</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Change of cmp eax,[esi+74]</Description>
+      <AddressString>ffxiii2img.exe+2E3C29</AddressString>
+      <Before>
+        <Byte>86</Byte>
+        <Byte>84</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>3B</Byte>
+        <Byte>46</Byte>
+        <Byte>74</Byte>
+      </Actual>
+      <After>
+        <Byte>75</Byte>
+        <Byte>11</Byte>
+        <Byte>8B</Byte>
+        <Byte>4E</Byte>
+        <Byte>7C</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of cmp edx,[esi+74]</Description>
+      <AddressString>ffxiii2img.exe+2E3879</AddressString>
+      <Before>
+        <Byte>5D</Byte>
+        <Byte>C3</Byte>
+        <Byte>8B</Byte>
+        <Byte>56</Byte>
+        <Byte>70</Byte>
+      </Before>
+      <Actual>
+        <Byte>3B</Byte>
+        <Byte>56</Byte>
+        <Byte>74</Byte>
+      </Actual>
+      <After>
+        <Byte>7D</Byte>
+        <Byte>03</Byte>
+        <Byte>40</Byte>
+        <Byte>EB</Byte>
+        <Byte>01</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of test bl,bl</Description>
+      <AddressString>ffxiii2img.exe+2E3924</AddressString>
+      <Before>
+        <Byte>0F</Byte>
+        <Byte>2C</Byte>
+        <Byte>CA</Byte>
+        <Byte>03</Byte>
+        <Byte>CA</Byte>
+      </Before>
+      <Actual>
+        <Byte>84</Byte>
+        <Byte>DB</Byte>
+      </Actual>
+      <After>
+        <Byte>75</Byte>
+        <Byte>09</Byte>
+        <Byte>8B</Byte>
+        <Byte>C8</Byte>
+        <Byte>C6</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
   <UserdefinedSymbols/>
 </CheatTable>
