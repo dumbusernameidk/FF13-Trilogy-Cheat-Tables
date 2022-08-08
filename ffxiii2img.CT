@@ -49,7 +49,7 @@
           </Offsets>
         </CheatEntry>
         <CheatEntry>
-          <ID>474</ID>
+          <ID>563</ID>
           <Description>"Casino Coins"</Description>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -2110,6 +2110,36 @@ wp_flag:Fragment Energy
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
+          <ID>564</ID>
+          <Description>"Disable Collision"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(CollisionDisable,ffxiii2img.exe,0F 29 41 70 5E)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(CollisionDisable)
+
+newmem:
+
+code:
+//movaps   [ecx+70], xmm0
+pop   esi
+jmp   Exit
+
+CollisionDisable:
+jmp   newmem
+
+Exit:
+
+[DISABLE]
+CollisionDisable:
+db 0F 29 41 70 5E
+unregistersymbol(CollisionDisable)
+dealloc(newmem)
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
           <ID>189</ID>
           <Description>"Monster Stats (Must Select To Update Pointers)"</Description>
           <Options moHideChildren="1"/>
@@ -2420,6 +2450,61 @@ dealloc(newmem)
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
+          <ID>562</ID>
+          <Description>"Infinite Chocobo Boost"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(ChocoboRaceBoostDoesntDrain,ffxiii2img.exe,F3 0F 5C C8 F3 0F 11 8E C4 00 00 00)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(ChocoboRaceBoostDoesntDrain)
+
+newmem:
+mov eax, (float)300.00
+
+code:
+//subss   xmm1, xmm0
+mov  [esi+000000C4], eax
+jmp    Exit
+
+ChocoboRaceBoostDoesntDrain:
+jmp   newmem
+nop   7
+
+Exit:
+//============================================================================//
+aobscanmodule(ChocoboMaxBoost,ffxiii2img.exe,F3 0F 58 9E C4 00 00 00)
+alloc(newmem1,$1000)
+label(code1,Exit1)
+registersymbol(ChocoboMaxBoost)
+
+newmem1:
+mov [esi+00000C4], (float)300.00
+
+code1:
+addss xmm3,[esi+000000C4]
+jmp   Exit1
+
+ChocoboMaxBoost:
+jmp   newmem1
+nop   3
+
+Exit1:
+
+[DISABLE]
+ChocoboRaceBoostDoesntDrain:
+db F3 0F 5C C8 F3 0F 11 8E C4 00 00 00
+unregistersymbol(ChocoboRaceBoostDoesntDrain)
+dealloc(newmem)
+
+ChocoboMaxBoost:
+db F3 0F 58 9E C4 00 00 00
+unregistersymbol(ChocoboMaxBoost)
+dealloc(newmem1)
+</AssemblerScript>
+        </CheatEntry>
+        <CheatEntry>
           <ID>6</ID>
           <Description>"Inf Health + OHK"</Description>
           <LastState/>
@@ -2577,6 +2662,7 @@ e078:Frying Pan
 e083:Fragment Crystal
 e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
+e093:Mog Figurine
 e107:Caius's Sword
 e108:Serah Mask
 e109:Lightning Mask
@@ -2588,6 +2674,9 @@ e228:Orange Newsboy Cap
 e236:Whimsical Headdress
 e237:Strawberry Ice Cream
 e238:Rum Raisin Ice Cream
+e242:Pink-Rimmed Glasses
+e243:Gold Shades
+e244:Violet Shades
 e248:Brown Bushy Mustache
 e252:Lebreau's Olive Tattoo
 e256:Pink Tattoo
@@ -2598,6 +2687,7 @@ e267:Guard's Medic Badge
 e268:Blue Pilot's Badge
 e271:Blue PSICOM Spaulders
 e285:Afro &amp; Red Chick
+e293:Long Gui's Shell
 e296:Lower Rank Insignia
 e298:Gold Brooch
 e301:Golden Flower
@@ -2605,6 +2695,9 @@ e308:Silver Gear
 e314:Sky Blue Newsboy Cap
 e317:Party Hat
 e319:Mint Chip Ice Cream
+e321:Black-Rimmed Glasses
+e322:Vacationer's Shades
+e323:Queen's Mask
 e327:Gadot's Red Emblem
 e329:NORA Symbol
 e331:Dragon Hide Backpack
@@ -3204,6 +3297,7 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
+mcr_k433:Albino Lobo
 mcr_k434:Flandit
 mcr_k436:Flangonzola
 mcr_k438:Yeoman
@@ -3226,6 +3320,7 @@ mcr_k496:Pantopoda
 mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k647:Kanna Kamuy
 mcr_k650:Moblin
 mcr_k651:Major Moblin
 mcr_k652:Swampmonk
@@ -3236,10 +3331,12 @@ mcr_k662:Caterchipillar
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k672:Testudo
 mcr_k673:Scutari
 mcr_k851:Apotamkin
 mcr_k853:Grenade
 mcr_k861:Pink Lily
+mcr_k867:White Chocobo
 mcr_k868:Black Chocobo
 mcr_k869:Blue Chocobo
 mcr_k870:Red Chocobo
@@ -3416,6 +3513,7 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
+mcr_k433:Albino Lobo
 mcr_k434:Flandit
 mcr_k436:Flangonzola
 mcr_k438:Yeoman
@@ -3438,6 +3536,7 @@ mcr_k496:Pantopoda
 mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k647:Kanna Kamuy
 mcr_k650:Moblin
 mcr_k651:Major Moblin
 mcr_k652:Swampmonk
@@ -3448,10 +3547,12 @@ mcr_k662:Caterchipillar
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k672:Testudo
 mcr_k673:Scutari
 mcr_k851:Apotamkin
 mcr_k853:Grenade
 mcr_k861:Pink Lily
+mcr_k867:White Chocobo
 mcr_k868:Black Chocobo
 mcr_k869:Blue Chocobo
 mcr_k870:Red Chocobo
@@ -3628,6 +3729,7 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
+mcr_k433:Albino Lobo
 mcr_k434:Flandit
 mcr_k436:Flangonzola
 mcr_k438:Yeoman
@@ -3650,6 +3752,7 @@ mcr_k496:Pantopoda
 mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k647:Kanna Kamuy
 mcr_k650:Moblin
 mcr_k651:Major Moblin
 mcr_k652:Swampmonk
@@ -3660,10 +3763,12 @@ mcr_k662:Caterchipillar
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k672:Testudo
 mcr_k673:Scutari
 mcr_k851:Apotamkin
 mcr_k853:Grenade
 mcr_k861:Pink Lily
+mcr_k867:White Chocobo
 mcr_k868:Black Chocobo
 mcr_k869:Blue Chocobo
 mcr_k870:Red Chocobo
@@ -3840,6 +3945,7 @@ mcr_k273:Cait Sith
 mcr_k400:Uridimmu
 mcr_k430:Luminous Puma
 mcr_k432:Seeping Brie
+mcr_k433:Albino Lobo
 mcr_k434:Flandit
 mcr_k436:Flangonzola
 mcr_k438:Yeoman
@@ -3862,6 +3968,7 @@ mcr_k496:Pantopoda
 mcr_k640:Bamapama
 mcr_k642:Fachan
 mcr_k643:Unsaganashi
+mcr_k647:Kanna Kamuy
 mcr_k650:Moblin
 mcr_k651:Major Moblin
 mcr_k652:Swampmonk
@@ -3872,10 +3979,12 @@ mcr_k662:Caterchipillar
 mcr_k664:Dragoon
 mcr_k665:Spiceacilian
 mcr_k668:Chunerpeton
+mcr_k672:Testudo
 mcr_k673:Scutari
 mcr_k851:Apotamkin
 mcr_k853:Grenade
 mcr_k861:Pink Lily
+mcr_k867:White Chocobo
 mcr_k868:Black Chocobo
 mcr_k869:Blue Chocobo
 mcr_k870:Red Chocobo
@@ -3999,18 +4108,6 @@ material_o011:Gold Nugget
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
-            <CheatEntry>
-              <ID>156</ID>
-              <Description>"Start"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>ffxiii2img.exe+211E5FC</Address>
-              <Offsets>
-                <Offset>0</Offset>
-                <Offset>414</Offset>
-              </Offsets>
-            </CheatEntry>
             <CheatEntry>
               <ID>158</ID>
               <Description>"attacksReceived"</Description>
@@ -4222,7 +4319,7 @@ k400_rk000:Feral Fangs
               </Offsets>
             </CheatEntry>
             <CheatEntry>
-              <ID>165</ID>
+              <ID>587</ID>
               <Description>"chainGaugeBarAmount"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -4241,19 +4338,6 @@ k400_rk000:Feral Fangs
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
-            <CheatEntry>
-              <ID>516</ID>
-              <Description>"Start"</Description>
-              <ShowAsHex>1</ShowAsHex>
-              <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>4 Bytes</VariableType>
-              <Address>ffxiii2img.exe+211E5FC</Address>
-              <Offsets>
-                <Offset>0</Offset>
-                <Offset>30</Offset>
-                <Offset>414</Offset>
-              </Offsets>
-            </CheatEntry>
             <CheatEntry>
               <ID>517</ID>
               <Description>"attacksReceived"</Description>
@@ -4480,6 +4564,1629 @@ k400_rk000:Feral Fangs
               <Address>ffxiii2img.exe+211E5FC</Address>
               <Offsets>
                 <Offset>2240</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>566</ID>
+          <Description>"AI  #3"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>568</ID>
+              <Description>"attacksReceived"</Description>
+              <DropDownList DisplayValueAsItem="1">:================================||PlayerMoveList||=============================
+c108_at010_00:Bowsword (Sword Attack 1)
+c108_at020_00:Bowsword (Sword Attack 2)
+c108_at010w_10:Bowsword (Bow Attack 1)
+c108_at015w_10:Bowsword (Bow Attack 3)
+c108_at020w_10:Bowsword (Bow Attack 2)
+c108_at200_00:Bowsword (Sword Attack){???}
+c108_at200w_10:Bowsword (Bow Attack){???}
+c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108at310_10:Bowsword (Sword Attack){???}
+c108at315_10:Bowsword (???)
+c108_at310w_10:Bowsword (Bow Attack){In-air?}
+c108_at520w_10:Blitz (Bowsword){Bow}
+c108_at520_00:Blitz (Bowsword){Sword}
+c108_at540_00:Blindside (Bowsword){Sword}
+c108_at540w_10:Blindside (Bowsword){Bow}
+c110_at010_00:Dual Swords (Attack 1)
+c110_at015_00:Dual Swords (Attack 3)
+c110_at020_00:Dual Swords (Attack 2)
+c110_at200_00:Dual Swords (???)
+c110_at310_00:Dual Swords (???)
+c110_at520_00:Blitz (Dual Swords)
+C110_at540_00:Blindside (Dual Swords)
+ac100_00:Provoke
+ac110_00:Challenge
+at010_10:Flamestrike
+at010_20:Froststrike
+at020_10:Flamestrike (Attack 2)
+at020_20:Froststrike (Attack 2)
+at010_30:Sparkstrike
+at020_30:Sparkstrike (Attack 2)
+at010_40:Aquastrike
+at020_40:Aquastrike (Attack 2)
+at310_10:Flamestrike + Froststrike (In-air)
+at310_20:Flamestrike + Froststrike (In-air)(Attack 1 + 2)
+at310_30:Flamestrike + Sparkstrike (In-air)(Attack 1 + 3)
+at310_40:Flamestrike + Aquastrike (In-air)(Attack 1 + 4)
+at500_00:Launch
+at200_rv:Counterattack
+at520_00:Blitz
+de110_00:? / Counter
+m175_ac000:???
+ma000_00:Ruin
+ma000_00_cs:Ruin {???}
+ma000_00_air:Ruin (In-air)
+ma000_00_bt:Ruin (Blindside)
+ma020_00:Ruinga Explosion
+ma020_00_air:Ruinga Explosion (In-air)
+mb000_00:Fire
+mb000_00_air:Fire (In-air)
+mb010_00:Fira
+mb010_00_air:Fira (In-air)
+mb020_00:Firaga
+mb020_00_air:Firaga (In-air)
+mb100_00:Blizzard
+mb100_00_air:Blizzard (In-air)
+mb110_00:Blizzara
+mb110_00_air:Blizzara (In-air)
+mb120_00:Blizzaga
+mb120_00_air:Blizzaga (In-air)
+mb200_00:Thunder
+mb200_00_air:Thunder (In-air)
+mb210_00:Thundara
+mb210_00_air:Thundara (In-air)
+mb220_00:Thundaga
+mb220_00_air:Thundaga (In-air)
+mb300_00:Water
+mb300_00_air:Water (In-air)
+mb310_00:Watera
+mb310_00_air:Watera (In-air)
+mb320_00:Waterga
+mb320_00_air:Waterga (In-air)
+mb400_00:Aero
+mb400_00_air:Aero (In-air)
+mb410_00:Aerora
+mb410_00_air:Aerora (In-air)
+mb420_00:Aeroga
+mb420_00_air:Aeroga (In-air)
+mg000_00:Deprotect
+mg010_00:Deshell
+mg020_00:Poison
+mg030_00:Imperil
+mg200_00:Deprotega
+mg210_00:Deshellga
+mg220_00:Poisonga
+mg230_00:Imperilga
+mg240_00:Dispel
+mg500_00:Slow
+mg510_00:Fog
+mg520_00:Pain
+mg530_00:Curse
+mg540_00:Daze
+mg700_00:Slowga
+mg710_00:Fogga
+mg720_00:Painga
+mg730_00:Cursega
+mg740_00:Dazega
+:================================||MonsterMoveList||============================
+k003_at010_00:Gorgonopsid (Attack 1)
+k003_at020_00:Gorgonopsid (Attack 2)
+k043at010_30:Zwerg Scandroid (Attack ?)
+k271_at010_00:Meonekton (Attack 1)
+k271_at020_00:Meonekton (Attack 2)
+k400_at010_00:Uridimmu (Attack 1)
+k400_at020_00:Uridimmu (Attack 2)
+k043_rk000:Multicast
+k270_rk000:Spider Web
+k271_rk000:Black Hole
+k400_rk000:Feral Fangs
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>F8</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>569</ID>
+              <Description>"attacksReceived"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>108</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>570</ID>
+              <Description>"entityMoves"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>138</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>571</ID>
+              <Description>"currentHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2D0</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>572</ID>
+              <Description>"maxHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>314</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>573</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>31C</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>574</ID>
+              <Description>"Strength"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>324</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>575</ID>
+              <Description>"Magic"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>328</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>576</ID>
+              <Description>"chainGaugeBarAmount"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2240</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>577</ID>
+          <Description>"AI  #4"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>578</ID>
+              <Description>"attacksReceived"</Description>
+              <DropDownList DisplayValueAsItem="1">:================================||PlayerMoveList||=============================
+c108_at010_00:Bowsword (Sword Attack 1)
+c108_at020_00:Bowsword (Sword Attack 2)
+c108_at010w_10:Bowsword (Bow Attack 1)
+c108_at015w_10:Bowsword (Bow Attack 3)
+c108_at020w_10:Bowsword (Bow Attack 2)
+c108_at200_00:Bowsword (Sword Attack){???}
+c108_at200w_10:Bowsword (Bow Attack){???}
+c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108at310_10:Bowsword (Sword Attack){???}
+c108at315_10:Bowsword (???)
+c108_at310w_10:Bowsword (Bow Attack){In-air?}
+c108_at520w_10:Blitz (Bowsword){Bow}
+c108_at520_00:Blitz (Bowsword){Sword}
+c108_at540_00:Blindside (Bowsword){Sword}
+c108_at540w_10:Blindside (Bowsword){Bow}
+c110_at010_00:Dual Swords (Attack 1)
+c110_at015_00:Dual Swords (Attack 3)
+c110_at020_00:Dual Swords (Attack 2)
+c110_at200_00:Dual Swords (???)
+c110_at310_00:Dual Swords (???)
+c110_at520_00:Blitz (Dual Swords)
+C110_at540_00:Blindside (Dual Swords)
+ac100_00:Provoke
+ac110_00:Challenge
+at010_10:Flamestrike
+at010_20:Froststrike
+at020_10:Flamestrike (Attack 2)
+at020_20:Froststrike (Attack 2)
+at010_30:Sparkstrike
+at020_30:Sparkstrike (Attack 2)
+at010_40:Aquastrike
+at020_40:Aquastrike (Attack 2)
+at310_10:Flamestrike + Froststrike (In-air)
+at310_20:Flamestrike + Froststrike (In-air)(Attack 1 + 2)
+at310_30:Flamestrike + Sparkstrike (In-air)(Attack 1 + 3)
+at310_40:Flamestrike + Aquastrike (In-air)(Attack 1 + 4)
+at500_00:Launch
+at200_rv:Counterattack
+at520_00:Blitz
+de110_00:? / Counter
+m175_ac000:???
+ma000_00:Ruin
+ma000_00_cs:Ruin {???}
+ma000_00_air:Ruin (In-air)
+ma000_00_bt:Ruin (Blindside)
+ma020_00:Ruinga Explosion
+ma020_00_air:Ruinga Explosion (In-air)
+mb000_00:Fire
+mb000_00_air:Fire (In-air)
+mb010_00:Fira
+mb010_00_air:Fira (In-air)
+mb020_00:Firaga
+mb020_00_air:Firaga (In-air)
+mb100_00:Blizzard
+mb100_00_air:Blizzard (In-air)
+mb110_00:Blizzara
+mb110_00_air:Blizzara (In-air)
+mb120_00:Blizzaga
+mb120_00_air:Blizzaga (In-air)
+mb200_00:Thunder
+mb200_00_air:Thunder (In-air)
+mb210_00:Thundara
+mb210_00_air:Thundara (In-air)
+mb220_00:Thundaga
+mb220_00_air:Thundaga (In-air)
+mb300_00:Water
+mb300_00_air:Water (In-air)
+mb310_00:Watera
+mb310_00_air:Watera (In-air)
+mb320_00:Waterga
+mb320_00_air:Waterga (In-air)
+mb400_00:Aero
+mb400_00_air:Aero (In-air)
+mb410_00:Aerora
+mb410_00_air:Aerora (In-air)
+mb420_00:Aeroga
+mb420_00_air:Aeroga (In-air)
+mg000_00:Deprotect
+mg010_00:Deshell
+mg020_00:Poison
+mg030_00:Imperil
+mg200_00:Deprotega
+mg210_00:Deshellga
+mg220_00:Poisonga
+mg230_00:Imperilga
+mg240_00:Dispel
+mg500_00:Slow
+mg510_00:Fog
+mg520_00:Pain
+mg530_00:Curse
+mg540_00:Daze
+mg700_00:Slowga
+mg710_00:Fogga
+mg720_00:Painga
+mg730_00:Cursega
+mg740_00:Dazega
+:================================||MonsterMoveList||============================
+k003_at010_00:Gorgonopsid (Attack 1)
+k003_at020_00:Gorgonopsid (Attack 2)
+k043at010_30:Zwerg Scandroid (Attack ?)
+k271_at010_00:Meonekton (Attack 1)
+k271_at020_00:Meonekton (Attack 2)
+k400_at010_00:Uridimmu (Attack 1)
+k400_at020_00:Uridimmu (Attack 2)
+k043_rk000:Multicast
+k270_rk000:Spider Web
+k271_rk000:Black Hole
+k400_rk000:Feral Fangs
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>F8</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>579</ID>
+              <Description>"attacksReceived"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>108</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>580</ID>
+              <Description>"entityMoves"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>138</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>581</ID>
+              <Description>"currentHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2D0</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>582</ID>
+              <Description>"maxHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>314</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>583</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>31C</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>584</ID>
+              <Description>"Strength"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>324</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>585</ID>
+              <Description>"Magic"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>328</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>586</ID>
+              <Description>"chainGaugeBarAmount"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2240</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>588</ID>
+          <Description>"AI  #5"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>589</ID>
+              <Description>"attacksReceived"</Description>
+              <DropDownList DisplayValueAsItem="1">:================================||PlayerMoveList||=============================
+c108_at010_00:Bowsword (Sword Attack 1)
+c108_at020_00:Bowsword (Sword Attack 2)
+c108_at010w_10:Bowsword (Bow Attack 1)
+c108_at015w_10:Bowsword (Bow Attack 3)
+c108_at020w_10:Bowsword (Bow Attack 2)
+c108_at200_00:Bowsword (Sword Attack){???}
+c108_at200w_10:Bowsword (Bow Attack){???}
+c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108at310_10:Bowsword (Sword Attack){???}
+c108at315_10:Bowsword (???)
+c108_at310w_10:Bowsword (Bow Attack){In-air?}
+c108_at520w_10:Blitz (Bowsword){Bow}
+c108_at520_00:Blitz (Bowsword){Sword}
+c108_at540_00:Blindside (Bowsword){Sword}
+c108_at540w_10:Blindside (Bowsword){Bow}
+c110_at010_00:Dual Swords (Attack 1)
+c110_at015_00:Dual Swords (Attack 3)
+c110_at020_00:Dual Swords (Attack 2)
+c110_at200_00:Dual Swords (???)
+c110_at310_00:Dual Swords (???)
+c110_at520_00:Blitz (Dual Swords)
+C110_at540_00:Blindside (Dual Swords)
+ac100_00:Provoke
+ac110_00:Challenge
+at010_10:Flamestrike
+at010_20:Froststrike
+at020_10:Flamestrike (Attack 2)
+at020_20:Froststrike (Attack 2)
+at010_30:Sparkstrike
+at020_30:Sparkstrike (Attack 2)
+at010_40:Aquastrike
+at020_40:Aquastrike (Attack 2)
+at310_10:Flamestrike + Froststrike (In-air)
+at310_20:Flamestrike + Froststrike (In-air)(Attack 1 + 2)
+at310_30:Flamestrike + Sparkstrike (In-air)(Attack 1 + 3)
+at310_40:Flamestrike + Aquastrike (In-air)(Attack 1 + 4)
+at500_00:Launch
+at200_rv:Counterattack
+at520_00:Blitz
+de110_00:? / Counter
+m175_ac000:???
+ma000_00:Ruin
+ma000_00_cs:Ruin {???}
+ma000_00_air:Ruin (In-air)
+ma000_00_bt:Ruin (Blindside)
+ma020_00:Ruinga Explosion
+ma020_00_air:Ruinga Explosion (In-air)
+mb000_00:Fire
+mb000_00_air:Fire (In-air)
+mb010_00:Fira
+mb010_00_air:Fira (In-air)
+mb020_00:Firaga
+mb020_00_air:Firaga (In-air)
+mb100_00:Blizzard
+mb100_00_air:Blizzard (In-air)
+mb110_00:Blizzara
+mb110_00_air:Blizzara (In-air)
+mb120_00:Blizzaga
+mb120_00_air:Blizzaga (In-air)
+mb200_00:Thunder
+mb200_00_air:Thunder (In-air)
+mb210_00:Thundara
+mb210_00_air:Thundara (In-air)
+mb220_00:Thundaga
+mb220_00_air:Thundaga (In-air)
+mb300_00:Water
+mb300_00_air:Water (In-air)
+mb310_00:Watera
+mb310_00_air:Watera (In-air)
+mb320_00:Waterga
+mb320_00_air:Waterga (In-air)
+mb400_00:Aero
+mb400_00_air:Aero (In-air)
+mb410_00:Aerora
+mb410_00_air:Aerora (In-air)
+mb420_00:Aeroga
+mb420_00_air:Aeroga (In-air)
+mg000_00:Deprotect
+mg010_00:Deshell
+mg020_00:Poison
+mg030_00:Imperil
+mg200_00:Deprotega
+mg210_00:Deshellga
+mg220_00:Poisonga
+mg230_00:Imperilga
+mg240_00:Dispel
+mg500_00:Slow
+mg510_00:Fog
+mg520_00:Pain
+mg530_00:Curse
+mg540_00:Daze
+mg700_00:Slowga
+mg710_00:Fogga
+mg720_00:Painga
+mg730_00:Cursega
+mg740_00:Dazega
+:================================||MonsterMoveList||============================
+k003_at010_00:Gorgonopsid (Attack 1)
+k003_at020_00:Gorgonopsid (Attack 2)
+k043at010_30:Zwerg Scandroid (Attack ?)
+k271_at010_00:Meonekton (Attack 1)
+k271_at020_00:Meonekton (Attack 2)
+k400_at010_00:Uridimmu (Attack 1)
+k400_at020_00:Uridimmu (Attack 2)
+k043_rk000:Multicast
+k270_rk000:Spider Web
+k271_rk000:Black Hole
+k400_rk000:Feral Fangs
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>F8</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>590</ID>
+              <Description>"attacksReceived"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>108</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>591</ID>
+              <Description>"entityMoves"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>138</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>592</ID>
+              <Description>"currentHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2D0</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>593</ID>
+              <Description>"maxHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>314</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>594</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>31C</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>595</ID>
+              <Description>"Strength"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>324</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>596</ID>
+              <Description>"Magic"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>328</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>597</ID>
+              <Description>"chainGaugeBarAmount"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2240</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>598</ID>
+          <Description>"AI  #6"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>599</ID>
+              <Description>"attacksReceived"</Description>
+              <DropDownList DisplayValueAsItem="1">:================================||PlayerMoveList||=============================
+c108_at010_00:Bowsword (Sword Attack 1)
+c108_at020_00:Bowsword (Sword Attack 2)
+c108_at010w_10:Bowsword (Bow Attack 1)
+c108_at015w_10:Bowsword (Bow Attack 3)
+c108_at020w_10:Bowsword (Bow Attack 2)
+c108_at200_00:Bowsword (Sword Attack){???}
+c108_at200w_10:Bowsword (Bow Attack){???}
+c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108at310_10:Bowsword (Sword Attack){???}
+c108at315_10:Bowsword (???)
+c108_at310w_10:Bowsword (Bow Attack){In-air?}
+c108_at520w_10:Blitz (Bowsword){Bow}
+c108_at520_00:Blitz (Bowsword){Sword}
+c108_at540_00:Blindside (Bowsword){Sword}
+c108_at540w_10:Blindside (Bowsword){Bow}
+c110_at010_00:Dual Swords (Attack 1)
+c110_at015_00:Dual Swords (Attack 3)
+c110_at020_00:Dual Swords (Attack 2)
+c110_at200_00:Dual Swords (???)
+c110_at310_00:Dual Swords (???)
+c110_at520_00:Blitz (Dual Swords)
+C110_at540_00:Blindside (Dual Swords)
+ac100_00:Provoke
+ac110_00:Challenge
+at010_10:Flamestrike
+at010_20:Froststrike
+at020_10:Flamestrike (Attack 2)
+at020_20:Froststrike (Attack 2)
+at010_30:Sparkstrike
+at020_30:Sparkstrike (Attack 2)
+at010_40:Aquastrike
+at020_40:Aquastrike (Attack 2)
+at310_10:Flamestrike + Froststrike (In-air)
+at310_20:Flamestrike + Froststrike (In-air)(Attack 1 + 2)
+at310_30:Flamestrike + Sparkstrike (In-air)(Attack 1 + 3)
+at310_40:Flamestrike + Aquastrike (In-air)(Attack 1 + 4)
+at500_00:Launch
+at200_rv:Counterattack
+at520_00:Blitz
+de110_00:? / Counter
+m175_ac000:???
+ma000_00:Ruin
+ma000_00_cs:Ruin {???}
+ma000_00_air:Ruin (In-air)
+ma000_00_bt:Ruin (Blindside)
+ma020_00:Ruinga Explosion
+ma020_00_air:Ruinga Explosion (In-air)
+mb000_00:Fire
+mb000_00_air:Fire (In-air)
+mb010_00:Fira
+mb010_00_air:Fira (In-air)
+mb020_00:Firaga
+mb020_00_air:Firaga (In-air)
+mb100_00:Blizzard
+mb100_00_air:Blizzard (In-air)
+mb110_00:Blizzara
+mb110_00_air:Blizzara (In-air)
+mb120_00:Blizzaga
+mb120_00_air:Blizzaga (In-air)
+mb200_00:Thunder
+mb200_00_air:Thunder (In-air)
+mb210_00:Thundara
+mb210_00_air:Thundara (In-air)
+mb220_00:Thundaga
+mb220_00_air:Thundaga (In-air)
+mb300_00:Water
+mb300_00_air:Water (In-air)
+mb310_00:Watera
+mb310_00_air:Watera (In-air)
+mb320_00:Waterga
+mb320_00_air:Waterga (In-air)
+mb400_00:Aero
+mb400_00_air:Aero (In-air)
+mb410_00:Aerora
+mb410_00_air:Aerora (In-air)
+mb420_00:Aeroga
+mb420_00_air:Aeroga (In-air)
+mg000_00:Deprotect
+mg010_00:Deshell
+mg020_00:Poison
+mg030_00:Imperil
+mg200_00:Deprotega
+mg210_00:Deshellga
+mg220_00:Poisonga
+mg230_00:Imperilga
+mg240_00:Dispel
+mg500_00:Slow
+mg510_00:Fog
+mg520_00:Pain
+mg530_00:Curse
+mg540_00:Daze
+mg700_00:Slowga
+mg710_00:Fogga
+mg720_00:Painga
+mg730_00:Cursega
+mg740_00:Dazega
+:================================||MonsterMoveList||============================
+k003_at010_00:Gorgonopsid (Attack 1)
+k003_at020_00:Gorgonopsid (Attack 2)
+k043at010_30:Zwerg Scandroid (Attack ?)
+k271_at010_00:Meonekton (Attack 1)
+k271_at020_00:Meonekton (Attack 2)
+k400_at010_00:Uridimmu (Attack 1)
+k400_at020_00:Uridimmu (Attack 2)
+k043_rk000:Multicast
+k270_rk000:Spider Web
+k271_rk000:Black Hole
+k400_rk000:Feral Fangs
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>F8</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>600</ID>
+              <Description>"attacksReceived"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>108</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>601</ID>
+              <Description>"entityMoves"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>138</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>602</ID>
+              <Description>"currentHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2D0</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>603</ID>
+              <Description>"maxHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>314</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>604</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>31C</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>605</ID>
+              <Description>"Strength"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>324</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>606</ID>
+              <Description>"Magic"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>328</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>607</ID>
+              <Description>"chainGaugeBarAmount"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2240</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>608</ID>
+          <Description>"AI  #7"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>609</ID>
+              <Description>"attacksReceived"</Description>
+              <DropDownList DisplayValueAsItem="1">:================================||PlayerMoveList||=============================
+c108_at010_00:Bowsword (Sword Attack 1)
+c108_at020_00:Bowsword (Sword Attack 2)
+c108_at010w_10:Bowsword (Bow Attack 1)
+c108_at015w_10:Bowsword (Bow Attack 3)
+c108_at020w_10:Bowsword (Bow Attack 2)
+c108_at200_00:Bowsword (Sword Attack){???}
+c108_at200w_10:Bowsword (Bow Attack){???}
+c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108at310_10:Bowsword (Sword Attack){???}
+c108at315_10:Bowsword (???)
+c108_at310w_10:Bowsword (Bow Attack){In-air?}
+c108_at520w_10:Blitz (Bowsword){Bow}
+c108_at520_00:Blitz (Bowsword){Sword}
+c108_at540_00:Blindside (Bowsword){Sword}
+c108_at540w_10:Blindside (Bowsword){Bow}
+c110_at010_00:Dual Swords (Attack 1)
+c110_at015_00:Dual Swords (Attack 3)
+c110_at020_00:Dual Swords (Attack 2)
+c110_at200_00:Dual Swords (???)
+c110_at310_00:Dual Swords (???)
+c110_at520_00:Blitz (Dual Swords)
+C110_at540_00:Blindside (Dual Swords)
+ac100_00:Provoke
+ac110_00:Challenge
+at010_10:Flamestrike
+at010_20:Froststrike
+at020_10:Flamestrike (Attack 2)
+at020_20:Froststrike (Attack 2)
+at010_30:Sparkstrike
+at020_30:Sparkstrike (Attack 2)
+at010_40:Aquastrike
+at020_40:Aquastrike (Attack 2)
+at310_10:Flamestrike + Froststrike (In-air)
+at310_20:Flamestrike + Froststrike (In-air)(Attack 1 + 2)
+at310_30:Flamestrike + Sparkstrike (In-air)(Attack 1 + 3)
+at310_40:Flamestrike + Aquastrike (In-air)(Attack 1 + 4)
+at500_00:Launch
+at200_rv:Counterattack
+at520_00:Blitz
+de110_00:? / Counter
+m175_ac000:???
+ma000_00:Ruin
+ma000_00_cs:Ruin {???}
+ma000_00_air:Ruin (In-air)
+ma000_00_bt:Ruin (Blindside)
+ma020_00:Ruinga Explosion
+ma020_00_air:Ruinga Explosion (In-air)
+mb000_00:Fire
+mb000_00_air:Fire (In-air)
+mb010_00:Fira
+mb010_00_air:Fira (In-air)
+mb020_00:Firaga
+mb020_00_air:Firaga (In-air)
+mb100_00:Blizzard
+mb100_00_air:Blizzard (In-air)
+mb110_00:Blizzara
+mb110_00_air:Blizzara (In-air)
+mb120_00:Blizzaga
+mb120_00_air:Blizzaga (In-air)
+mb200_00:Thunder
+mb200_00_air:Thunder (In-air)
+mb210_00:Thundara
+mb210_00_air:Thundara (In-air)
+mb220_00:Thundaga
+mb220_00_air:Thundaga (In-air)
+mb300_00:Water
+mb300_00_air:Water (In-air)
+mb310_00:Watera
+mb310_00_air:Watera (In-air)
+mb320_00:Waterga
+mb320_00_air:Waterga (In-air)
+mb400_00:Aero
+mb400_00_air:Aero (In-air)
+mb410_00:Aerora
+mb410_00_air:Aerora (In-air)
+mb420_00:Aeroga
+mb420_00_air:Aeroga (In-air)
+mg000_00:Deprotect
+mg010_00:Deshell
+mg020_00:Poison
+mg030_00:Imperil
+mg200_00:Deprotega
+mg210_00:Deshellga
+mg220_00:Poisonga
+mg230_00:Imperilga
+mg240_00:Dispel
+mg500_00:Slow
+mg510_00:Fog
+mg520_00:Pain
+mg530_00:Curse
+mg540_00:Daze
+mg700_00:Slowga
+mg710_00:Fogga
+mg720_00:Painga
+mg730_00:Cursega
+mg740_00:Dazega
+:================================||MonsterMoveList||============================
+k003_at010_00:Gorgonopsid (Attack 1)
+k003_at020_00:Gorgonopsid (Attack 2)
+k043at010_30:Zwerg Scandroid (Attack ?)
+k271_at010_00:Meonekton (Attack 1)
+k271_at020_00:Meonekton (Attack 2)
+k400_at010_00:Uridimmu (Attack 1)
+k400_at020_00:Uridimmu (Attack 2)
+k043_rk000:Multicast
+k270_rk000:Spider Web
+k271_rk000:Black Hole
+k400_rk000:Feral Fangs
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>F8</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>610</ID>
+              <Description>"attacksReceived"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>108</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>611</ID>
+              <Description>"entityMoves"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>138</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>612</ID>
+              <Description>"currentHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2D0</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>613</ID>
+              <Description>"maxHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>314</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>614</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>31C</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>615</ID>
+              <Description>"Strength"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>324</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>616</ID>
+              <Description>"Magic"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>328</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>617</ID>
+              <Description>"chainGaugeBarAmount"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2240</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>618</ID>
+          <Description>"AI  #8"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>619</ID>
+              <Description>"attacksReceived"</Description>
+              <DropDownList DisplayValueAsItem="1">:================================||PlayerMoveList||=============================
+c108_at010_00:Bowsword (Sword Attack 1)
+c108_at020_00:Bowsword (Sword Attack 2)
+c108_at010w_10:Bowsword (Bow Attack 1)
+c108_at015w_10:Bowsword (Bow Attack 3)
+c108_at020w_10:Bowsword (Bow Attack 2)
+c108_at200_00:Bowsword (Sword Attack){???}
+c108_at200w_10:Bowsword (Bow Attack){???}
+c108_at310_00:Bowsword (Sword Attack){In-air?}
+c108at310_10:Bowsword (Sword Attack){???}
+c108at315_10:Bowsword (???)
+c108_at310w_10:Bowsword (Bow Attack){In-air?}
+c108_at520w_10:Blitz (Bowsword){Bow}
+c108_at520_00:Blitz (Bowsword){Sword}
+c108_at540_00:Blindside (Bowsword){Sword}
+c108_at540w_10:Blindside (Bowsword){Bow}
+c110_at010_00:Dual Swords (Attack 1)
+c110_at015_00:Dual Swords (Attack 3)
+c110_at020_00:Dual Swords (Attack 2)
+c110_at200_00:Dual Swords (???)
+c110_at310_00:Dual Swords (???)
+c110_at520_00:Blitz (Dual Swords)
+C110_at540_00:Blindside (Dual Swords)
+ac100_00:Provoke
+ac110_00:Challenge
+at010_10:Flamestrike
+at010_20:Froststrike
+at020_10:Flamestrike (Attack 2)
+at020_20:Froststrike (Attack 2)
+at010_30:Sparkstrike
+at020_30:Sparkstrike (Attack 2)
+at010_40:Aquastrike
+at020_40:Aquastrike (Attack 2)
+at310_10:Flamestrike + Froststrike (In-air)
+at310_20:Flamestrike + Froststrike (In-air)(Attack 1 + 2)
+at310_30:Flamestrike + Sparkstrike (In-air)(Attack 1 + 3)
+at310_40:Flamestrike + Aquastrike (In-air)(Attack 1 + 4)
+at500_00:Launch
+at200_rv:Counterattack
+at520_00:Blitz
+de110_00:? / Counter
+m175_ac000:???
+ma000_00:Ruin
+ma000_00_cs:Ruin {???}
+ma000_00_air:Ruin (In-air)
+ma000_00_bt:Ruin (Blindside)
+ma020_00:Ruinga Explosion
+ma020_00_air:Ruinga Explosion (In-air)
+mb000_00:Fire
+mb000_00_air:Fire (In-air)
+mb010_00:Fira
+mb010_00_air:Fira (In-air)
+mb020_00:Firaga
+mb020_00_air:Firaga (In-air)
+mb100_00:Blizzard
+mb100_00_air:Blizzard (In-air)
+mb110_00:Blizzara
+mb110_00_air:Blizzara (In-air)
+mb120_00:Blizzaga
+mb120_00_air:Blizzaga (In-air)
+mb200_00:Thunder
+mb200_00_air:Thunder (In-air)
+mb210_00:Thundara
+mb210_00_air:Thundara (In-air)
+mb220_00:Thundaga
+mb220_00_air:Thundaga (In-air)
+mb300_00:Water
+mb300_00_air:Water (In-air)
+mb310_00:Watera
+mb310_00_air:Watera (In-air)
+mb320_00:Waterga
+mb320_00_air:Waterga (In-air)
+mb400_00:Aero
+mb400_00_air:Aero (In-air)
+mb410_00:Aerora
+mb410_00_air:Aerora (In-air)
+mb420_00:Aeroga
+mb420_00_air:Aeroga (In-air)
+mg000_00:Deprotect
+mg010_00:Deshell
+mg020_00:Poison
+mg030_00:Imperil
+mg200_00:Deprotega
+mg210_00:Deshellga
+mg220_00:Poisonga
+mg230_00:Imperilga
+mg240_00:Dispel
+mg500_00:Slow
+mg510_00:Fog
+mg520_00:Pain
+mg530_00:Curse
+mg540_00:Daze
+mg700_00:Slowga
+mg710_00:Fogga
+mg720_00:Painga
+mg730_00:Cursega
+mg740_00:Dazega
+:================================||MonsterMoveList||============================
+k003_at010_00:Gorgonopsid (Attack 1)
+k003_at020_00:Gorgonopsid (Attack 2)
+k043at010_30:Zwerg Scandroid (Attack ?)
+k271_at010_00:Meonekton (Attack 1)
+k271_at020_00:Meonekton (Attack 2)
+k400_at010_00:Uridimmu (Attack 1)
+k400_at020_00:Uridimmu (Attack 2)
+k043_rk000:Multicast
+k270_rk000:Spider Web
+k271_rk000:Black Hole
+k400_rk000:Feral Fangs
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>F8</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>620</ID>
+              <Description>"attacksReceived"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>108</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>621</ID>
+              <Description>"entityMoves"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>138</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>622</ID>
+              <Description>"currentHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2D0</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>623</ID>
+              <Description>"maxHealth"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>314</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>624</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>31C</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>625</ID>
+              <Description>"Strength"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>324</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>626</ID>
+              <Description>"Magic"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>328</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>414</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>627</ID>
+              <Description>"chainGaugeBarAmount"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>ffxiii2img.exe+211E5FC</Address>
+              <Offsets>
+                <Offset>2240</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
+                <Offset>30</Offset>
                 <Offset>30</Offset>
                 <Offset>414</Offset>
               </Offsets>
@@ -4865,78 +6572,24 @@ dealloc(newmem)
             <Offset>18F39</Offset>
           </Offsets>
         </CheatEntry>
+        <CheatEntry>
+          <ID>565</ID>
+          <Description>"Eyes of the Goddess"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Off
+1:Control camera during events
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Binary</VariableType>
+          <BitStart>7</BitStart>
+          <BitLength>1</BitLength>
+          <ShowAsBinary>0</ShowAsBinary>
+          <Address>ffxiii2img.exe+4D51F98</Address>
+          <Offsets>
+            <Offset>18F39</Offset>
+          </Offsets>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
-  <CheatCodes>
-    <CodeEntry>
-      <Description>Change of cmp eax,[esi+74]</Description>
-      <AddressString>ffxiii2img.exe+2E3C29</AddressString>
-      <Before>
-        <Byte>86</Byte>
-        <Byte>84</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-        <Byte>00</Byte>
-      </Before>
-      <Actual>
-        <Byte>3B</Byte>
-        <Byte>46</Byte>
-        <Byte>74</Byte>
-      </Actual>
-      <After>
-        <Byte>75</Byte>
-        <Byte>11</Byte>
-        <Byte>8B</Byte>
-        <Byte>4E</Byte>
-        <Byte>7C</Byte>
-      </After>
-    </CodeEntry>
-    <CodeEntry>
-      <Description>Change of cmp edx,[esi+74]</Description>
-      <AddressString>ffxiii2img.exe+2E3879</AddressString>
-      <Before>
-        <Byte>5D</Byte>
-        <Byte>C3</Byte>
-        <Byte>8B</Byte>
-        <Byte>56</Byte>
-        <Byte>70</Byte>
-      </Before>
-      <Actual>
-        <Byte>3B</Byte>
-        <Byte>56</Byte>
-        <Byte>74</Byte>
-      </Actual>
-      <After>
-        <Byte>7D</Byte>
-        <Byte>03</Byte>
-        <Byte>40</Byte>
-        <Byte>EB</Byte>
-        <Byte>01</Byte>
-      </After>
-    </CodeEntry>
-    <CodeEntry>
-      <Description>Change of test bl,bl</Description>
-      <AddressString>ffxiii2img.exe+2E3924</AddressString>
-      <Before>
-        <Byte>0F</Byte>
-        <Byte>2C</Byte>
-        <Byte>CA</Byte>
-        <Byte>03</Byte>
-        <Byte>CA</Byte>
-      </Before>
-      <Actual>
-        <Byte>84</Byte>
-        <Byte>DB</Byte>
-      </Actual>
-      <After>
-        <Byte>75</Byte>
-        <Byte>09</Byte>
-        <Byte>8B</Byte>
-        <Byte>C8</Byte>
-        <Byte>C6</Byte>
-      </After>
-    </CodeEntry>
-  </CheatCodes>
   <UserdefinedSymbols/>
 </CheatTable>
