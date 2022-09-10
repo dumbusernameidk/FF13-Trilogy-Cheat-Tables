@@ -11,7 +11,6 @@
         <CheatEntry>
           <ID>71</ID>
           <Description>"Tactical Point Bar Amount (Do Not Go Past 2100)"</Description>
-          <LastState Value="2100" RealAddress="130D0BB8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B230</Address>
@@ -22,7 +21,6 @@
         <CheatEntry>
           <ID>63</ID>
           <Description>"Tactical Point Level (Do Not Go Past 5)"</Description>
-          <LastState Value="5" RealAddress="130D0BC0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B230</Address>
@@ -33,7 +31,6 @@
         <CheatEntry>
           <ID>69520</ID>
           <Description>"Vehicle Health (Display Value)"</Description>
-          <LastState Value="3" RealAddress="130D2474"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiIiimg.exe+242B230</Address>
@@ -44,7 +41,6 @@
         <CheatEntry>
           <ID>33</ID>
           <Description>"Gil"</Description>
-          <LastState Value="250" RealAddress="130D3088"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B230</Address>
@@ -56,7 +52,6 @@
           <ID>105</ID>
           <Description>"Time Played"</Description>
           <Options moManualExpandCollapse="1"/>
-          <LastState Value="595058654" RealAddress="130D3090"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B230</Address>
@@ -67,7 +62,6 @@
             <CheatEntry>
               <ID>225</ID>
               <Description>"Some Value that Inc Time Played (+1 = +4 Hours Gained)"</Description>
-              <LastState Value="0" RealAddress="130D3094"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+4</Address>
@@ -77,7 +71,6 @@
         <CheatEntry>
           <ID>69506</ID>
           <Description>"Crystarium Stage"</Description>
-          <LastState Value="0" RealAddress="130D309C"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B230</Address>
@@ -4158,7 +4151,6 @@ FF:Empty
             <CheatEntry>
               <ID>224</ID>
               <Description>"Eidolon Gestalt Mode Timer"</Description>
-              <LastState Value="0" RealAddress="1307CAE8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>ffxiiiimg.exe+23FD20C</Address>
@@ -4340,7 +4332,6 @@ dealloc(newmem1)
         <CheatEntry>
           <ID>69485</ID>
           <Description>"Battle Duration"</Description>
-          <LastState Value="28630" RealAddress="131001F8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4351,7 +4342,6 @@ dealloc(newmem1)
         <CheatEntry>
           <ID>69505</ID>
           <Description>"Target Time"</Description>
-          <LastState Value="68000" RealAddress="131001FC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4362,7 +4352,6 @@ dealloc(newmem1)
         <CheatEntry>
           <ID>69484</ID>
           <Description>"Initiative Bonus"</Description>
-          <LastState Value="100" RealAddress="13100200"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4373,7 +4362,6 @@ dealloc(newmem1)
         <CheatEntry>
           <ID>69483</ID>
           <Description>"Points Per Second"</Description>
-          <LastState Value="147" RealAddress="13100204"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4384,7 +4372,6 @@ dealloc(newmem1)
         <CheatEntry>
           <ID>69481</ID>
           <Description>"Score Earned"</Description>
-          <LastState Value="15880" RealAddress="13100208"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4395,7 +4382,6 @@ dealloc(newmem1)
         <CheatEntry>
           <ID>69487</ID>
           <Description>"Crystogen Points Earned"</Description>
-          <LastState Value="46" RealAddress="13100214"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4406,7 +4392,6 @@ dealloc(newmem1)
         <CheatEntry>
           <ID>69504</ID>
           <Description>"Rating"</Description>
-          <LastState Value="50" RealAddress="13100228"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4579,7 +4564,6 @@ material_o011:Gold Nugget
 material_o012:Platinum Ingot
 wea_lig_000:Godslayer
 </DropDownList>
-          <LastState RealAddress="13100230"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -4594,7 +4578,6 @@ wea_lig_000:Godslayer
         <CheatEntry>
           <ID>70201</ID>
           <Description>"Spoils Quantity #1"</Description>
-          <LastState Value="1" RealAddress="13100242"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4764,7 +4747,6 @@ material_o010:Gold Dust
 material_o011:Gold Nugget
 material_o012:Platinum Ingot
 </DropDownList>
-          <LastState RealAddress="13100248"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -4779,7 +4761,6 @@ material_o012:Platinum Ingot
         <CheatEntry>
           <ID>70202</ID>
           <Description>"Spoils Quantity #2"</Description>
-          <LastState Value="1" RealAddress="1310025A"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
           <Address>ffxiiiimg.exe+242B060</Address>
@@ -4949,7 +4930,6 @@ material_o010:Gold Dust
 material_o011:Gold Nugget
 material_o012:Platinum Ingot
 </DropDownList>
-          <LastState RealAddress="13100260"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -4973,7 +4953,6 @@ material_o012:Platinum Ingot
         <CheatEntry>
           <ID>70214</ID>
           <Description>"currentMusic"</Description>
-          <LastState RealAddress="0ECCFEE0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5001,7 +4980,6 @@ s_point_hang_01:The Hanging Edge || Aerorail Trussway 12-E
 s_point_hang_02:The Hanging Edge || Aerorail Trussway 11-E
 s_point_lasd_00:Orphan's Cradle || The Tesseracts
 </DropDownList>
-          <LastState RealAddress="130D1790"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5016,7 +4994,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69535</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D17A0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5031,7 +5008,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69536</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D17B0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5046,7 +5022,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69537</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D17D0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5061,7 +5036,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69538</ID>
           <Description>"Something Map / Zone Related? { territoryID? }"</Description>
-          <LastState RealAddress="130D17E0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5076,7 +5050,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69539</ID>
           <Description>"Something Map / Zone Related? { territoryID? }"</Description>
-          <LastState RealAddress="130D17F0"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5091,7 +5064,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69540</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D1990"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5130,7 +5102,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
 69:Seventh Ark
 6A:Test Map {Black Screen Does Not Load}
 </DropDownList>
-          <LastState Value="00" RealAddress="130D19A0"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
@@ -5142,7 +5113,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69534</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D30A8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5157,7 +5127,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69521</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D30C8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5172,7 +5141,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69523</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D30E8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5187,7 +5155,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69522</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D3128"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5202,7 +5169,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69524</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D3138"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5217,7 +5183,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69525</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D31A8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5232,7 +5197,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69526</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D31C8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5247,7 +5211,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69527</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D31D8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5262,7 +5225,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69528</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D31E8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5277,7 +5239,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69529</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D31F8"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5292,7 +5253,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69530</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D3208"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5307,7 +5267,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69531</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D3218"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5322,7 +5281,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69532</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D3228"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -5337,7 +5295,6 @@ s_point_lasd_00:Orphan's Cradle || The Tesseracts
         <CheatEntry>
           <ID>69533</ID>
           <Description>"?"</Description>
-          <LastState RealAddress="130D3238"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>String</VariableType>
           <Length>16</Length>
@@ -7480,7 +7437,6 @@ s601_at030_00:???
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
-  <Comments>0078EEA4
-0045B978
+  <Comments>
 </Comments>
 </CheatTable>
