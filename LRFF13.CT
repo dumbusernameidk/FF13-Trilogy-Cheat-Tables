@@ -1090,7 +1090,6 @@
             <CheatEntry>
               <ID>662</ID>
               <Description>"currentAnimation"</Description>
-              <LastState RealAddress="DF705C60"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1354,7 +1353,6 @@ e703:Millionaire's Mustache
 e704:Servant's Mustache
 e707:Politician's Beard
 </DropDownList>
-              <LastState RealAddress="DED52BC8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1369,7 +1367,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>453</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52BD8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1384,7 +1381,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>584</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52BD9"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1399,7 +1395,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>454</ID>
               <Description>"Outfit Name"</Description>
-              <LastState RealAddress="DED52C08"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1414,7 +1409,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>455</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52C48"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1429,7 +1423,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>456</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52C58"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1444,7 +1437,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>457</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52C68"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1697,7 +1689,6 @@ e703:Millionaire's Mustache
 e704:Servant's Mustache
 e707:Politician's Beard
 </DropDownList>
-              <LastState RealAddress="DED52CF8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1712,7 +1703,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>458</ID>
               <Description>"Outfit Name"</Description>
-              <LastState RealAddress="DED52D38"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1727,7 +1717,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>459</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52D78"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1742,7 +1731,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>460</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52D88"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -1757,7 +1745,6 @@ e707:Politician's Beard
             <CheatEntry>
               <ID>461</ID>
               <Description>"?"</Description>
-              <LastState RealAddress="DED52D98"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2010,7 +1997,6 @@ e703:Millionaire's Mustache
 e704:Servant's Mustache
 e707:Politician's Beard
 </DropDownList>
-              <LastState RealAddress="DED52E28"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2039,7 +2025,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED52E68"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2068,7 +2053,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED52EA8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2097,7 +2081,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED52EB8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2126,7 +2109,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED52EC8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2155,7 +2137,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED54428"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2184,7 +2165,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED54448"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2213,7 +2193,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED54468"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2242,7 +2221,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED54478"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2271,7 +2249,6 @@ e600:Deathless Mask
 e602:Moogle Hat
 e612:Tiara of the Goddess
 </DropDownList>
-              <LastState RealAddress="DED54488"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
               <Length>16</Length>
@@ -2286,7 +2263,6 @@ e612:Tiara of the Goddess
             <CheatEntry>
               <ID>452</ID>
               <Description>"Gil"</Description>
-              <LastState Value="54365" RealAddress="DED55304"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>LRFF13.exe+4CF79D8</Address>
@@ -2297,7 +2273,6 @@ e612:Tiara of the Goddess
             <CheatEntry>
               <ID>481</ID>
               <Description>"EP"</Description>
-              <LastState Value="16000" RealAddress="DED55340"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>LRFF13.exe+4CF79D8</Address>
@@ -2324,7 +2299,6 @@ e612:Tiara of the Goddess
                 <CheatEntry>
                   <ID>520</ID>
                   <Description>"?"</Description>
-                  <LastState Value="2920" RealAddress="DED70AE0"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2336,7 +2310,6 @@ e612:Tiara of the Goddess
                 <CheatEntry>
                   <ID>534</ID>
                   <Description>"?"</Description>
-                  <LastState Value="6" RealAddress="DED70AE4"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2348,7 +2321,6 @@ e612:Tiara of the Goddess
                 <CheatEntry>
                   <ID>533</ID>
                   <Description>"?"</Description>
-                  <LastState Value="0" RealAddress="DED70AEC"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2360,7 +2332,6 @@ e612:Tiara of the Goddess
                 <CheatEntry>
                   <ID>530</ID>
                   <Description>"Battle Time"</Description>
-                  <LastState Value="0" RealAddress="DED70B08"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2372,7 +2343,6 @@ e612:Tiara of the Goddess
                 <CheatEntry>
                   <ID>529</ID>
                   <Description>"Score"</Description>
-                  <LastState Value="0" RealAddress="DED70B0C"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2384,7 +2354,6 @@ e612:Tiara of the Goddess
                 <CheatEntry>
                   <ID>528</ID>
                   <Description>"High Score?"</Description>
-                  <LastState Value="0" RealAddress="DED70B10"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2396,7 +2365,6 @@ e612:Tiara of the Goddess
                 <CheatEntry>
                   <ID>527</ID>
                   <Description>"Gil"</Description>
-                  <LastState Value="0" RealAddress="DED70B14"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2743,7 +2711,6 @@ wea_oa08:Death Herald
 :===============================||Accessories||=================================
 acc_a_9050:???
 </DropDownList>
-                  <LastState RealAddress="DED70B20"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -2759,7 +2726,6 @@ acc_a_9050:???
                     <CheatEntry>
                       <ID>524</ID>
                       <Description>"Quantity"</Description>
-                      <LastState Value="0" RealAddress="DED70B31"/>
                       <ShowAsSigned>0</ShowAsSigned>
                       <VariableType>Byte</VariableType>
                       <Address>LRFF13.exe+4CF74C0</Address>
@@ -3108,7 +3074,6 @@ wea_oa08:Death Herald
 :===============================||Accessories||=================================
 acc_a_9050:???
 </DropDownList>
-                  <LastState RealAddress="DED70B38"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -3124,7 +3089,6 @@ acc_a_9050:???
                     <CheatEntry>
                       <ID>526</ID>
                       <Description>"Quantity"</Description>
-                      <LastState Value="0" RealAddress="DED70B49"/>
                       <ShowAsSigned>0</ShowAsSigned>
                       <VariableType>Byte</VariableType>
                       <Address>LRFF13.exe+4CF74C0</Address>
@@ -3473,7 +3437,6 @@ wea_oa08:Death Herald
 :===============================||Accessories||=================================
 acc_a_9050:???
 </DropDownList>
-                  <LastState RealAddress="DED70B50"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -3489,7 +3452,6 @@ acc_a_9050:???
                     <CheatEntry>
                       <ID>532</ID>
                       <Description>"Quantity"</Description>
-                      <LastState Value="0" RealAddress="DED70B61"/>
                       <ShowAsSigned>0</ShowAsSigned>
                       <VariableType>Byte</VariableType>
                       <Address>LRFF13.exe+4CF74C0</Address>
@@ -3838,7 +3800,6 @@ wea_oa08:Death Herald
 :===============================||Accessories||=================================
 acc_a_9050:???
 </DropDownList>
-                  <LastState RealAddress="DED70B68"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -3854,7 +3815,6 @@ acc_a_9050:???
                     <CheatEntry>
                       <ID>558</ID>
                       <Description>"Quantity"</Description>
-                      <LastState Value="0" RealAddress="DED70B79"/>
                       <ShowAsSigned>0</ShowAsSigned>
                       <VariableType>Byte</VariableType>
                       <Address>LRFF13.exe+4CF74C0</Address>
@@ -4203,7 +4163,6 @@ wea_oa08:Death Herald
 :===============================||Accessories||=================================
 acc_a_9050:???
 </DropDownList>
-                  <LastState RealAddress="DED70B80"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -4219,7 +4178,6 @@ acc_a_9050:???
                     <CheatEntry>
                       <ID>560</ID>
                       <Description>"Quantity"</Description>
-                      <LastState Value="0" RealAddress="DED70B91"/>
                       <ShowAsSigned>0</ShowAsSigned>
                       <VariableType>Byte</VariableType>
                       <Address>LRFF13.exe+4CF74C0</Address>
@@ -4568,7 +4526,6 @@ wea_oa08:Death Herald
 :===============================||Accessories||=================================
 acc_a_9050:???
 </DropDownList>
-                  <LastState RealAddress="DED70B98"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -4584,7 +4541,6 @@ acc_a_9050:???
                     <CheatEntry>
                       <ID>562</ID>
                       <Description>"Quantity"</Description>
-                      <LastState Value="0" RealAddress="DED70BA9"/>
                       <ShowAsSigned>0</ShowAsSigned>
                       <VariableType>Byte</VariableType>
                       <Address>LRFF13.exe+4CF74C0</Address>
@@ -4933,7 +4889,6 @@ wea_oa08:Death Herald
 :===============================||Accessories||=================================
 acc_a_9050:???
 </DropDownList>
-                  <LastState RealAddress="DED70BB0"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -4949,7 +4904,6 @@ acc_a_9050:???
                     <CheatEntry>
                       <ID>564</ID>
                       <Description>"Quantity"</Description>
-                      <LastState Value="0" RealAddress="DED70BC1"/>
                       <ShowAsSigned>0</ShowAsSigned>
                       <VariableType>Byte</VariableType>
                       <Address>LRFF13.exe+4CF74C0</Address>
@@ -4981,7 +4935,6 @@ acc_a_9050:???
                 <CheatEntry>
                   <ID>212</ID>
                   <Description>"Sprint Stamina"</Description>
-                  <LastState Value="14000" RealAddress="DEE4CF64"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Float</VariableType>
                   <Address>LRFF13.exe+20C9B38</Address>
@@ -5002,7 +4955,6 @@ acc_a_9050:???
                 <CheatEntry>
                   <ID>107</ID>
                   <Description>"currentMusic"</Description>
-                  <LastState RealAddress="DED90928"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
                   <Length>16</Length>
@@ -7271,7 +7223,6 @@ unregistersymbol(NanCrashFix)
     <CheatEntry>
       <ID>629</ID>
       <Description>"Overclock Timer"</Description>
-      <LastState Value="0" RealAddress="DECD1348"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
       <Address>LRFF13.exe+20C42D0</Address>
