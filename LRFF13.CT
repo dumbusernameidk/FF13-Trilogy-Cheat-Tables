@@ -2297,42 +2297,9 @@ e612:Tiara of the Goddess
               <GroupHeader>1</GroupHeader>
               <CheatEntries>
                 <CheatEntry>
-                  <ID>520</ID>
-                  <Description>"?"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>LRFF13.exe+4CF74C0</Address>
-                  <Offsets>
-                    <Offset>20</Offset>
-                    <Offset>E5C</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>534</ID>
-                  <Description>"?"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>LRFF13.exe+4CF74C0</Address>
-                  <Offsets>
-                    <Offset>24</Offset>
-                    <Offset>E5C</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
-                  <ID>533</ID>
-                  <Description>"?"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
-                  <VariableType>4 Bytes</VariableType>
-                  <Address>LRFF13.exe+4CF74C0</Address>
-                  <Offsets>
-                    <Offset>2C</Offset>
-                    <Offset>E5C</Offset>
-                  </Offsets>
-                </CheatEntry>
-                <CheatEntry>
                   <ID>530</ID>
                   <Description>"Battle Time"</Description>
-                  <ShowAsSigned>0</ShowAsSigned>
+                  <ShowAsSigned>1</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
                   <Offsets>
@@ -2353,7 +2320,7 @@ e612:Tiara of the Goddess
                 </CheatEntry>
                 <CheatEntry>
                   <ID>528</ID>
-                  <Description>"High Score?"</Description>
+                  <Description>"High Score"</Description>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>LRFF13.exe+4CF74C0</Address>
@@ -2382,25 +2349,44 @@ e003:Lucky Clover
 e012:Odin's Horn
 e014:Cute Heart
 e015:Halo
+e023:Cie'th Wings
+e026:Coronet
+e027:Crown
 e030:Railworker's Cap
 e031:Railworker's Beret
+e032:Black Mage's Hood
 e033:Scholar's Mortarboard
 e034:Chef's Hat
 e037:Cute Bunny Ears
 e038:Onion Knight's Helm
+e039:Gold Anchor
 e041:Tonberry's Lantern
+e042:Summoner's Mask
+e043:Ripe Apple
+e044:Pumpkin Head
 e046:Crystal Rose
+e049:Crystal Feather
+e051:Crystal Apple
 e052:Crystal Star
+e053:Tinkling Bell
 e062:Crest of Etro
 e065:Rangda Crest
 e066:Leyak Crest
+e067:Behemoth Crest
 e068:Canned Sheep Logo
 e070:Dajh's Patch
+e072:Unicorn Mart Logo
+e081:Mog's Staff
 e083:Fragment Crystal
+e090:Cactuar Figurine
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e093:Mog Figurine
+e094:Miniflan Figurine
+e096:Tonberry Figurine
 e097:Fuzzy Sheep Figurine
 e098:Afro
+e103:Bandage
 e110:Mog Mask
 e113:Retro Mog Mask
 e203:Purple Flower
@@ -2415,58 +2401,86 @@ e212:Brass Gear
 e215:Purple Chocobo Figurine
 e216:White Chocobo Figurine
 e217:Black Chocobo Figurine
+e220:Youthful Parasol
+e224:Blue Moogle Bobble
 e226:Water Spirit Wings
 e227:Snowy Spirit Wings
 e228:Orange Newsboy Cap
+e229:Pink Newsboy Cap
+e230:Red Silk Hat
+e231:Sky Blue Silk Hat
 e234:Bubbly Party Hat
 e236:Vanguard Headdress
 e238:Rum Raisin Ice Cream
 e241:Yellow-rimmed Glasses
+e242:Pink-rimmed Glasses
 e244:Urban Shades
 e245:Masquerade Mask
 e246:Carnival Mask
+e248:Dandy's Mustache
 e251:Lebreau's Black Tattoo
 e252:Lebreau's Green Tattoo
 e253:Gadot's Black Emblem
+e254:Gadot's Blue Emblem
 e255:Black Tattoo
 e257:Sky Blue NORA Symbol
 e258:Green NORA Symbol
 e259:Blue Feather Pin
 e261:Leather Rucksack
+e264:Emergency Beacon
 e265:Aerial Guard's Badge
 e266:Mobile Guard's Badge
 e267:Medic Guard's Badge
+e268:Commissioned Pilot's Badge
 e269:Salvage Pilot's Badge
+e271:PSICOM Air Medal
+e272:PSICOM Mobile Medal
+e273:PSICOM Medic Medal
 e274:Silver Medal
 e281:White Chocobo Chick
+e283:Silver Chocobo Chick
+e284:Gold Chocobo Chick
+e290:Afro &amp; Silver Chick
+e291:Afro &amp; Gold Chick
 e292:Silver Padlock
+e293:Long Gui's Shell
+e297:Replica PSICOM Epaulet
 e298:Celebrity's Charm
 e301:Golden Flower
 e302:Crimson Flower
 e303:Festive Tree
 e304:Delicious Mushroom
 e305:Twilight Butterfly
+e307:Yellow Ribbon
 e308:Nickel Gear
 e309:Chocobo Figurine
 e313:Nymph Wings
 e315:Formal Silk Hat
 e318:Ceremonial Headdress
+e319:Mint Chip Ice Cream
 e320:Red Bow Tie
 e321:Black-rimmed Glasses
+e322:Dark Knight's Shades
 e323:Queen's Mask
 e325:Seadog's Beard
+e326:Lebreau's Rainbow Tattoo
 e327:Gadot's Red Emblem
+e328:Tribal Tattoo
 e330:Chocobo Feather Pin
 e332:Caution Beacon
 e333:Guardian Corps Badge
+e335:Replica PSICOM Emblem
 e336:Gold Medal
 e338:Chocobo Chick
 e339:Afro &amp; Yellow Chick
+e340:Gold Padlock
+e341:Adamantoise Shell
 e343:Golden Insignia
 e344:PSICOM Officer Epaulets
 e501:Reflective Shades
 e502:Elegant Shades
 e503:Balmy Shades
+e504:Dancefloor Shades
 e505:Ocean Shades
 e506:Dreamy Shades
 e507:City Shades
@@ -2479,21 +2493,30 @@ e513:Scholar's Glasses
 e514:Business Eyewear
 e515:Steamy Glasses
 e516:Girlish Glasses
+e517:Cool Glasses
 e518:Green Glasses
+e519:Retro Scopes
 e520:Heart Glasses
 e521:Smiley Glasses
 e522:Frosty Glasses
 e523:Angelic Glasses
+e524:Cyber Scanners
+e525:Monoculus Mask
 e526:Raven Mask
 e527:Golden Mask
 e528:Moonlight Mask
 e529:Crimson Mask
+e530:Pioneer's Eyepatch
 e531:Zebra-print Eyepatch
 e532:Snakeskin Eyepatch
+e533:Lovely Eyepatch
 e534:Glam Hat
 e535:Thief's Silk Hat
 e536:Lady's Silk Hat
+e537:Clown's Silk Hat
+e538:Cowboy Hat
 e539:Straw Hat
+e540:Snakeskin Hat
 e541:Safari Hat
 e542:Boater Hat
 e543:Vacation Hat
@@ -2502,7 +2525,13 @@ e545:Floppy Sun Hat
 e546:Painter's Beret
 e547:Order of Salvation Cap
 e548:Dogtooth Beret
+e550:Sailor's Tricorne
+e551:Hotblooded Tricorne
 e552:Brigand's Tricorne
+e553:Priest's Tricorne
+e554:Witch's Pointy Hat
+e555:Scholar's Peaked Hat
+e556:Dapper Hat
 e558:Crown of Passion
 e559:Crown of Purity
 e560:Crown of Youth
@@ -2512,12 +2541,20 @@ e563:Bow of Aestheticism
 e564:Passionate Corsage
 e565:Sweet Corsage
 e566:Perky Corsage
+e567:Lunar Circlet
+e568:Honored Circlet
+e569:Brave Circlet
+e570:Holy Circlet
 e571:White Cat Ears
 e573:Violet Cat Ears
 e574:Wildcat Ears
 e575:Adult Bunny Ears
 e576:Enticing Bunny Ears
 e577:Wild Bunny Ears
+e578:Dark Devil Ears
+e579:Dazzling Devil Ears
+e580:Pure Angel Ears
+e581:Cautious Devil Ears
 e582:Pure Earrings
 e583:Pure Pendant
 e584:Heaven's Banner
@@ -2528,16 +2565,27 @@ e588:Fairy Tail
 e589:Imp Tail
 e590:Merry Tail
 e591:Untamed Tail
+e592:Fluffy Tail
+e593:Shadow Tail
+e594:Wagging Tail
 e595:Leopard Tail
+e596:Maiden's Beret
+e597:Guard's Cap
+e598:Warm Beret
+e599:Herringbone Beret
 e600:Deathless Mask
 e602:Moogle Hat
 e603:Chocobo Girl's Cap
 e604:Chocoberet
 e612:Tiara of the Goddess
+e702:Shogun's Mustache
 e703:Millionaire's Mustache
+e704:Servant's Mustache
+e707:Politician's Beard
 :===============================||Other Items||=================================
 gil_d_000:Unappraised Item
 gil_d_010:Lizard Tail
+gil_d_020:Yellowed Skull
 gil_l_000:Bronzed Medal
 gil_l_010:Silvered Medal
 gil_l_020:Crystal Medal
@@ -2574,6 +2622,12 @@ mat_z_036:AMP Chip
 mat_z_044:Cactuar Doll
 mat_z_045:Liquid Glass
 mat_abi_0_00:Bronze Malistone
+mat_abi_0_01:Silver Malistone
+mat_abi_0_02:Gold Malistone
+mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -2582,6 +2636,7 @@ key_b_04:Moogle Dust
 key_b_05:Old-Fashioned Photo Frame
 key_b_06:Etro's Forbidden Tome
 key_b_07:Broken Gyroscope
+key_b_08:Golden Scarab
 key_b_09:Key to the Sand Gate
 key_b_10:Key to the Green Gate
 key_b_11:Bandit's Bloodseal
@@ -2589,9 +2644,14 @@ key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
 key_behi_tume:Cursed Dragon Claw
+key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
+key_d_lupe:Loupe
 key_d_oil:Bhakti's Oil
+key_d_seijyo:Saint's Crux
 key_d_sekiban:Tablet
+key_d_top:Crux Tip
+key_d_wing:Crux Body
 key_j_kino:Thunderclap Cap
 key_kb_g:Green Carbuncle Doll
 key_kyu_pass:Supply Sphere Password
@@ -2602,6 +2662,7 @@ key_l_kawa:Crystal Shard
 key_l_ling:Lackley's Ring
 key_l_pen:Quill Pen
 key_l_syokai:Reddick's Letter
+key_p_toppa:Proof of Overcoming Limits
 key_s_hiai:Fragment of Radiance
 key_s_hunnu:Fragment of Kindness
 key_s_kairaku:Fragment of Mischief
@@ -2610,6 +2671,7 @@ key_s_okuri:Beloved's Gift
 key_s_zyouai:Fragment of Smiles
 key_sm_lt:Soul Seed
 key_sp_bt:Spectral Elixir
+key_w_apple:Aryas Apple
 key_w_buhin1:Plate Metal Fragment
 key_w_buhin2:Silvered Metal Fragment
 key_w_buhin3:Golden Metal Fragment
@@ -2629,12 +2691,16 @@ key_w_mogura:Rocky Crag Mole
 key_w_moji1:Goddess Glyphs
 key_w_moji2:Chaos Glyphs
 key_w_mori:Forest Fertilizer
+key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
+key_y_death:Death Game Ticket
 key_y_fire:Fireworks
+key_y_gabu:Niblet-Defeater Emblem
 key_y_honou:Desert Flame
 key_y_id:ID Card
 key_y_kaban:Music Satchel
@@ -2645,6 +2711,7 @@ key_y_megane:Gift Glasses
 key_y_rappa:Nostalgic Score: Coda
 key_y_recipe:Gordon Gourmet's Recipe
 key_y_sake:Bacchus's Brew
+key_y_sanka:Death Game Point
 key_y_serap:Serah's Pendant
 key_y_shiji:Boss's Note
 key_y_ticket:Sneaking-In Special Ticket
@@ -2669,35 +2736,50 @@ libra_m293:Fanatic Notes
 libra_m300:Niblet Notes
 libra_m302:Vali Notes
 libra_m303:Hanuman Notes
+libra_m304:Neela Notes
+libra_m305:Wendigo Notes
+libra_m306:Sugriva Notes
+libra_m321:Set Notes
 libra_m322:Gertrude Notes
 libra_m324:Gaunt Notes
 libra_m325:Dryad Notes
+libra_m326:Arcangeli Notes
 libra_m330:Desmond Notes
 libra_m352:Zaltys Notes
 libra_m353:Zomok Notes
 libra_m354:Chocobo Eater Notes
+libra_m356:Chimera Notes
 libra_m357:Cyclops Notes
+libra_m375:Study of Despair
 libra_m380:Prophecy of the Future
 libra_m381:Prophecy of Aspiration
+libra_m387:Holy Revelations
 libra_m406:Gurangatch Notes
 libra_m412:Rafflesia Notes
 libra_m455:Reaver Notes
 libra_m491:Schrodinger Notes
 libra_m745:Prophecy of Rebirth
+libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
+it_atel:Ether
 it_expotion:X-Potion
+it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
-it_grace:Holy Water
+it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
+it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
 it_ydrink2:Nektar Mk II
@@ -2708,8 +2790,18 @@ it_ydrink5:Nektar of the Gods Ω
 wea_oa00:???
 wea_oa02:???
 wea_oa08:Death Herald
+wea_oa10:Executioner's Axe
+wea_oa12:Brittle Bone
+wea_oa13:Bonecracker
 :===============================||Accessories||=================================
+acc_a_9010:Fireseal Jewel
+acc_a_9030:Frostward Bangle
 acc_a_9050:???
+acc_a_9060:Preta Hood
+acc_a_9080:Devil Crest
+acc_a_9090:Irondragon Scale
+acc_a_9100:Dreamdragon's Scale
+acc_b_9050:Stormward Bangle
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -2745,25 +2837,44 @@ e003:Lucky Clover
 e012:Odin's Horn
 e014:Cute Heart
 e015:Halo
+e023:Cie'th Wings
+e026:Coronet
+e027:Crown
 e030:Railworker's Cap
 e031:Railworker's Beret
+e032:Black Mage's Hood
 e033:Scholar's Mortarboard
 e034:Chef's Hat
 e037:Cute Bunny Ears
 e038:Onion Knight's Helm
+e039:Gold Anchor
 e041:Tonberry's Lantern
+e042:Summoner's Mask
+e043:Ripe Apple
+e044:Pumpkin Head
 e046:Crystal Rose
+e049:Crystal Feather
+e051:Crystal Apple
 e052:Crystal Star
+e053:Tinkling Bell
 e062:Crest of Etro
 e065:Rangda Crest
 e066:Leyak Crest
+e067:Behemoth Crest
 e068:Canned Sheep Logo
 e070:Dajh's Patch
+e072:Unicorn Mart Logo
+e081:Mog's Staff
 e083:Fragment Crystal
+e090:Cactuar Figurine
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e093:Mog Figurine
+e094:Miniflan Figurine
+e096:Tonberry Figurine
 e097:Fuzzy Sheep Figurine
 e098:Afro
+e103:Bandage
 e110:Mog Mask
 e113:Retro Mog Mask
 e203:Purple Flower
@@ -2778,58 +2889,86 @@ e212:Brass Gear
 e215:Purple Chocobo Figurine
 e216:White Chocobo Figurine
 e217:Black Chocobo Figurine
+e220:Youthful Parasol
+e224:Blue Moogle Bobble
 e226:Water Spirit Wings
 e227:Snowy Spirit Wings
 e228:Orange Newsboy Cap
+e229:Pink Newsboy Cap
+e230:Red Silk Hat
+e231:Sky Blue Silk Hat
 e234:Bubbly Party Hat
 e236:Vanguard Headdress
 e238:Rum Raisin Ice Cream
 e241:Yellow-rimmed Glasses
+e242:Pink-rimmed Glasses
 e244:Urban Shades
 e245:Masquerade Mask
 e246:Carnival Mask
+e248:Dandy's Mustache
 e251:Lebreau's Black Tattoo
 e252:Lebreau's Green Tattoo
 e253:Gadot's Black Emblem
+e254:Gadot's Blue Emblem
 e255:Black Tattoo
 e257:Sky Blue NORA Symbol
 e258:Green NORA Symbol
 e259:Blue Feather Pin
 e261:Leather Rucksack
+e264:Emergency Beacon
 e265:Aerial Guard's Badge
 e266:Mobile Guard's Badge
 e267:Medic Guard's Badge
+e268:Commissioned Pilot's Badge
 e269:Salvage Pilot's Badge
+e271:PSICOM Air Medal
+e272:PSICOM Mobile Medal
+e273:PSICOM Medic Medal
 e274:Silver Medal
 e281:White Chocobo Chick
+e283:Silver Chocobo Chick
+e284:Gold Chocobo Chick
+e290:Afro &amp; Silver Chick
+e291:Afro &amp; Gold Chick
 e292:Silver Padlock
+e293:Long Gui's Shell
+e297:Replica PSICOM Epaulet
 e298:Celebrity's Charm
 e301:Golden Flower
 e302:Crimson Flower
 e303:Festive Tree
 e304:Delicious Mushroom
 e305:Twilight Butterfly
+e307:Yellow Ribbon
 e308:Nickel Gear
 e309:Chocobo Figurine
 e313:Nymph Wings
 e315:Formal Silk Hat
 e318:Ceremonial Headdress
+e319:Mint Chip Ice Cream
 e320:Red Bow Tie
 e321:Black-rimmed Glasses
+e322:Dark Knight's Shades
 e323:Queen's Mask
 e325:Seadog's Beard
+e326:Lebreau's Rainbow Tattoo
 e327:Gadot's Red Emblem
+e328:Tribal Tattoo
 e330:Chocobo Feather Pin
 e332:Caution Beacon
 e333:Guardian Corps Badge
+e335:Replica PSICOM Emblem
 e336:Gold Medal
 e338:Chocobo Chick
 e339:Afro &amp; Yellow Chick
+e340:Gold Padlock
+e341:Adamantoise Shell
 e343:Golden Insignia
 e344:PSICOM Officer Epaulets
 e501:Reflective Shades
 e502:Elegant Shades
 e503:Balmy Shades
+e504:Dancefloor Shades
 e505:Ocean Shades
 e506:Dreamy Shades
 e507:City Shades
@@ -2842,21 +2981,30 @@ e513:Scholar's Glasses
 e514:Business Eyewear
 e515:Steamy Glasses
 e516:Girlish Glasses
+e517:Cool Glasses
 e518:Green Glasses
+e519:Retro Scopes
 e520:Heart Glasses
 e521:Smiley Glasses
 e522:Frosty Glasses
 e523:Angelic Glasses
+e524:Cyber Scanners
+e525:Monoculus Mask
 e526:Raven Mask
 e527:Golden Mask
 e528:Moonlight Mask
 e529:Crimson Mask
+e530:Pioneer's Eyepatch
 e531:Zebra-print Eyepatch
 e532:Snakeskin Eyepatch
+e533:Lovely Eyepatch
 e534:Glam Hat
 e535:Thief's Silk Hat
 e536:Lady's Silk Hat
+e537:Clown's Silk Hat
+e538:Cowboy Hat
 e539:Straw Hat
+e540:Snakeskin Hat
 e541:Safari Hat
 e542:Boater Hat
 e543:Vacation Hat
@@ -2865,7 +3013,13 @@ e545:Floppy Sun Hat
 e546:Painter's Beret
 e547:Order of Salvation Cap
 e548:Dogtooth Beret
+e550:Sailor's Tricorne
+e551:Hotblooded Tricorne
 e552:Brigand's Tricorne
+e553:Priest's Tricorne
+e554:Witch's Pointy Hat
+e555:Scholar's Peaked Hat
+e556:Dapper Hat
 e558:Crown of Passion
 e559:Crown of Purity
 e560:Crown of Youth
@@ -2875,12 +3029,20 @@ e563:Bow of Aestheticism
 e564:Passionate Corsage
 e565:Sweet Corsage
 e566:Perky Corsage
+e567:Lunar Circlet
+e568:Honored Circlet
+e569:Brave Circlet
+e570:Holy Circlet
 e571:White Cat Ears
 e573:Violet Cat Ears
 e574:Wildcat Ears
 e575:Adult Bunny Ears
 e576:Enticing Bunny Ears
 e577:Wild Bunny Ears
+e578:Dark Devil Ears
+e579:Dazzling Devil Ears
+e580:Pure Angel Ears
+e581:Cautious Devil Ears
 e582:Pure Earrings
 e583:Pure Pendant
 e584:Heaven's Banner
@@ -2891,16 +3053,27 @@ e588:Fairy Tail
 e589:Imp Tail
 e590:Merry Tail
 e591:Untamed Tail
+e592:Fluffy Tail
+e593:Shadow Tail
+e594:Wagging Tail
 e595:Leopard Tail
+e596:Maiden's Beret
+e597:Guard's Cap
+e598:Warm Beret
+e599:Herringbone Beret
 e600:Deathless Mask
 e602:Moogle Hat
 e603:Chocobo Girl's Cap
 e604:Chocoberet
 e612:Tiara of the Goddess
+e702:Shogun's Mustache
 e703:Millionaire's Mustache
+e704:Servant's Mustache
+e707:Politician's Beard
 :===============================||Other Items||=================================
 gil_d_000:Unappraised Item
 gil_d_010:Lizard Tail
+gil_d_020:Yellowed Skull
 gil_l_000:Bronzed Medal
 gil_l_010:Silvered Medal
 gil_l_020:Crystal Medal
@@ -2937,6 +3110,12 @@ mat_z_036:AMP Chip
 mat_z_044:Cactuar Doll
 mat_z_045:Liquid Glass
 mat_abi_0_00:Bronze Malistone
+mat_abi_0_01:Silver Malistone
+mat_abi_0_02:Gold Malistone
+mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -2945,6 +3124,7 @@ key_b_04:Moogle Dust
 key_b_05:Old-Fashioned Photo Frame
 key_b_06:Etro's Forbidden Tome
 key_b_07:Broken Gyroscope
+key_b_08:Golden Scarab
 key_b_09:Key to the Sand Gate
 key_b_10:Key to the Green Gate
 key_b_11:Bandit's Bloodseal
@@ -2952,9 +3132,14 @@ key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
 key_behi_tume:Cursed Dragon Claw
+key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
+key_d_lupe:Loupe
 key_d_oil:Bhakti's Oil
+key_d_seijyo:Saint's Crux
 key_d_sekiban:Tablet
+key_d_top:Crux Tip
+key_d_wing:Crux Body
 key_j_kino:Thunderclap Cap
 key_kb_g:Green Carbuncle Doll
 key_kyu_pass:Supply Sphere Password
@@ -2965,6 +3150,7 @@ key_l_kawa:Crystal Shard
 key_l_ling:Lackley's Ring
 key_l_pen:Quill Pen
 key_l_syokai:Reddick's Letter
+key_p_toppa:Proof of Overcoming Limits
 key_s_hiai:Fragment of Radiance
 key_s_hunnu:Fragment of Kindness
 key_s_kairaku:Fragment of Mischief
@@ -2973,6 +3159,7 @@ key_s_okuri:Beloved's Gift
 key_s_zyouai:Fragment of Smiles
 key_sm_lt:Soul Seed
 key_sp_bt:Spectral Elixir
+key_w_apple:Aryas Apple
 key_w_buhin1:Plate Metal Fragment
 key_w_buhin2:Silvered Metal Fragment
 key_w_buhin3:Golden Metal Fragment
@@ -2992,12 +3179,16 @@ key_w_mogura:Rocky Crag Mole
 key_w_moji1:Goddess Glyphs
 key_w_moji2:Chaos Glyphs
 key_w_mori:Forest Fertilizer
+key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
+key_y_death:Death Game Ticket
 key_y_fire:Fireworks
+key_y_gabu:Niblet-Defeater Emblem
 key_y_honou:Desert Flame
 key_y_id:ID Card
 key_y_kaban:Music Satchel
@@ -3008,6 +3199,7 @@ key_y_megane:Gift Glasses
 key_y_rappa:Nostalgic Score: Coda
 key_y_recipe:Gordon Gourmet's Recipe
 key_y_sake:Bacchus's Brew
+key_y_sanka:Death Game Point
 key_y_serap:Serah's Pendant
 key_y_shiji:Boss's Note
 key_y_ticket:Sneaking-In Special Ticket
@@ -3032,35 +3224,50 @@ libra_m293:Fanatic Notes
 libra_m300:Niblet Notes
 libra_m302:Vali Notes
 libra_m303:Hanuman Notes
+libra_m304:Neela Notes
+libra_m305:Wendigo Notes
+libra_m306:Sugriva Notes
+libra_m321:Set Notes
 libra_m322:Gertrude Notes
 libra_m324:Gaunt Notes
 libra_m325:Dryad Notes
+libra_m326:Arcangeli Notes
 libra_m330:Desmond Notes
 libra_m352:Zaltys Notes
 libra_m353:Zomok Notes
 libra_m354:Chocobo Eater Notes
+libra_m356:Chimera Notes
 libra_m357:Cyclops Notes
+libra_m375:Study of Despair
 libra_m380:Prophecy of the Future
 libra_m381:Prophecy of Aspiration
+libra_m387:Holy Revelations
 libra_m406:Gurangatch Notes
 libra_m412:Rafflesia Notes
 libra_m455:Reaver Notes
 libra_m491:Schrodinger Notes
 libra_m745:Prophecy of Rebirth
+libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
+it_atel:Ether
 it_expotion:X-Potion
+it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
-it_grace:Holy Water
+it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
+it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
 it_ydrink2:Nektar Mk II
@@ -3071,8 +3278,18 @@ it_ydrink5:Nektar of the Gods Ω
 wea_oa00:???
 wea_oa02:???
 wea_oa08:Death Herald
+wea_oa10:Executioner's Axe
+wea_oa12:Brittle Bone
+wea_oa13:Bonecracker
 :===============================||Accessories||=================================
+acc_a_9010:Fireseal Jewel
+acc_a_9030:Frostward Bangle
 acc_a_9050:???
+acc_a_9060:Preta Hood
+acc_a_9080:Devil Crest
+acc_a_9090:Irondragon Scale
+acc_a_9100:Dreamdragon's Scale
+acc_b_9050:Stormward Bangle
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -3108,25 +3325,44 @@ e003:Lucky Clover
 e012:Odin's Horn
 e014:Cute Heart
 e015:Halo
+e023:Cie'th Wings
+e026:Coronet
+e027:Crown
 e030:Railworker's Cap
 e031:Railworker's Beret
+e032:Black Mage's Hood
 e033:Scholar's Mortarboard
 e034:Chef's Hat
 e037:Cute Bunny Ears
 e038:Onion Knight's Helm
+e039:Gold Anchor
 e041:Tonberry's Lantern
+e042:Summoner's Mask
+e043:Ripe Apple
+e044:Pumpkin Head
 e046:Crystal Rose
+e049:Crystal Feather
+e051:Crystal Apple
 e052:Crystal Star
+e053:Tinkling Bell
 e062:Crest of Etro
 e065:Rangda Crest
 e066:Leyak Crest
+e067:Behemoth Crest
 e068:Canned Sheep Logo
 e070:Dajh's Patch
+e072:Unicorn Mart Logo
+e081:Mog's Staff
 e083:Fragment Crystal
+e090:Cactuar Figurine
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e093:Mog Figurine
+e094:Miniflan Figurine
+e096:Tonberry Figurine
 e097:Fuzzy Sheep Figurine
 e098:Afro
+e103:Bandage
 e110:Mog Mask
 e113:Retro Mog Mask
 e203:Purple Flower
@@ -3141,58 +3377,86 @@ e212:Brass Gear
 e215:Purple Chocobo Figurine
 e216:White Chocobo Figurine
 e217:Black Chocobo Figurine
+e220:Youthful Parasol
+e224:Blue Moogle Bobble
 e226:Water Spirit Wings
 e227:Snowy Spirit Wings
 e228:Orange Newsboy Cap
+e229:Pink Newsboy Cap
+e230:Red Silk Hat
+e231:Sky Blue Silk Hat
 e234:Bubbly Party Hat
 e236:Vanguard Headdress
 e238:Rum Raisin Ice Cream
 e241:Yellow-rimmed Glasses
+e242:Pink-rimmed Glasses
 e244:Urban Shades
 e245:Masquerade Mask
 e246:Carnival Mask
+e248:Dandy's Mustache
 e251:Lebreau's Black Tattoo
 e252:Lebreau's Green Tattoo
 e253:Gadot's Black Emblem
+e254:Gadot's Blue Emblem
 e255:Black Tattoo
 e257:Sky Blue NORA Symbol
 e258:Green NORA Symbol
 e259:Blue Feather Pin
 e261:Leather Rucksack
+e264:Emergency Beacon
 e265:Aerial Guard's Badge
 e266:Mobile Guard's Badge
 e267:Medic Guard's Badge
+e268:Commissioned Pilot's Badge
 e269:Salvage Pilot's Badge
+e271:PSICOM Air Medal
+e272:PSICOM Mobile Medal
+e273:PSICOM Medic Medal
 e274:Silver Medal
 e281:White Chocobo Chick
+e283:Silver Chocobo Chick
+e284:Gold Chocobo Chick
+e290:Afro &amp; Silver Chick
+e291:Afro &amp; Gold Chick
 e292:Silver Padlock
+e293:Long Gui's Shell
+e297:Replica PSICOM Epaulet
 e298:Celebrity's Charm
 e301:Golden Flower
 e302:Crimson Flower
 e303:Festive Tree
 e304:Delicious Mushroom
 e305:Twilight Butterfly
+e307:Yellow Ribbon
 e308:Nickel Gear
 e309:Chocobo Figurine
 e313:Nymph Wings
 e315:Formal Silk Hat
 e318:Ceremonial Headdress
+e319:Mint Chip Ice Cream
 e320:Red Bow Tie
 e321:Black-rimmed Glasses
+e322:Dark Knight's Shades
 e323:Queen's Mask
 e325:Seadog's Beard
+e326:Lebreau's Rainbow Tattoo
 e327:Gadot's Red Emblem
+e328:Tribal Tattoo
 e330:Chocobo Feather Pin
 e332:Caution Beacon
 e333:Guardian Corps Badge
+e335:Replica PSICOM Emblem
 e336:Gold Medal
 e338:Chocobo Chick
 e339:Afro &amp; Yellow Chick
+e340:Gold Padlock
+e341:Adamantoise Shell
 e343:Golden Insignia
 e344:PSICOM Officer Epaulets
 e501:Reflective Shades
 e502:Elegant Shades
 e503:Balmy Shades
+e504:Dancefloor Shades
 e505:Ocean Shades
 e506:Dreamy Shades
 e507:City Shades
@@ -3205,21 +3469,30 @@ e513:Scholar's Glasses
 e514:Business Eyewear
 e515:Steamy Glasses
 e516:Girlish Glasses
+e517:Cool Glasses
 e518:Green Glasses
+e519:Retro Scopes
 e520:Heart Glasses
 e521:Smiley Glasses
 e522:Frosty Glasses
 e523:Angelic Glasses
+e524:Cyber Scanners
+e525:Monoculus Mask
 e526:Raven Mask
 e527:Golden Mask
 e528:Moonlight Mask
 e529:Crimson Mask
+e530:Pioneer's Eyepatch
 e531:Zebra-print Eyepatch
 e532:Snakeskin Eyepatch
+e533:Lovely Eyepatch
 e534:Glam Hat
 e535:Thief's Silk Hat
 e536:Lady's Silk Hat
+e537:Clown's Silk Hat
+e538:Cowboy Hat
 e539:Straw Hat
+e540:Snakeskin Hat
 e541:Safari Hat
 e542:Boater Hat
 e543:Vacation Hat
@@ -3228,7 +3501,13 @@ e545:Floppy Sun Hat
 e546:Painter's Beret
 e547:Order of Salvation Cap
 e548:Dogtooth Beret
+e550:Sailor's Tricorne
+e551:Hotblooded Tricorne
 e552:Brigand's Tricorne
+e553:Priest's Tricorne
+e554:Witch's Pointy Hat
+e555:Scholar's Peaked Hat
+e556:Dapper Hat
 e558:Crown of Passion
 e559:Crown of Purity
 e560:Crown of Youth
@@ -3238,12 +3517,20 @@ e563:Bow of Aestheticism
 e564:Passionate Corsage
 e565:Sweet Corsage
 e566:Perky Corsage
+e567:Lunar Circlet
+e568:Honored Circlet
+e569:Brave Circlet
+e570:Holy Circlet
 e571:White Cat Ears
 e573:Violet Cat Ears
 e574:Wildcat Ears
 e575:Adult Bunny Ears
 e576:Enticing Bunny Ears
 e577:Wild Bunny Ears
+e578:Dark Devil Ears
+e579:Dazzling Devil Ears
+e580:Pure Angel Ears
+e581:Cautious Devil Ears
 e582:Pure Earrings
 e583:Pure Pendant
 e584:Heaven's Banner
@@ -3254,16 +3541,27 @@ e588:Fairy Tail
 e589:Imp Tail
 e590:Merry Tail
 e591:Untamed Tail
+e592:Fluffy Tail
+e593:Shadow Tail
+e594:Wagging Tail
 e595:Leopard Tail
+e596:Maiden's Beret
+e597:Guard's Cap
+e598:Warm Beret
+e599:Herringbone Beret
 e600:Deathless Mask
 e602:Moogle Hat
 e603:Chocobo Girl's Cap
 e604:Chocoberet
 e612:Tiara of the Goddess
+e702:Shogun's Mustache
 e703:Millionaire's Mustache
+e704:Servant's Mustache
+e707:Politician's Beard
 :===============================||Other Items||=================================
 gil_d_000:Unappraised Item
 gil_d_010:Lizard Tail
+gil_d_020:Yellowed Skull
 gil_l_000:Bronzed Medal
 gil_l_010:Silvered Medal
 gil_l_020:Crystal Medal
@@ -3300,6 +3598,12 @@ mat_z_036:AMP Chip
 mat_z_044:Cactuar Doll
 mat_z_045:Liquid Glass
 mat_abi_0_00:Bronze Malistone
+mat_abi_0_01:Silver Malistone
+mat_abi_0_02:Gold Malistone
+mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -3308,6 +3612,7 @@ key_b_04:Moogle Dust
 key_b_05:Old-Fashioned Photo Frame
 key_b_06:Etro's Forbidden Tome
 key_b_07:Broken Gyroscope
+key_b_08:Golden Scarab
 key_b_09:Key to the Sand Gate
 key_b_10:Key to the Green Gate
 key_b_11:Bandit's Bloodseal
@@ -3315,9 +3620,14 @@ key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
 key_behi_tume:Cursed Dragon Claw
+key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
+key_d_lupe:Loupe
 key_d_oil:Bhakti's Oil
+key_d_seijyo:Saint's Crux
 key_d_sekiban:Tablet
+key_d_top:Crux Tip
+key_d_wing:Crux Body
 key_j_kino:Thunderclap Cap
 key_kb_g:Green Carbuncle Doll
 key_kyu_pass:Supply Sphere Password
@@ -3328,6 +3638,7 @@ key_l_kawa:Crystal Shard
 key_l_ling:Lackley's Ring
 key_l_pen:Quill Pen
 key_l_syokai:Reddick's Letter
+key_p_toppa:Proof of Overcoming Limits
 key_s_hiai:Fragment of Radiance
 key_s_hunnu:Fragment of Kindness
 key_s_kairaku:Fragment of Mischief
@@ -3336,6 +3647,7 @@ key_s_okuri:Beloved's Gift
 key_s_zyouai:Fragment of Smiles
 key_sm_lt:Soul Seed
 key_sp_bt:Spectral Elixir
+key_w_apple:Aryas Apple
 key_w_buhin1:Plate Metal Fragment
 key_w_buhin2:Silvered Metal Fragment
 key_w_buhin3:Golden Metal Fragment
@@ -3355,12 +3667,16 @@ key_w_mogura:Rocky Crag Mole
 key_w_moji1:Goddess Glyphs
 key_w_moji2:Chaos Glyphs
 key_w_mori:Forest Fertilizer
+key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
+key_y_death:Death Game Ticket
 key_y_fire:Fireworks
+key_y_gabu:Niblet-Defeater Emblem
 key_y_honou:Desert Flame
 key_y_id:ID Card
 key_y_kaban:Music Satchel
@@ -3371,6 +3687,7 @@ key_y_megane:Gift Glasses
 key_y_rappa:Nostalgic Score: Coda
 key_y_recipe:Gordon Gourmet's Recipe
 key_y_sake:Bacchus's Brew
+key_y_sanka:Death Game Point
 key_y_serap:Serah's Pendant
 key_y_shiji:Boss's Note
 key_y_ticket:Sneaking-In Special Ticket
@@ -3395,35 +3712,50 @@ libra_m293:Fanatic Notes
 libra_m300:Niblet Notes
 libra_m302:Vali Notes
 libra_m303:Hanuman Notes
+libra_m304:Neela Notes
+libra_m305:Wendigo Notes
+libra_m306:Sugriva Notes
+libra_m321:Set Notes
 libra_m322:Gertrude Notes
 libra_m324:Gaunt Notes
 libra_m325:Dryad Notes
+libra_m326:Arcangeli Notes
 libra_m330:Desmond Notes
 libra_m352:Zaltys Notes
 libra_m353:Zomok Notes
 libra_m354:Chocobo Eater Notes
+libra_m356:Chimera Notes
 libra_m357:Cyclops Notes
+libra_m375:Study of Despair
 libra_m380:Prophecy of the Future
 libra_m381:Prophecy of Aspiration
+libra_m387:Holy Revelations
 libra_m406:Gurangatch Notes
 libra_m412:Rafflesia Notes
 libra_m455:Reaver Notes
 libra_m491:Schrodinger Notes
 libra_m745:Prophecy of Rebirth
+libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
+it_atel:Ether
 it_expotion:X-Potion
+it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
-it_grace:Holy Water
+it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
+it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
 it_ydrink2:Nektar Mk II
@@ -3434,8 +3766,18 @@ it_ydrink5:Nektar of the Gods Ω
 wea_oa00:???
 wea_oa02:???
 wea_oa08:Death Herald
+wea_oa10:Executioner's Axe
+wea_oa12:Brittle Bone
+wea_oa13:Bonecracker
 :===============================||Accessories||=================================
+acc_a_9010:Fireseal Jewel
+acc_a_9030:Frostward Bangle
 acc_a_9050:???
+acc_a_9060:Preta Hood
+acc_a_9080:Devil Crest
+acc_a_9090:Irondragon Scale
+acc_a_9100:Dreamdragon's Scale
+acc_b_9050:Stormward Bangle
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -3471,25 +3813,44 @@ e003:Lucky Clover
 e012:Odin's Horn
 e014:Cute Heart
 e015:Halo
+e023:Cie'th Wings
+e026:Coronet
+e027:Crown
 e030:Railworker's Cap
 e031:Railworker's Beret
+e032:Black Mage's Hood
 e033:Scholar's Mortarboard
 e034:Chef's Hat
 e037:Cute Bunny Ears
 e038:Onion Knight's Helm
+e039:Gold Anchor
 e041:Tonberry's Lantern
+e042:Summoner's Mask
+e043:Ripe Apple
+e044:Pumpkin Head
 e046:Crystal Rose
+e049:Crystal Feather
+e051:Crystal Apple
 e052:Crystal Star
+e053:Tinkling Bell
 e062:Crest of Etro
 e065:Rangda Crest
 e066:Leyak Crest
+e067:Behemoth Crest
 e068:Canned Sheep Logo
 e070:Dajh's Patch
+e072:Unicorn Mart Logo
+e081:Mog's Staff
 e083:Fragment Crystal
+e090:Cactuar Figurine
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e093:Mog Figurine
+e094:Miniflan Figurine
+e096:Tonberry Figurine
 e097:Fuzzy Sheep Figurine
 e098:Afro
+e103:Bandage
 e110:Mog Mask
 e113:Retro Mog Mask
 e203:Purple Flower
@@ -3504,58 +3865,86 @@ e212:Brass Gear
 e215:Purple Chocobo Figurine
 e216:White Chocobo Figurine
 e217:Black Chocobo Figurine
+e220:Youthful Parasol
+e224:Blue Moogle Bobble
 e226:Water Spirit Wings
 e227:Snowy Spirit Wings
 e228:Orange Newsboy Cap
+e229:Pink Newsboy Cap
+e230:Red Silk Hat
+e231:Sky Blue Silk Hat
 e234:Bubbly Party Hat
 e236:Vanguard Headdress
 e238:Rum Raisin Ice Cream
 e241:Yellow-rimmed Glasses
+e242:Pink-rimmed Glasses
 e244:Urban Shades
 e245:Masquerade Mask
 e246:Carnival Mask
+e248:Dandy's Mustache
 e251:Lebreau's Black Tattoo
 e252:Lebreau's Green Tattoo
 e253:Gadot's Black Emblem
+e254:Gadot's Blue Emblem
 e255:Black Tattoo
 e257:Sky Blue NORA Symbol
 e258:Green NORA Symbol
 e259:Blue Feather Pin
 e261:Leather Rucksack
+e264:Emergency Beacon
 e265:Aerial Guard's Badge
 e266:Mobile Guard's Badge
 e267:Medic Guard's Badge
+e268:Commissioned Pilot's Badge
 e269:Salvage Pilot's Badge
+e271:PSICOM Air Medal
+e272:PSICOM Mobile Medal
+e273:PSICOM Medic Medal
 e274:Silver Medal
 e281:White Chocobo Chick
+e283:Silver Chocobo Chick
+e284:Gold Chocobo Chick
+e290:Afro &amp; Silver Chick
+e291:Afro &amp; Gold Chick
 e292:Silver Padlock
+e293:Long Gui's Shell
+e297:Replica PSICOM Epaulet
 e298:Celebrity's Charm
 e301:Golden Flower
 e302:Crimson Flower
 e303:Festive Tree
 e304:Delicious Mushroom
 e305:Twilight Butterfly
+e307:Yellow Ribbon
 e308:Nickel Gear
 e309:Chocobo Figurine
 e313:Nymph Wings
 e315:Formal Silk Hat
 e318:Ceremonial Headdress
+e319:Mint Chip Ice Cream
 e320:Red Bow Tie
 e321:Black-rimmed Glasses
+e322:Dark Knight's Shades
 e323:Queen's Mask
 e325:Seadog's Beard
+e326:Lebreau's Rainbow Tattoo
 e327:Gadot's Red Emblem
+e328:Tribal Tattoo
 e330:Chocobo Feather Pin
 e332:Caution Beacon
 e333:Guardian Corps Badge
+e335:Replica PSICOM Emblem
 e336:Gold Medal
 e338:Chocobo Chick
 e339:Afro &amp; Yellow Chick
+e340:Gold Padlock
+e341:Adamantoise Shell
 e343:Golden Insignia
 e344:PSICOM Officer Epaulets
 e501:Reflective Shades
 e502:Elegant Shades
 e503:Balmy Shades
+e504:Dancefloor Shades
 e505:Ocean Shades
 e506:Dreamy Shades
 e507:City Shades
@@ -3568,21 +3957,30 @@ e513:Scholar's Glasses
 e514:Business Eyewear
 e515:Steamy Glasses
 e516:Girlish Glasses
+e517:Cool Glasses
 e518:Green Glasses
+e519:Retro Scopes
 e520:Heart Glasses
 e521:Smiley Glasses
 e522:Frosty Glasses
 e523:Angelic Glasses
+e524:Cyber Scanners
+e525:Monoculus Mask
 e526:Raven Mask
 e527:Golden Mask
 e528:Moonlight Mask
 e529:Crimson Mask
+e530:Pioneer's Eyepatch
 e531:Zebra-print Eyepatch
 e532:Snakeskin Eyepatch
+e533:Lovely Eyepatch
 e534:Glam Hat
 e535:Thief's Silk Hat
 e536:Lady's Silk Hat
+e537:Clown's Silk Hat
+e538:Cowboy Hat
 e539:Straw Hat
+e540:Snakeskin Hat
 e541:Safari Hat
 e542:Boater Hat
 e543:Vacation Hat
@@ -3591,7 +3989,13 @@ e545:Floppy Sun Hat
 e546:Painter's Beret
 e547:Order of Salvation Cap
 e548:Dogtooth Beret
+e550:Sailor's Tricorne
+e551:Hotblooded Tricorne
 e552:Brigand's Tricorne
+e553:Priest's Tricorne
+e554:Witch's Pointy Hat
+e555:Scholar's Peaked Hat
+e556:Dapper Hat
 e558:Crown of Passion
 e559:Crown of Purity
 e560:Crown of Youth
@@ -3601,12 +4005,20 @@ e563:Bow of Aestheticism
 e564:Passionate Corsage
 e565:Sweet Corsage
 e566:Perky Corsage
+e567:Lunar Circlet
+e568:Honored Circlet
+e569:Brave Circlet
+e570:Holy Circlet
 e571:White Cat Ears
 e573:Violet Cat Ears
 e574:Wildcat Ears
 e575:Adult Bunny Ears
 e576:Enticing Bunny Ears
 e577:Wild Bunny Ears
+e578:Dark Devil Ears
+e579:Dazzling Devil Ears
+e580:Pure Angel Ears
+e581:Cautious Devil Ears
 e582:Pure Earrings
 e583:Pure Pendant
 e584:Heaven's Banner
@@ -3617,16 +4029,27 @@ e588:Fairy Tail
 e589:Imp Tail
 e590:Merry Tail
 e591:Untamed Tail
+e592:Fluffy Tail
+e593:Shadow Tail
+e594:Wagging Tail
 e595:Leopard Tail
+e596:Maiden's Beret
+e597:Guard's Cap
+e598:Warm Beret
+e599:Herringbone Beret
 e600:Deathless Mask
 e602:Moogle Hat
 e603:Chocobo Girl's Cap
 e604:Chocoberet
 e612:Tiara of the Goddess
+e702:Shogun's Mustache
 e703:Millionaire's Mustache
+e704:Servant's Mustache
+e707:Politician's Beard
 :===============================||Other Items||=================================
 gil_d_000:Unappraised Item
 gil_d_010:Lizard Tail
+gil_d_020:Yellowed Skull
 gil_l_000:Bronzed Medal
 gil_l_010:Silvered Medal
 gil_l_020:Crystal Medal
@@ -3663,6 +4086,12 @@ mat_z_036:AMP Chip
 mat_z_044:Cactuar Doll
 mat_z_045:Liquid Glass
 mat_abi_0_00:Bronze Malistone
+mat_abi_0_01:Silver Malistone
+mat_abi_0_02:Gold Malistone
+mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -3671,6 +4100,7 @@ key_b_04:Moogle Dust
 key_b_05:Old-Fashioned Photo Frame
 key_b_06:Etro's Forbidden Tome
 key_b_07:Broken Gyroscope
+key_b_08:Golden Scarab
 key_b_09:Key to the Sand Gate
 key_b_10:Key to the Green Gate
 key_b_11:Bandit's Bloodseal
@@ -3678,9 +4108,14 @@ key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
 key_behi_tume:Cursed Dragon Claw
+key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
+key_d_lupe:Loupe
 key_d_oil:Bhakti's Oil
+key_d_seijyo:Saint's Crux
 key_d_sekiban:Tablet
+key_d_top:Crux Tip
+key_d_wing:Crux Body
 key_j_kino:Thunderclap Cap
 key_kb_g:Green Carbuncle Doll
 key_kyu_pass:Supply Sphere Password
@@ -3691,6 +4126,7 @@ key_l_kawa:Crystal Shard
 key_l_ling:Lackley's Ring
 key_l_pen:Quill Pen
 key_l_syokai:Reddick's Letter
+key_p_toppa:Proof of Overcoming Limits
 key_s_hiai:Fragment of Radiance
 key_s_hunnu:Fragment of Kindness
 key_s_kairaku:Fragment of Mischief
@@ -3699,6 +4135,7 @@ key_s_okuri:Beloved's Gift
 key_s_zyouai:Fragment of Smiles
 key_sm_lt:Soul Seed
 key_sp_bt:Spectral Elixir
+key_w_apple:Aryas Apple
 key_w_buhin1:Plate Metal Fragment
 key_w_buhin2:Silvered Metal Fragment
 key_w_buhin3:Golden Metal Fragment
@@ -3718,12 +4155,16 @@ key_w_mogura:Rocky Crag Mole
 key_w_moji1:Goddess Glyphs
 key_w_moji2:Chaos Glyphs
 key_w_mori:Forest Fertilizer
+key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
+key_y_death:Death Game Ticket
 key_y_fire:Fireworks
+key_y_gabu:Niblet-Defeater Emblem
 key_y_honou:Desert Flame
 key_y_id:ID Card
 key_y_kaban:Music Satchel
@@ -3734,6 +4175,7 @@ key_y_megane:Gift Glasses
 key_y_rappa:Nostalgic Score: Coda
 key_y_recipe:Gordon Gourmet's Recipe
 key_y_sake:Bacchus's Brew
+key_y_sanka:Death Game Point
 key_y_serap:Serah's Pendant
 key_y_shiji:Boss's Note
 key_y_ticket:Sneaking-In Special Ticket
@@ -3758,35 +4200,50 @@ libra_m293:Fanatic Notes
 libra_m300:Niblet Notes
 libra_m302:Vali Notes
 libra_m303:Hanuman Notes
+libra_m304:Neela Notes
+libra_m305:Wendigo Notes
+libra_m306:Sugriva Notes
+libra_m321:Set Notes
 libra_m322:Gertrude Notes
 libra_m324:Gaunt Notes
 libra_m325:Dryad Notes
+libra_m326:Arcangeli Notes
 libra_m330:Desmond Notes
 libra_m352:Zaltys Notes
 libra_m353:Zomok Notes
 libra_m354:Chocobo Eater Notes
+libra_m356:Chimera Notes
 libra_m357:Cyclops Notes
+libra_m375:Study of Despair
 libra_m380:Prophecy of the Future
 libra_m381:Prophecy of Aspiration
+libra_m387:Holy Revelations
 libra_m406:Gurangatch Notes
 libra_m412:Rafflesia Notes
 libra_m455:Reaver Notes
 libra_m491:Schrodinger Notes
 libra_m745:Prophecy of Rebirth
+libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
+it_atel:Ether
 it_expotion:X-Potion
+it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
-it_grace:Holy Water
+it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
+it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
 it_ydrink2:Nektar Mk II
@@ -3797,8 +4254,18 @@ it_ydrink5:Nektar of the Gods Ω
 wea_oa00:???
 wea_oa02:???
 wea_oa08:Death Herald
+wea_oa10:Executioner's Axe
+wea_oa12:Brittle Bone
+wea_oa13:Bonecracker
 :===============================||Accessories||=================================
+acc_a_9010:Fireseal Jewel
+acc_a_9030:Frostward Bangle
 acc_a_9050:???
+acc_a_9060:Preta Hood
+acc_a_9080:Devil Crest
+acc_a_9090:Irondragon Scale
+acc_a_9100:Dreamdragon's Scale
+acc_b_9050:Stormward Bangle
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -3834,25 +4301,44 @@ e003:Lucky Clover
 e012:Odin's Horn
 e014:Cute Heart
 e015:Halo
+e023:Cie'th Wings
+e026:Coronet
+e027:Crown
 e030:Railworker's Cap
 e031:Railworker's Beret
+e032:Black Mage's Hood
 e033:Scholar's Mortarboard
 e034:Chef's Hat
 e037:Cute Bunny Ears
 e038:Onion Knight's Helm
+e039:Gold Anchor
 e041:Tonberry's Lantern
+e042:Summoner's Mask
+e043:Ripe Apple
+e044:Pumpkin Head
 e046:Crystal Rose
+e049:Crystal Feather
+e051:Crystal Apple
 e052:Crystal Star
+e053:Tinkling Bell
 e062:Crest of Etro
 e065:Rangda Crest
 e066:Leyak Crest
+e067:Behemoth Crest
 e068:Canned Sheep Logo
 e070:Dajh's Patch
+e072:Unicorn Mart Logo
+e081:Mog's Staff
 e083:Fragment Crystal
+e090:Cactuar Figurine
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e093:Mog Figurine
+e094:Miniflan Figurine
+e096:Tonberry Figurine
 e097:Fuzzy Sheep Figurine
 e098:Afro
+e103:Bandage
 e110:Mog Mask
 e113:Retro Mog Mask
 e203:Purple Flower
@@ -3867,58 +4353,86 @@ e212:Brass Gear
 e215:Purple Chocobo Figurine
 e216:White Chocobo Figurine
 e217:Black Chocobo Figurine
+e220:Youthful Parasol
+e224:Blue Moogle Bobble
 e226:Water Spirit Wings
 e227:Snowy Spirit Wings
 e228:Orange Newsboy Cap
+e229:Pink Newsboy Cap
+e230:Red Silk Hat
+e231:Sky Blue Silk Hat
 e234:Bubbly Party Hat
 e236:Vanguard Headdress
 e238:Rum Raisin Ice Cream
 e241:Yellow-rimmed Glasses
+e242:Pink-rimmed Glasses
 e244:Urban Shades
 e245:Masquerade Mask
 e246:Carnival Mask
+e248:Dandy's Mustache
 e251:Lebreau's Black Tattoo
 e252:Lebreau's Green Tattoo
 e253:Gadot's Black Emblem
+e254:Gadot's Blue Emblem
 e255:Black Tattoo
 e257:Sky Blue NORA Symbol
 e258:Green NORA Symbol
 e259:Blue Feather Pin
 e261:Leather Rucksack
+e264:Emergency Beacon
 e265:Aerial Guard's Badge
 e266:Mobile Guard's Badge
 e267:Medic Guard's Badge
+e268:Commissioned Pilot's Badge
 e269:Salvage Pilot's Badge
+e271:PSICOM Air Medal
+e272:PSICOM Mobile Medal
+e273:PSICOM Medic Medal
 e274:Silver Medal
 e281:White Chocobo Chick
+e283:Silver Chocobo Chick
+e284:Gold Chocobo Chick
+e290:Afro &amp; Silver Chick
+e291:Afro &amp; Gold Chick
 e292:Silver Padlock
+e293:Long Gui's Shell
+e297:Replica PSICOM Epaulet
 e298:Celebrity's Charm
 e301:Golden Flower
 e302:Crimson Flower
 e303:Festive Tree
 e304:Delicious Mushroom
 e305:Twilight Butterfly
+e307:Yellow Ribbon
 e308:Nickel Gear
 e309:Chocobo Figurine
 e313:Nymph Wings
 e315:Formal Silk Hat
 e318:Ceremonial Headdress
+e319:Mint Chip Ice Cream
 e320:Red Bow Tie
 e321:Black-rimmed Glasses
+e322:Dark Knight's Shades
 e323:Queen's Mask
 e325:Seadog's Beard
+e326:Lebreau's Rainbow Tattoo
 e327:Gadot's Red Emblem
+e328:Tribal Tattoo
 e330:Chocobo Feather Pin
 e332:Caution Beacon
 e333:Guardian Corps Badge
+e335:Replica PSICOM Emblem
 e336:Gold Medal
 e338:Chocobo Chick
 e339:Afro &amp; Yellow Chick
+e340:Gold Padlock
+e341:Adamantoise Shell
 e343:Golden Insignia
 e344:PSICOM Officer Epaulets
 e501:Reflective Shades
 e502:Elegant Shades
 e503:Balmy Shades
+e504:Dancefloor Shades
 e505:Ocean Shades
 e506:Dreamy Shades
 e507:City Shades
@@ -3931,21 +4445,30 @@ e513:Scholar's Glasses
 e514:Business Eyewear
 e515:Steamy Glasses
 e516:Girlish Glasses
+e517:Cool Glasses
 e518:Green Glasses
+e519:Retro Scopes
 e520:Heart Glasses
 e521:Smiley Glasses
 e522:Frosty Glasses
 e523:Angelic Glasses
+e524:Cyber Scanners
+e525:Monoculus Mask
 e526:Raven Mask
 e527:Golden Mask
 e528:Moonlight Mask
 e529:Crimson Mask
+e530:Pioneer's Eyepatch
 e531:Zebra-print Eyepatch
 e532:Snakeskin Eyepatch
+e533:Lovely Eyepatch
 e534:Glam Hat
 e535:Thief's Silk Hat
 e536:Lady's Silk Hat
+e537:Clown's Silk Hat
+e538:Cowboy Hat
 e539:Straw Hat
+e540:Snakeskin Hat
 e541:Safari Hat
 e542:Boater Hat
 e543:Vacation Hat
@@ -3954,7 +4477,13 @@ e545:Floppy Sun Hat
 e546:Painter's Beret
 e547:Order of Salvation Cap
 e548:Dogtooth Beret
+e550:Sailor's Tricorne
+e551:Hotblooded Tricorne
 e552:Brigand's Tricorne
+e553:Priest's Tricorne
+e554:Witch's Pointy Hat
+e555:Scholar's Peaked Hat
+e556:Dapper Hat
 e558:Crown of Passion
 e559:Crown of Purity
 e560:Crown of Youth
@@ -3964,12 +4493,20 @@ e563:Bow of Aestheticism
 e564:Passionate Corsage
 e565:Sweet Corsage
 e566:Perky Corsage
+e567:Lunar Circlet
+e568:Honored Circlet
+e569:Brave Circlet
+e570:Holy Circlet
 e571:White Cat Ears
 e573:Violet Cat Ears
 e574:Wildcat Ears
 e575:Adult Bunny Ears
 e576:Enticing Bunny Ears
 e577:Wild Bunny Ears
+e578:Dark Devil Ears
+e579:Dazzling Devil Ears
+e580:Pure Angel Ears
+e581:Cautious Devil Ears
 e582:Pure Earrings
 e583:Pure Pendant
 e584:Heaven's Banner
@@ -3980,16 +4517,27 @@ e588:Fairy Tail
 e589:Imp Tail
 e590:Merry Tail
 e591:Untamed Tail
+e592:Fluffy Tail
+e593:Shadow Tail
+e594:Wagging Tail
 e595:Leopard Tail
+e596:Maiden's Beret
+e597:Guard's Cap
+e598:Warm Beret
+e599:Herringbone Beret
 e600:Deathless Mask
 e602:Moogle Hat
 e603:Chocobo Girl's Cap
 e604:Chocoberet
 e612:Tiara of the Goddess
+e702:Shogun's Mustache
 e703:Millionaire's Mustache
+e704:Servant's Mustache
+e707:Politician's Beard
 :===============================||Other Items||=================================
 gil_d_000:Unappraised Item
 gil_d_010:Lizard Tail
+gil_d_020:Yellowed Skull
 gil_l_000:Bronzed Medal
 gil_l_010:Silvered Medal
 gil_l_020:Crystal Medal
@@ -4026,6 +4574,12 @@ mat_z_036:AMP Chip
 mat_z_044:Cactuar Doll
 mat_z_045:Liquid Glass
 mat_abi_0_00:Bronze Malistone
+mat_abi_0_01:Silver Malistone
+mat_abi_0_02:Gold Malistone
+mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -4034,6 +4588,7 @@ key_b_04:Moogle Dust
 key_b_05:Old-Fashioned Photo Frame
 key_b_06:Etro's Forbidden Tome
 key_b_07:Broken Gyroscope
+key_b_08:Golden Scarab
 key_b_09:Key to the Sand Gate
 key_b_10:Key to the Green Gate
 key_b_11:Bandit's Bloodseal
@@ -4041,9 +4596,14 @@ key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
 key_behi_tume:Cursed Dragon Claw
+key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
+key_d_lupe:Loupe
 key_d_oil:Bhakti's Oil
+key_d_seijyo:Saint's Crux
 key_d_sekiban:Tablet
+key_d_top:Crux Tip
+key_d_wing:Crux Body
 key_j_kino:Thunderclap Cap
 key_kb_g:Green Carbuncle Doll
 key_kyu_pass:Supply Sphere Password
@@ -4054,6 +4614,7 @@ key_l_kawa:Crystal Shard
 key_l_ling:Lackley's Ring
 key_l_pen:Quill Pen
 key_l_syokai:Reddick's Letter
+key_p_toppa:Proof of Overcoming Limits
 key_s_hiai:Fragment of Radiance
 key_s_hunnu:Fragment of Kindness
 key_s_kairaku:Fragment of Mischief
@@ -4062,6 +4623,7 @@ key_s_okuri:Beloved's Gift
 key_s_zyouai:Fragment of Smiles
 key_sm_lt:Soul Seed
 key_sp_bt:Spectral Elixir
+key_w_apple:Aryas Apple
 key_w_buhin1:Plate Metal Fragment
 key_w_buhin2:Silvered Metal Fragment
 key_w_buhin3:Golden Metal Fragment
@@ -4081,12 +4643,16 @@ key_w_mogura:Rocky Crag Mole
 key_w_moji1:Goddess Glyphs
 key_w_moji2:Chaos Glyphs
 key_w_mori:Forest Fertilizer
+key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
+key_y_death:Death Game Ticket
 key_y_fire:Fireworks
+key_y_gabu:Niblet-Defeater Emblem
 key_y_honou:Desert Flame
 key_y_id:ID Card
 key_y_kaban:Music Satchel
@@ -4097,6 +4663,7 @@ key_y_megane:Gift Glasses
 key_y_rappa:Nostalgic Score: Coda
 key_y_recipe:Gordon Gourmet's Recipe
 key_y_sake:Bacchus's Brew
+key_y_sanka:Death Game Point
 key_y_serap:Serah's Pendant
 key_y_shiji:Boss's Note
 key_y_ticket:Sneaking-In Special Ticket
@@ -4121,35 +4688,50 @@ libra_m293:Fanatic Notes
 libra_m300:Niblet Notes
 libra_m302:Vali Notes
 libra_m303:Hanuman Notes
+libra_m304:Neela Notes
+libra_m305:Wendigo Notes
+libra_m306:Sugriva Notes
+libra_m321:Set Notes
 libra_m322:Gertrude Notes
 libra_m324:Gaunt Notes
 libra_m325:Dryad Notes
+libra_m326:Arcangeli Notes
 libra_m330:Desmond Notes
 libra_m352:Zaltys Notes
 libra_m353:Zomok Notes
 libra_m354:Chocobo Eater Notes
+libra_m356:Chimera Notes
 libra_m357:Cyclops Notes
+libra_m375:Study of Despair
 libra_m380:Prophecy of the Future
 libra_m381:Prophecy of Aspiration
+libra_m387:Holy Revelations
 libra_m406:Gurangatch Notes
 libra_m412:Rafflesia Notes
 libra_m455:Reaver Notes
 libra_m491:Schrodinger Notes
 libra_m745:Prophecy of Rebirth
+libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
+it_atel:Ether
 it_expotion:X-Potion
+it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
-it_grace:Holy Water
+it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
+it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
 it_ydrink2:Nektar Mk II
@@ -4160,8 +4742,18 @@ it_ydrink5:Nektar of the Gods Ω
 wea_oa00:???
 wea_oa02:???
 wea_oa08:Death Herald
+wea_oa10:Executioner's Axe
+wea_oa12:Brittle Bone
+wea_oa13:Bonecracker
 :===============================||Accessories||=================================
+acc_a_9010:Fireseal Jewel
+acc_a_9030:Frostward Bangle
 acc_a_9050:???
+acc_a_9060:Preta Hood
+acc_a_9080:Devil Crest
+acc_a_9090:Irondragon Scale
+acc_a_9100:Dreamdragon's Scale
+acc_b_9050:Stormward Bangle
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -4197,25 +4789,44 @@ e003:Lucky Clover
 e012:Odin's Horn
 e014:Cute Heart
 e015:Halo
+e023:Cie'th Wings
+e026:Coronet
+e027:Crown
 e030:Railworker's Cap
 e031:Railworker's Beret
+e032:Black Mage's Hood
 e033:Scholar's Mortarboard
 e034:Chef's Hat
 e037:Cute Bunny Ears
 e038:Onion Knight's Helm
+e039:Gold Anchor
 e041:Tonberry's Lantern
+e042:Summoner's Mask
+e043:Ripe Apple
+e044:Pumpkin Head
 e046:Crystal Rose
+e049:Crystal Feather
+e051:Crystal Apple
 e052:Crystal Star
+e053:Tinkling Bell
 e062:Crest of Etro
 e065:Rangda Crest
 e066:Leyak Crest
+e067:Behemoth Crest
 e068:Canned Sheep Logo
 e070:Dajh's Patch
+e072:Unicorn Mart Logo
+e081:Mog's Staff
 e083:Fragment Crystal
+e090:Cactuar Figurine
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e093:Mog Figurine
+e094:Miniflan Figurine
+e096:Tonberry Figurine
 e097:Fuzzy Sheep Figurine
 e098:Afro
+e103:Bandage
 e110:Mog Mask
 e113:Retro Mog Mask
 e203:Purple Flower
@@ -4230,58 +4841,86 @@ e212:Brass Gear
 e215:Purple Chocobo Figurine
 e216:White Chocobo Figurine
 e217:Black Chocobo Figurine
+e220:Youthful Parasol
+e224:Blue Moogle Bobble
 e226:Water Spirit Wings
 e227:Snowy Spirit Wings
 e228:Orange Newsboy Cap
+e229:Pink Newsboy Cap
+e230:Red Silk Hat
+e231:Sky Blue Silk Hat
 e234:Bubbly Party Hat
 e236:Vanguard Headdress
 e238:Rum Raisin Ice Cream
 e241:Yellow-rimmed Glasses
+e242:Pink-rimmed Glasses
 e244:Urban Shades
 e245:Masquerade Mask
 e246:Carnival Mask
+e248:Dandy's Mustache
 e251:Lebreau's Black Tattoo
 e252:Lebreau's Green Tattoo
 e253:Gadot's Black Emblem
+e254:Gadot's Blue Emblem
 e255:Black Tattoo
 e257:Sky Blue NORA Symbol
 e258:Green NORA Symbol
 e259:Blue Feather Pin
 e261:Leather Rucksack
+e264:Emergency Beacon
 e265:Aerial Guard's Badge
 e266:Mobile Guard's Badge
 e267:Medic Guard's Badge
+e268:Commissioned Pilot's Badge
 e269:Salvage Pilot's Badge
+e271:PSICOM Air Medal
+e272:PSICOM Mobile Medal
+e273:PSICOM Medic Medal
 e274:Silver Medal
 e281:White Chocobo Chick
+e283:Silver Chocobo Chick
+e284:Gold Chocobo Chick
+e290:Afro &amp; Silver Chick
+e291:Afro &amp; Gold Chick
 e292:Silver Padlock
+e293:Long Gui's Shell
+e297:Replica PSICOM Epaulet
 e298:Celebrity's Charm
 e301:Golden Flower
 e302:Crimson Flower
 e303:Festive Tree
 e304:Delicious Mushroom
 e305:Twilight Butterfly
+e307:Yellow Ribbon
 e308:Nickel Gear
 e309:Chocobo Figurine
 e313:Nymph Wings
 e315:Formal Silk Hat
 e318:Ceremonial Headdress
+e319:Mint Chip Ice Cream
 e320:Red Bow Tie
 e321:Black-rimmed Glasses
+e322:Dark Knight's Shades
 e323:Queen's Mask
 e325:Seadog's Beard
+e326:Lebreau's Rainbow Tattoo
 e327:Gadot's Red Emblem
+e328:Tribal Tattoo
 e330:Chocobo Feather Pin
 e332:Caution Beacon
 e333:Guardian Corps Badge
+e335:Replica PSICOM Emblem
 e336:Gold Medal
 e338:Chocobo Chick
 e339:Afro &amp; Yellow Chick
+e340:Gold Padlock
+e341:Adamantoise Shell
 e343:Golden Insignia
 e344:PSICOM Officer Epaulets
 e501:Reflective Shades
 e502:Elegant Shades
 e503:Balmy Shades
+e504:Dancefloor Shades
 e505:Ocean Shades
 e506:Dreamy Shades
 e507:City Shades
@@ -4294,21 +4933,30 @@ e513:Scholar's Glasses
 e514:Business Eyewear
 e515:Steamy Glasses
 e516:Girlish Glasses
+e517:Cool Glasses
 e518:Green Glasses
+e519:Retro Scopes
 e520:Heart Glasses
 e521:Smiley Glasses
 e522:Frosty Glasses
 e523:Angelic Glasses
+e524:Cyber Scanners
+e525:Monoculus Mask
 e526:Raven Mask
 e527:Golden Mask
 e528:Moonlight Mask
 e529:Crimson Mask
+e530:Pioneer's Eyepatch
 e531:Zebra-print Eyepatch
 e532:Snakeskin Eyepatch
+e533:Lovely Eyepatch
 e534:Glam Hat
 e535:Thief's Silk Hat
 e536:Lady's Silk Hat
+e537:Clown's Silk Hat
+e538:Cowboy Hat
 e539:Straw Hat
+e540:Snakeskin Hat
 e541:Safari Hat
 e542:Boater Hat
 e543:Vacation Hat
@@ -4317,7 +4965,13 @@ e545:Floppy Sun Hat
 e546:Painter's Beret
 e547:Order of Salvation Cap
 e548:Dogtooth Beret
+e550:Sailor's Tricorne
+e551:Hotblooded Tricorne
 e552:Brigand's Tricorne
+e553:Priest's Tricorne
+e554:Witch's Pointy Hat
+e555:Scholar's Peaked Hat
+e556:Dapper Hat
 e558:Crown of Passion
 e559:Crown of Purity
 e560:Crown of Youth
@@ -4327,12 +4981,20 @@ e563:Bow of Aestheticism
 e564:Passionate Corsage
 e565:Sweet Corsage
 e566:Perky Corsage
+e567:Lunar Circlet
+e568:Honored Circlet
+e569:Brave Circlet
+e570:Holy Circlet
 e571:White Cat Ears
 e573:Violet Cat Ears
 e574:Wildcat Ears
 e575:Adult Bunny Ears
 e576:Enticing Bunny Ears
 e577:Wild Bunny Ears
+e578:Dark Devil Ears
+e579:Dazzling Devil Ears
+e580:Pure Angel Ears
+e581:Cautious Devil Ears
 e582:Pure Earrings
 e583:Pure Pendant
 e584:Heaven's Banner
@@ -4343,16 +5005,27 @@ e588:Fairy Tail
 e589:Imp Tail
 e590:Merry Tail
 e591:Untamed Tail
+e592:Fluffy Tail
+e593:Shadow Tail
+e594:Wagging Tail
 e595:Leopard Tail
+e596:Maiden's Beret
+e597:Guard's Cap
+e598:Warm Beret
+e599:Herringbone Beret
 e600:Deathless Mask
 e602:Moogle Hat
 e603:Chocobo Girl's Cap
 e604:Chocoberet
 e612:Tiara of the Goddess
+e702:Shogun's Mustache
 e703:Millionaire's Mustache
+e704:Servant's Mustache
+e707:Politician's Beard
 :===============================||Other Items||=================================
 gil_d_000:Unappraised Item
 gil_d_010:Lizard Tail
+gil_d_020:Yellowed Skull
 gil_l_000:Bronzed Medal
 gil_l_010:Silvered Medal
 gil_l_020:Crystal Medal
@@ -4389,6 +5062,12 @@ mat_z_036:AMP Chip
 mat_z_044:Cactuar Doll
 mat_z_045:Liquid Glass
 mat_abi_0_00:Bronze Malistone
+mat_abi_0_01:Silver Malistone
+mat_abi_0_02:Gold Malistone
+mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -4397,6 +5076,7 @@ key_b_04:Moogle Dust
 key_b_05:Old-Fashioned Photo Frame
 key_b_06:Etro's Forbidden Tome
 key_b_07:Broken Gyroscope
+key_b_08:Golden Scarab
 key_b_09:Key to the Sand Gate
 key_b_10:Key to the Green Gate
 key_b_11:Bandit's Bloodseal
@@ -4404,9 +5084,14 @@ key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
 key_behi_tume:Cursed Dragon Claw
+key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
+key_d_lupe:Loupe
 key_d_oil:Bhakti's Oil
+key_d_seijyo:Saint's Crux
 key_d_sekiban:Tablet
+key_d_top:Crux Tip
+key_d_wing:Crux Body
 key_j_kino:Thunderclap Cap
 key_kb_g:Green Carbuncle Doll
 key_kyu_pass:Supply Sphere Password
@@ -4417,6 +5102,7 @@ key_l_kawa:Crystal Shard
 key_l_ling:Lackley's Ring
 key_l_pen:Quill Pen
 key_l_syokai:Reddick's Letter
+key_p_toppa:Proof of Overcoming Limits
 key_s_hiai:Fragment of Radiance
 key_s_hunnu:Fragment of Kindness
 key_s_kairaku:Fragment of Mischief
@@ -4425,6 +5111,7 @@ key_s_okuri:Beloved's Gift
 key_s_zyouai:Fragment of Smiles
 key_sm_lt:Soul Seed
 key_sp_bt:Spectral Elixir
+key_w_apple:Aryas Apple
 key_w_buhin1:Plate Metal Fragment
 key_w_buhin2:Silvered Metal Fragment
 key_w_buhin3:Golden Metal Fragment
@@ -4444,12 +5131,16 @@ key_w_mogura:Rocky Crag Mole
 key_w_moji1:Goddess Glyphs
 key_w_moji2:Chaos Glyphs
 key_w_mori:Forest Fertilizer
+key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
+key_y_death:Death Game Ticket
 key_y_fire:Fireworks
+key_y_gabu:Niblet-Defeater Emblem
 key_y_honou:Desert Flame
 key_y_id:ID Card
 key_y_kaban:Music Satchel
@@ -4460,6 +5151,7 @@ key_y_megane:Gift Glasses
 key_y_rappa:Nostalgic Score: Coda
 key_y_recipe:Gordon Gourmet's Recipe
 key_y_sake:Bacchus's Brew
+key_y_sanka:Death Game Point
 key_y_serap:Serah's Pendant
 key_y_shiji:Boss's Note
 key_y_ticket:Sneaking-In Special Ticket
@@ -4484,35 +5176,50 @@ libra_m293:Fanatic Notes
 libra_m300:Niblet Notes
 libra_m302:Vali Notes
 libra_m303:Hanuman Notes
+libra_m304:Neela Notes
+libra_m305:Wendigo Notes
+libra_m306:Sugriva Notes
+libra_m321:Set Notes
 libra_m322:Gertrude Notes
 libra_m324:Gaunt Notes
 libra_m325:Dryad Notes
+libra_m326:Arcangeli Notes
 libra_m330:Desmond Notes
 libra_m352:Zaltys Notes
 libra_m353:Zomok Notes
 libra_m354:Chocobo Eater Notes
+libra_m356:Chimera Notes
 libra_m357:Cyclops Notes
+libra_m375:Study of Despair
 libra_m380:Prophecy of the Future
 libra_m381:Prophecy of Aspiration
+libra_m387:Holy Revelations
 libra_m406:Gurangatch Notes
 libra_m412:Rafflesia Notes
 libra_m455:Reaver Notes
 libra_m491:Schrodinger Notes
 libra_m745:Prophecy of Rebirth
+libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
+it_atel:Ether
 it_expotion:X-Potion
+it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
-it_grace:Holy Water
+it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
+it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
 it_ydrink2:Nektar Mk II
@@ -4523,8 +5230,18 @@ it_ydrink5:Nektar of the Gods Ω
 wea_oa00:???
 wea_oa02:???
 wea_oa08:Death Herald
+wea_oa10:Executioner's Axe
+wea_oa12:Brittle Bone
+wea_oa13:Bonecracker
 :===============================||Accessories||=================================
+acc_a_9010:Fireseal Jewel
+acc_a_9030:Frostward Bangle
 acc_a_9050:???
+acc_a_9060:Preta Hood
+acc_a_9080:Devil Crest
+acc_a_9090:Irondragon Scale
+acc_a_9100:Dreamdragon's Scale
+acc_b_9050:Stormward Bangle
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -4560,25 +5277,44 @@ e003:Lucky Clover
 e012:Odin's Horn
 e014:Cute Heart
 e015:Halo
+e023:Cie'th Wings
+e026:Coronet
+e027:Crown
 e030:Railworker's Cap
 e031:Railworker's Beret
+e032:Black Mage's Hood
 e033:Scholar's Mortarboard
 e034:Chef's Hat
 e037:Cute Bunny Ears
 e038:Onion Knight's Helm
+e039:Gold Anchor
 e041:Tonberry's Lantern
+e042:Summoner's Mask
+e043:Ripe Apple
+e044:Pumpkin Head
 e046:Crystal Rose
+e049:Crystal Feather
+e051:Crystal Apple
 e052:Crystal Star
+e053:Tinkling Bell
 e062:Crest of Etro
 e065:Rangda Crest
 e066:Leyak Crest
+e067:Behemoth Crest
 e068:Canned Sheep Logo
 e070:Dajh's Patch
+e072:Unicorn Mart Logo
+e081:Mog's Staff
 e083:Fragment Crystal
+e090:Cactuar Figurine
+e091:Cute Cactuar Figurine
 e092:Carbuncle Figurine
 e093:Mog Figurine
+e094:Miniflan Figurine
+e096:Tonberry Figurine
 e097:Fuzzy Sheep Figurine
 e098:Afro
+e103:Bandage
 e110:Mog Mask
 e113:Retro Mog Mask
 e203:Purple Flower
@@ -4593,58 +5329,86 @@ e212:Brass Gear
 e215:Purple Chocobo Figurine
 e216:White Chocobo Figurine
 e217:Black Chocobo Figurine
+e220:Youthful Parasol
+e224:Blue Moogle Bobble
 e226:Water Spirit Wings
 e227:Snowy Spirit Wings
 e228:Orange Newsboy Cap
+e229:Pink Newsboy Cap
+e230:Red Silk Hat
+e231:Sky Blue Silk Hat
 e234:Bubbly Party Hat
 e236:Vanguard Headdress
 e238:Rum Raisin Ice Cream
 e241:Yellow-rimmed Glasses
+e242:Pink-rimmed Glasses
 e244:Urban Shades
 e245:Masquerade Mask
 e246:Carnival Mask
+e248:Dandy's Mustache
 e251:Lebreau's Black Tattoo
 e252:Lebreau's Green Tattoo
 e253:Gadot's Black Emblem
+e254:Gadot's Blue Emblem
 e255:Black Tattoo
 e257:Sky Blue NORA Symbol
 e258:Green NORA Symbol
 e259:Blue Feather Pin
 e261:Leather Rucksack
+e264:Emergency Beacon
 e265:Aerial Guard's Badge
 e266:Mobile Guard's Badge
 e267:Medic Guard's Badge
+e268:Commissioned Pilot's Badge
 e269:Salvage Pilot's Badge
+e271:PSICOM Air Medal
+e272:PSICOM Mobile Medal
+e273:PSICOM Medic Medal
 e274:Silver Medal
 e281:White Chocobo Chick
+e283:Silver Chocobo Chick
+e284:Gold Chocobo Chick
+e290:Afro &amp; Silver Chick
+e291:Afro &amp; Gold Chick
 e292:Silver Padlock
+e293:Long Gui's Shell
+e297:Replica PSICOM Epaulet
 e298:Celebrity's Charm
 e301:Golden Flower
 e302:Crimson Flower
 e303:Festive Tree
 e304:Delicious Mushroom
 e305:Twilight Butterfly
+e307:Yellow Ribbon
 e308:Nickel Gear
 e309:Chocobo Figurine
 e313:Nymph Wings
 e315:Formal Silk Hat
 e318:Ceremonial Headdress
+e319:Mint Chip Ice Cream
 e320:Red Bow Tie
 e321:Black-rimmed Glasses
+e322:Dark Knight's Shades
 e323:Queen's Mask
 e325:Seadog's Beard
+e326:Lebreau's Rainbow Tattoo
 e327:Gadot's Red Emblem
+e328:Tribal Tattoo
 e330:Chocobo Feather Pin
 e332:Caution Beacon
 e333:Guardian Corps Badge
+e335:Replica PSICOM Emblem
 e336:Gold Medal
 e338:Chocobo Chick
 e339:Afro &amp; Yellow Chick
+e340:Gold Padlock
+e341:Adamantoise Shell
 e343:Golden Insignia
 e344:PSICOM Officer Epaulets
 e501:Reflective Shades
 e502:Elegant Shades
 e503:Balmy Shades
+e504:Dancefloor Shades
 e505:Ocean Shades
 e506:Dreamy Shades
 e507:City Shades
@@ -4657,21 +5421,30 @@ e513:Scholar's Glasses
 e514:Business Eyewear
 e515:Steamy Glasses
 e516:Girlish Glasses
+e517:Cool Glasses
 e518:Green Glasses
+e519:Retro Scopes
 e520:Heart Glasses
 e521:Smiley Glasses
 e522:Frosty Glasses
 e523:Angelic Glasses
+e524:Cyber Scanners
+e525:Monoculus Mask
 e526:Raven Mask
 e527:Golden Mask
 e528:Moonlight Mask
 e529:Crimson Mask
+e530:Pioneer's Eyepatch
 e531:Zebra-print Eyepatch
 e532:Snakeskin Eyepatch
+e533:Lovely Eyepatch
 e534:Glam Hat
 e535:Thief's Silk Hat
 e536:Lady's Silk Hat
+e537:Clown's Silk Hat
+e538:Cowboy Hat
 e539:Straw Hat
+e540:Snakeskin Hat
 e541:Safari Hat
 e542:Boater Hat
 e543:Vacation Hat
@@ -4680,7 +5453,13 @@ e545:Floppy Sun Hat
 e546:Painter's Beret
 e547:Order of Salvation Cap
 e548:Dogtooth Beret
+e550:Sailor's Tricorne
+e551:Hotblooded Tricorne
 e552:Brigand's Tricorne
+e553:Priest's Tricorne
+e554:Witch's Pointy Hat
+e555:Scholar's Peaked Hat
+e556:Dapper Hat
 e558:Crown of Passion
 e559:Crown of Purity
 e560:Crown of Youth
@@ -4690,12 +5469,20 @@ e563:Bow of Aestheticism
 e564:Passionate Corsage
 e565:Sweet Corsage
 e566:Perky Corsage
+e567:Lunar Circlet
+e568:Honored Circlet
+e569:Brave Circlet
+e570:Holy Circlet
 e571:White Cat Ears
 e573:Violet Cat Ears
 e574:Wildcat Ears
 e575:Adult Bunny Ears
 e576:Enticing Bunny Ears
 e577:Wild Bunny Ears
+e578:Dark Devil Ears
+e579:Dazzling Devil Ears
+e580:Pure Angel Ears
+e581:Cautious Devil Ears
 e582:Pure Earrings
 e583:Pure Pendant
 e584:Heaven's Banner
@@ -4706,16 +5493,27 @@ e588:Fairy Tail
 e589:Imp Tail
 e590:Merry Tail
 e591:Untamed Tail
+e592:Fluffy Tail
+e593:Shadow Tail
+e594:Wagging Tail
 e595:Leopard Tail
+e596:Maiden's Beret
+e597:Guard's Cap
+e598:Warm Beret
+e599:Herringbone Beret
 e600:Deathless Mask
 e602:Moogle Hat
 e603:Chocobo Girl's Cap
 e604:Chocoberet
 e612:Tiara of the Goddess
+e702:Shogun's Mustache
 e703:Millionaire's Mustache
+e704:Servant's Mustache
+e707:Politician's Beard
 :===============================||Other Items||=================================
 gil_d_000:Unappraised Item
 gil_d_010:Lizard Tail
+gil_d_020:Yellowed Skull
 gil_l_000:Bronzed Medal
 gil_l_010:Silvered Medal
 gil_l_020:Crystal Medal
@@ -4752,6 +5550,12 @@ mat_z_036:AMP Chip
 mat_z_044:Cactuar Doll
 mat_z_045:Liquid Glass
 mat_abi_0_00:Bronze Malistone
+mat_abi_0_01:Silver Malistone
+mat_abi_0_02:Gold Malistone
+mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -4760,6 +5564,7 @@ key_b_04:Moogle Dust
 key_b_05:Old-Fashioned Photo Frame
 key_b_06:Etro's Forbidden Tome
 key_b_07:Broken Gyroscope
+key_b_08:Golden Scarab
 key_b_09:Key to the Sand Gate
 key_b_10:Key to the Green Gate
 key_b_11:Bandit's Bloodseal
@@ -4767,9 +5572,14 @@ key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
 key_behi_tume:Cursed Dragon Claw
+key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
+key_d_lupe:Loupe
 key_d_oil:Bhakti's Oil
+key_d_seijyo:Saint's Crux
 key_d_sekiban:Tablet
+key_d_top:Crux Tip
+key_d_wing:Crux Body
 key_j_kino:Thunderclap Cap
 key_kb_g:Green Carbuncle Doll
 key_kyu_pass:Supply Sphere Password
@@ -4780,6 +5590,7 @@ key_l_kawa:Crystal Shard
 key_l_ling:Lackley's Ring
 key_l_pen:Quill Pen
 key_l_syokai:Reddick's Letter
+key_p_toppa:Proof of Overcoming Limits
 key_s_hiai:Fragment of Radiance
 key_s_hunnu:Fragment of Kindness
 key_s_kairaku:Fragment of Mischief
@@ -4788,6 +5599,7 @@ key_s_okuri:Beloved's Gift
 key_s_zyouai:Fragment of Smiles
 key_sm_lt:Soul Seed
 key_sp_bt:Spectral Elixir
+key_w_apple:Aryas Apple
 key_w_buhin1:Plate Metal Fragment
 key_w_buhin2:Silvered Metal Fragment
 key_w_buhin3:Golden Metal Fragment
@@ -4807,12 +5619,16 @@ key_w_mogura:Rocky Crag Mole
 key_w_moji1:Goddess Glyphs
 key_w_moji2:Chaos Glyphs
 key_w_mori:Forest Fertilizer
+key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
+key_y_death:Death Game Ticket
 key_y_fire:Fireworks
+key_y_gabu:Niblet-Defeater Emblem
 key_y_honou:Desert Flame
 key_y_id:ID Card
 key_y_kaban:Music Satchel
@@ -4823,6 +5639,7 @@ key_y_megane:Gift Glasses
 key_y_rappa:Nostalgic Score: Coda
 key_y_recipe:Gordon Gourmet's Recipe
 key_y_sake:Bacchus's Brew
+key_y_sanka:Death Game Point
 key_y_serap:Serah's Pendant
 key_y_shiji:Boss's Note
 key_y_ticket:Sneaking-In Special Ticket
@@ -4847,35 +5664,50 @@ libra_m293:Fanatic Notes
 libra_m300:Niblet Notes
 libra_m302:Vali Notes
 libra_m303:Hanuman Notes
+libra_m304:Neela Notes
+libra_m305:Wendigo Notes
+libra_m306:Sugriva Notes
+libra_m321:Set Notes
 libra_m322:Gertrude Notes
 libra_m324:Gaunt Notes
 libra_m325:Dryad Notes
+libra_m326:Arcangeli Notes
 libra_m330:Desmond Notes
 libra_m352:Zaltys Notes
 libra_m353:Zomok Notes
 libra_m354:Chocobo Eater Notes
+libra_m356:Chimera Notes
 libra_m357:Cyclops Notes
+libra_m375:Study of Despair
 libra_m380:Prophecy of the Future
 libra_m381:Prophecy of Aspiration
+libra_m387:Holy Revelations
 libra_m406:Gurangatch Notes
 libra_m412:Rafflesia Notes
 libra_m455:Reaver Notes
 libra_m491:Schrodinger Notes
 libra_m745:Prophecy of Rebirth
+libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
+it_atel:Ether
 it_expotion:X-Potion
+it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
-it_grace:Holy Water
+it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
+it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
 it_ydrink2:Nektar Mk II
@@ -4886,8 +5718,18 @@ it_ydrink5:Nektar of the Gods Ω
 wea_oa00:???
 wea_oa02:???
 wea_oa08:Death Herald
+wea_oa10:Executioner's Axe
+wea_oa12:Brittle Bone
+wea_oa13:Bonecracker
 :===============================||Accessories||=================================
+acc_a_9010:Fireseal Jewel
+acc_a_9030:Frostward Bangle
 acc_a_9050:???
+acc_a_9060:Preta Hood
+acc_a_9080:Devil Crest
+acc_a_9090:Irondragon Scale
+acc_a_9100:Dreamdragon's Scale
+acc_b_9050:Stormward Bangle
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -5329,6 +6171,9 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_cus_0_00:Mighty Material
+mat_cus_0_01:Sword Polisher
+mat_cus_0_02:Shield Polisher
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -5396,6 +6241,7 @@ key_w_smilk:Creamy Sheep Milk
 key_w_tane:Vegetable Seed
 key_w_tanta:Tantal Greens
 key_w_yasai:Gysahl Greens
+key_w_yasai_t:Gysahl Greens
 key_y_bashira:Civet Mask
 key_y_cream:Steak a la Civet
 key_y_death:Death Game Ticket
@@ -5462,7 +6308,6 @@ libra_m745:Prophecy of Rebirth
 libra_m770:Study of the Savage
 libra_m897:Ectopudding Notes
 libra_m898:Aster Protoflorian Notes
-key_w_yasai_t:Gysahl Greens
 :===============================||Consumables||=================================
 it_atel:Ether
 it_expotion:X-Potion
@@ -5470,12 +6315,16 @@ it_grace:Holy Water
 it_hero:Hero's Potion
 it_hpotion:Hi-Potion
 it_lowelxr:Refresher
+it_phenxbl:Phoenix Wing
 it_phenxtal:Phoenix Down
 it_potion:Potion
 it_protect:Protect Potion
+it_regen:Regen Potion
+it_reraise:Reraise Potion
 it_shell:Shell Potion
 it_unico:Mega-Remedy
 it_universal:Remedy
+it_upper:Warrior's Potion
 it_veil:Veil Potion
 it_war:Crusader's Potion
 it_ydrink1:Nektar
@@ -6919,11 +7768,56 @@ unregistersymbol(getShopInventory,ShopPointer)
             <CheatEntry>
               <ID>167</ID>
               <Description>"ItemID"</Description>
-              <DropDownList DisplayValueAsItem="1">$it_phenxtal:Phoenix Down
+              <DropDownList DisplayValueAsItem="1">:================================||Consumables||================================
+$it_atel:Ether
+$it_expotion:X-Potion
+$it_grace:Holy Water
+$it_hero:Hero's Potion
+$it_hpotion:Hi-Potion
+$it_lowelxr:Refresher
+$it_phenxbl:Phoenix Wing
+$it_phenxtal:Phoenix Down
 $it_potion:Potion
 $it_protect:Protect Potion
+$it_regen:Regen Potion
+$it_reraise:Reraise Potion
 $it_shell:Shell Potion
+$it_unico:Mega-Remedy
 $it_universal:Remedy
+$it_upper:Warrior's Potion
+$it_veil:Veil Potion
+$it_war:Crusader's Potion
+$it_ydrink1:Nektar
+$it_ydrink2:Nektar Mk II
+$it_ydrink3:Mirakle Nektar
+$it_ydrink4:Nektar of the Gods
+$it_ydrink5:Nektar of the Gods Ω
+:================================||Components||=================================
+$libra_m003:Gorgonopsid Notes
+$libra_m041:Gremlin Notes
+$libra_m300:Niblet Notes
+$libra_m322:Gertrude Notes
+$mat_abi_0_00:Bronze Malistone
+$mat_abi_0_01:Silver Malistone
+$mat_abi_0_02:Gold Malistone
+$mat_abi_0_03:Platinum Malistone
+$mat_cus_0_00:Mighty Material
+$mat_cus_0_01:Sword Polisher
+$mat_cus_0_02:Shield Polisher
+:================================||Outfitters Items||===========================
+$cos_ea_04:Stone and Sand
+$shi_ba_00:Prytwen
+$shi_ba_01:Pendragon
+$shi_ba_02:Dame du Lac
+$shi_ba_04:Knight's Pledge
+$shi_ea_01:Hesperides
+$shi_ea_02:Juno Sospita
+$shi_ea_04:Nemesis
+$wea_ba_03:Deucalion
+$wea_ba_04:Endymion
+$wea_ea_01:Liberator
+$wea_ea_02:Salvation
+$wea_ea_04:Immortal Order
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -6987,69 +7881,56 @@ dealloc(newmem)
                 <CheatEntry>
                   <ID>208</ID>
                   <Description>"ItemID"</Description>
-                  <DropDownList DisplayValueAsItem="1">:===============================||Adornments||==================================
-$e014:Cute Heart
-$e030:Railworker's Cap
-$e031:Railworker's Beret
-$e041:Tonberry's Lantern
-$e065:Rangda Crest
-$e066:Leyak Crest
-$e255:Black Tattoo
-$e336:Gold Medal
-$e513:Scholar's Glasses
-$e552:Brigand's Tricorne
-$e600:Deathless Mask
-$e602:Moogle Hat
-$e612:Tiara of the Goddess
-:===============================||Other Items||=================================
-$gil_l_000:Bronzed Medal
-$gil_l_010:Silvered Medal
-$mat_z_000:Tattered Leather
-$mat_z_002:Niblet Hairball
-$mat_z_013:Chipped Fang
-$mat_z_019:Poisonous Sting
-$mat_z_028:Firewyrm Scale
-$mat_z_031:Stormdragon Down
-$mat_z_045:Liquid Glass
-:===============================||Key Items||===================================
-$key_b_01:Violet Amulet
-$key_behi_tume:Cursed Dragon Claw
-$key_j_kino:Thunderclap Cap
-$key_l_pen:Quill Pen
-$key_sm_lt:Soul Seed
-$key_sp_bt:Spectral Elixir
-$key_niku:Shaolong Gui Shell
-$key_ninjin:Mandragora Root
-$key_soulcd:Seedhunter Membership Card
+                  <DropDownList DisplayValueAsItem="1">:================================||Consumables||================================
+$it_atel:Ether
+$it_expotion:X-Potion
+$it_grace:Holy Water
+$it_hero:Hero's Potion
+$it_hpotion:Hi-Potion
+$it_lowelxr:Refresher
+$it_phenxbl:Phoenix Wing
+$it_phenxtal:Phoenix Down
+$it_potion:Potion
+$it_protect:Protect Potion
+$it_regen:Regen Potion
+$it_reraise:Reraise Potion
+$it_shell:Shell Potion
+$it_unico:Mega-Remedy
+$it_universal:Remedy
+$it_upper:Warrior's Potion
+$it_veil:Veil Potion
+$it_war:Crusader's Potion
+$it_ydrink1:Nektar
+$it_ydrink2:Nektar Mk II
+$it_ydrink3:Mirakle Nektar
+$it_ydrink4:Nektar of the Gods
+$it_ydrink5:Nektar of the Gods Ω
+:================================||Components||=================================
 $libra_m003:Gorgonopsid Notes
 $libra_m041:Gremlin Notes
 $libra_m300:Niblet Notes
 $libra_m322:Gertrude Notes
-:===============================||Consumables||=================================
-$it_phenxtal:Phoenix Down
-$it_potion:Potion
-$it_protect:Protect Potion
-$it_shell:Shell Potion
-$it_universal:Remedy
-:===============================||Shields||=====================================
+$mat_abi_0_00:Bronze Malistone
+$mat_abi_0_01:Silver Malistone
+$mat_abi_0_02:Gold Malistone
+$mat_abi_0_03:Platinum Malistone
+$mat_cus_0_00:Mighty Material
+$mat_cus_0_01:Sword Polisher
+$mat_cus_0_02:Shield Polisher
+:================================||Outfitters Items||===========================
+$cos_ea_04:Stone and Sand
 $shi_ba_00:Prytwen
 $shi_ba_01:Pendragon
-$shi_ca_00:Double Cross
+$shi_ba_02:Dame du Lac
+$shi_ba_04:Knight's Pledge
+$shi_ea_01:Hesperides
 $shi_ea_02:Juno Sospita
-$shi_ja_00:Guardian Corps Shield
-$shi_ka_00:Goddess's Grace
-$shi_ma_00:Guardian's Protector
-$shi_oa_00:SOLDIER's Band
-$shi_zb_00:Thunderstruck
-$shi_zb_01:Final Border
-$shi_zb_02:Nightwalker
-$shi_zb_03:Fealty
-$shi_zb_04:Kaminari
-$shi_zb_05:Warning Sign
-$shi_zb_06:Rasa
-$shi_zc_00:Riot Shield
-$shi_zd_00:Abyss Gate
-$shi_ze_00:Mog's Shield
+$shi_ea_04:Nemesis
+$wea_ba_03:Deucalion
+$wea_ba_04:Endymion
+$wea_ea_01:Liberator
+$wea_ea_02:Salvation
+$wea_ea_04:Immortal Order
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
