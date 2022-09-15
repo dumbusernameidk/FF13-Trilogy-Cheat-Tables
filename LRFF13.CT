@@ -1081,26 +1081,76 @@
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>657</ID>
-          <Description>"white::scene::SceneCDevActor"</Description>
+          <ID>2509</ID>
+          <Description>"white::AppGame"</Description>
           <Options moHideChildren="1"/>
           <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
-              <ID>662</ID>
-              <Description>"currentAnimation"</Description>
+              <ID>2510</ID>
+              <Description>"white::main::SaveDataCreator"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>2511</ID>
+                  <Description>"Pointer to instance of `white::main::SaveDataCreator::SaveDataCreator'::`2'::FileMemoryAllocator"</Description>
+                  <Options moHideChildren="1"/>
+                  <LastState Value="" RealAddress="00000000"/>
+                  <GroupHeader>1</GroupHeader>
+                  <CheatEntries>
+                    <CheatEntry>
+                      <ID>1703</ID>
+                      <Description>"?"</Description>
+                      <ShowAsSigned>0</ShowAsSigned>
+                      <VariableType>String</VariableType>
+                      <Length>30</Length>
+                      <Unicode>0</Unicode>
+                      <CodePage>0</CodePage>
+                      <ZeroTerminate>1</ZeroTerminate>
+                      <Address>LRFF13.exe+1F50974</Address>
+                      <Offsets>
+                        <Offset>18</Offset>
+                        <Offset>50</Offset>
+                        <Offset>4FC</Offset>
+                      </Offsets>
+                    </CheatEntry>
+                  </CheatEntries>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1695</ID>
+              <Description>"isPaused?"</Description>
+              <DropDownList DisplayValueAsItem="1">0:No
+1:Yes
+</DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>String</VariableType>
-              <Length>16</Length>
-              <Unicode>0</Unicode>
-              <CodePage>0</CodePage>
-              <ZeroTerminate>1</ZeroTerminate>
-              <Address>LRFF13.exe+20D1768</Address>
+              <VariableType>Byte</VariableType>
+              <Address>LRFF13.exe+1F50974</Address>
               <Offsets>
-                <Offset>90</Offset>
-                <Offset>108</Offset>
-                <Offset>F8C</Offset>
+                <Offset>B0C</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>676</ID>
+          <Description>"white::battle::BattleInterface"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>629</ID>
+              <Description>"Overclock Timer"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>LRFF13.exe+20C42D0</Address>
+              <Offsets>
+                <Offset>738</Offset>
               </Offsets>
             </CheatEntry>
           </CheatEntries>
@@ -2271,6 +2321,16 @@ e612:Tiara of the Goddess
               </Offsets>
             </CheatEntry>
             <CheatEntry>
+              <ID>1707</ID>
+              <Description>"Time Played"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>LRFF13.exe+4CF79D8</Address>
+              <Offsets>
+                <Offset>2850</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
               <ID>481</ID>
               <Description>"EP"</Description>
               <ShowAsSigned>0</ShowAsSigned>
@@ -2625,9 +2685,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -2787,12 +2850,38 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba03:Deucalion
+wea_ba04:Endymion
+wea_ca00:Scramasax
+wea_da00:Femme Fatale
+wea_ea01:Liberator
+wea_ea02:Salvation
+wea_ea04:Immortal Order
+wea_fa00:Devil's Daughter
+wea_la00:Lominsan Cutlass
+wea_la02:Gridanian Sword
+wea_ma00:Blazefire Saber
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
 wea_oa13:Bonecracker
+wea_oa15:Battleaxe of the Believer
+wea_oa16:Gagnrad
+wea_pa00:Summoner's Staff
+wea_qa00:Brotherhood
+wea_zb00:Thirteen Nights
+wea_zb01:Rising Sun
+wea_zb02:Cloud Veil
+wea_zb03:Treasure Hold
+wea_zb04:Heavenly Fan
+wea_zb05:Cruel Grace
+wea_zb06:Jikishinkage
+wea_zc00:Survivor's Axe
+wea_zd00:Crocea Mors
+wea_ze00:Mog's Staff
+wea_zf00:Excalibur
 :===============================||Accessories||=================================
 acc_a_9010:Fireseal Jewel
 acc_a_9030:Frostward Bangle
@@ -2802,6 +2891,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -3113,9 +3207,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -3275,12 +3372,38 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba03:Deucalion
+wea_ba04:Endymion
+wea_ca00:Scramasax
+wea_da00:Femme Fatale
+wea_ea01:Liberator
+wea_ea02:Salvation
+wea_ea04:Immortal Order
+wea_fa00:Devil's Daughter
+wea_la00:Lominsan Cutlass
+wea_la02:Gridanian Sword
+wea_ma00:Blazefire Saber
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
 wea_oa13:Bonecracker
+wea_oa15:Battleaxe of the Believer
+wea_oa16:Gagnrad
+wea_pa00:Summoner's Staff
+wea_qa00:Brotherhood
+wea_zb00:Thirteen Nights
+wea_zb01:Rising Sun
+wea_zb02:Cloud Veil
+wea_zb03:Treasure Hold
+wea_zb04:Heavenly Fan
+wea_zb05:Cruel Grace
+wea_zb06:Jikishinkage
+wea_zc00:Survivor's Axe
+wea_zd00:Crocea Mors
+wea_ze00:Mog's Staff
+wea_zf00:Excalibur
 :===============================||Accessories||=================================
 acc_a_9010:Fireseal Jewel
 acc_a_9030:Frostward Bangle
@@ -3290,6 +3413,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -3601,9 +3729,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -3763,12 +3894,38 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba03:Deucalion
+wea_ba04:Endymion
+wea_ca00:Scramasax
+wea_da00:Femme Fatale
+wea_ea01:Liberator
+wea_ea02:Salvation
+wea_ea04:Immortal Order
+wea_fa00:Devil's Daughter
+wea_la00:Lominsan Cutlass
+wea_la02:Gridanian Sword
+wea_ma00:Blazefire Saber
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
 wea_oa13:Bonecracker
+wea_oa15:Battleaxe of the Believer
+wea_oa16:Gagnrad
+wea_pa00:Summoner's Staff
+wea_qa00:Brotherhood
+wea_zb00:Thirteen Nights
+wea_zb01:Rising Sun
+wea_zb02:Cloud Veil
+wea_zb03:Treasure Hold
+wea_zb04:Heavenly Fan
+wea_zb05:Cruel Grace
+wea_zb06:Jikishinkage
+wea_zc00:Survivor's Axe
+wea_zd00:Crocea Mors
+wea_ze00:Mog's Staff
+wea_zf00:Excalibur
 :===============================||Accessories||=================================
 acc_a_9010:Fireseal Jewel
 acc_a_9030:Frostward Bangle
@@ -3778,6 +3935,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -4089,9 +4251,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -4251,12 +4416,38 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba03:Deucalion
+wea_ba04:Endymion
+wea_ca00:Scramasax
+wea_da00:Femme Fatale
+wea_ea01:Liberator
+wea_ea02:Salvation
+wea_ea04:Immortal Order
+wea_fa00:Devil's Daughter
+wea_la00:Lominsan Cutlass
+wea_la02:Gridanian Sword
+wea_ma00:Blazefire Saber
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
 wea_oa13:Bonecracker
+wea_oa15:Battleaxe of the Believer
+wea_oa16:Gagnrad
+wea_pa00:Summoner's Staff
+wea_qa00:Brotherhood
+wea_zb00:Thirteen Nights
+wea_zb01:Rising Sun
+wea_zb02:Cloud Veil
+wea_zb03:Treasure Hold
+wea_zb04:Heavenly Fan
+wea_zb05:Cruel Grace
+wea_zb06:Jikishinkage
+wea_zc00:Survivor's Axe
+wea_zd00:Crocea Mors
+wea_ze00:Mog's Staff
+wea_zf00:Excalibur
 :===============================||Accessories||=================================
 acc_a_9010:Fireseal Jewel
 acc_a_9030:Frostward Bangle
@@ -4266,6 +4457,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -4577,9 +4773,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -4739,12 +4938,38 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba03:Deucalion
+wea_ba04:Endymion
+wea_ca00:Scramasax
+wea_da00:Femme Fatale
+wea_ea01:Liberator
+wea_ea02:Salvation
+wea_ea04:Immortal Order
+wea_fa00:Devil's Daughter
+wea_la00:Lominsan Cutlass
+wea_la02:Gridanian Sword
+wea_ma00:Blazefire Saber
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
 wea_oa13:Bonecracker
+wea_oa15:Battleaxe of the Believer
+wea_oa16:Gagnrad
+wea_pa00:Summoner's Staff
+wea_qa00:Brotherhood
+wea_zb00:Thirteen Nights
+wea_zb01:Rising Sun
+wea_zb02:Cloud Veil
+wea_zb03:Treasure Hold
+wea_zb04:Heavenly Fan
+wea_zb05:Cruel Grace
+wea_zb06:Jikishinkage
+wea_zc00:Survivor's Axe
+wea_zd00:Crocea Mors
+wea_ze00:Mog's Staff
+wea_zf00:Excalibur
 :===============================||Accessories||=================================
 acc_a_9010:Fireseal Jewel
 acc_a_9030:Frostward Bangle
@@ -4754,6 +4979,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -5065,9 +5295,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -5227,12 +5460,38 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba03:Deucalion
+wea_ba04:Endymion
+wea_ca00:Scramasax
+wea_da00:Femme Fatale
+wea_ea01:Liberator
+wea_ea02:Salvation
+wea_ea04:Immortal Order
+wea_fa00:Devil's Daughter
+wea_la00:Lominsan Cutlass
+wea_la02:Gridanian Sword
+wea_ma00:Blazefire Saber
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
 wea_oa13:Bonecracker
+wea_oa15:Battleaxe of the Believer
+wea_oa16:Gagnrad
+wea_pa00:Summoner's Staff
+wea_qa00:Brotherhood
+wea_zb00:Thirteen Nights
+wea_zb01:Rising Sun
+wea_zb02:Cloud Veil
+wea_zb03:Treasure Hold
+wea_zb04:Heavenly Fan
+wea_zb05:Cruel Grace
+wea_zb06:Jikishinkage
+wea_zc00:Survivor's Axe
+wea_zd00:Crocea Mors
+wea_ze00:Mog's Staff
+wea_zf00:Excalibur
 :===============================||Accessories||=================================
 acc_a_9010:Fireseal Jewel
 acc_a_9030:Frostward Bangle
@@ -5242,6 +5501,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -5553,9 +5817,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -5715,12 +5982,38 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba03:Deucalion
+wea_ba04:Endymion
+wea_ca00:Scramasax
+wea_da00:Femme Fatale
+wea_ea01:Liberator
+wea_ea02:Salvation
+wea_ea04:Immortal Order
+wea_fa00:Devil's Daughter
+wea_la00:Lominsan Cutlass
+wea_la02:Gridanian Sword
+wea_ma00:Blazefire Saber
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
 wea_oa13:Bonecracker
+wea_oa15:Battleaxe of the Believer
+wea_oa16:Gagnrad
+wea_pa00:Summoner's Staff
+wea_qa00:Brotherhood
+wea_zb00:Thirteen Nights
+wea_zb01:Rising Sun
+wea_zb02:Cloud Veil
+wea_zb03:Treasure Hold
+wea_zb04:Heavenly Fan
+wea_zb05:Cruel Grace
+wea_zb06:Jikishinkage
+wea_zc00:Survivor's Axe
+wea_zd00:Crocea Mors
+wea_ze00:Mog's Staff
+wea_zf00:Excalibur
 :===============================||Accessories||=================================
 acc_a_9010:Fireseal Jewel
 acc_a_9030:Frostward Bangle
@@ -5730,6 +6023,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -5810,6 +6108,31 @@ acc_b_9050:Stormward Bangle
                   </Offsets>
                 </CheatEntry>
               </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>657</ID>
+          <Description>"white::scene::SceneCDevActor"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1704</ID>
+              <Description>"currentAnimation"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>LRFF13.exe+20D1768</Address>
+              <Offsets>
+                <Offset>90</Offset>
+                <Offset>108</Offset>
+                <Offset>F8C</Offset>
+              </Offsets>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -6171,9 +6494,12 @@ mat_abi_0_00:Bronze Malistone
 mat_abi_0_01:Silver Malistone
 mat_abi_0_02:Gold Malistone
 mat_abi_0_03:Platinum Malistone
+mat_abi_0_04:Mythril Malistone
+mat_abi_0_05:Adamant Malistone
 mat_cus_0_00:Mighty Material
 mat_cus_0_01:Sword Polisher
 mat_cus_0_02:Shield Polisher
+mat_cus_0_03:Holy Figurine
 :===============================||Key Items||===================================
 key_b_00:Proof of Courage
 key_b_01:Violet Amulet
@@ -6189,6 +6515,7 @@ key_b_11:Bandit's Bloodseal
 key_b_12:Oath of the Merchants Guild
 key_b_17:Bronze Pocket Watch
 key_b_19:Statue Fragment
+key_b_20:Chocobo Girl's Phone No.
 key_behi_tume:Cursed Dragon Claw
 key_d_keisan:Arithmometer
 key_d_key:Pilgrim's Crux
@@ -6333,8 +6660,13 @@ it_ydrink3:Mirakle Nektar
 it_ydrink4:Nektar of the Gods
 it_ydrink5:Nektar of the Gods Ω
 :===============================||Weapons||=====================================
-wea_oa00:???
-wea_oa02:???
+wea_ba_03:Deucalion
+wea_ba_04:Endymion
+wea_ea_01:Liberator
+wea_ea_02:Salvation
+wea_ea_04:Immortal Order
+wea_oa00:Shadow Hunter
+wea_oa02:Chaos's Revenge
 wea_oa08:Death Herald
 wea_oa10:Executioner's Axe
 wea_oa12:Brittle Bone
@@ -6348,6 +6680,11 @@ acc_a_9080:Devil Crest
 acc_a_9090:Irondragon Scale
 acc_a_9100:Dreamdragon's Scale
 acc_b_9050:Stormward Bangle
+:===============================||Garbs||=======================================
+cos_da_05:Duelist
+cos_ea_04:Stone and Sand
+cos_fa_02:Crimson Bloom
+cos_fa_06:Violet Twilight
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>String</VariableType>
@@ -6415,6 +6752,180 @@ unregistersymbol(getHopesInventory,ArkShopPointer)
               <Address>ArkShopPointer</Address>
               <Offsets>
                 <Offset>D0</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2976</ID>
+          <Description>"getBattleCameraControl"</Description>
+          <Options moHideChildren="1"/>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(BattleCameraControl,LRFF13.exe,F3 0F 10 86 F4 04 00 00 0F)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(BattleCameraControl,BattleCameraControlPointer)
+
+newmem:
+mov [BattleCameraControlPointer], esi
+
+code:
+movss xmm0, [esi+000004F4]
+jmp Exit
+
+BattleCameraControlPointer:
+dd 00000000
+
+BattleCameraControl:
+jmp newmem
+nop 3
+
+Exit:
+
+[DISABLE]
+BattleCameraControl:
+db F3 0F 10 86 F4 04 00 00
+dealloc(newmem)
+unregistersymbol(BattleCameraControl,BattleCameraControlPointer)
+</AssemblerScript>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>2977</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>BattleCameraControlPointer</Address>
+              <Offsets>
+                <Offset>1A4</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2978</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>BattleCameraControlPointer</Address>
+              <Offsets>
+                <Offset>1A0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2982</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>BattleCameraControlPointer</Address>
+              <Offsets>
+                <Offset>4F0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2979</ID>
+              <Description>"Zoom"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>BattleCameraControlPointer</Address>
+              <Offsets>
+                <Offset>4FC</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2980</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>BattleCameraControlPointer</Address>
+              <Offsets>
+                <Offset>504</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2981</ID>
+              <Description>"?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>BattleCameraControlPointer</Address>
+              <Offsets>
+                <Offset>508</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1689</ID>
+          <Description>"getCameraActorContextTPS"</Description>
+          <Options moHideChildren="1"/>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(CameraCoords,LRFF13.exe,F3 0F 10 86 D8 00 00 00 0F 29)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(CameraCoords,CameraCoordsPointer)
+
+newmem:
+mov [CameraCoordsPointer], esi
+
+code:
+movss xmm0, [esi+000000D8]
+jmp Exit
+
+CameraCoordsPointer:
+dd 00000000
+
+CameraCoords:
+jmp newmem
+nop 3
+
+Exit:
+
+[DISABLE]
+CameraCoords:
+db F3 0F 10 86 D8 00 00 00
+dealloc(newmem)
+unregistersymbol(CameraCoords,CameraCoordsPointer)
+</AssemblerScript>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1693</ID>
+              <Description>"left/right"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>CameraCoordsPointer</Address>
+              <Offsets>
+                <Offset>D8</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1692</ID>
+              <Description>"up/down?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>CameraCoordsPointer</Address>
+              <Offsets>
+                <Offset>DC</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1691</ID>
+              <Description>"left/right?"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>CameraCoordsPointer</Address>
+              <Offsets>
+                <Offset>E0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1694</ID>
+              <Description>"camera height"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>CameraCoordsPointer</Address>
+              <Offsets>
+                <Offset>16C</Offset>
               </Offsets>
             </CheatEntry>
           </CheatEntries>
@@ -7649,6 +8160,92 @@ e707:Politician's Beard
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
+          <ID>2502</ID>
+          <Description>"getGuiModelCameraControl"</Description>
+          <Options moHideChildren="1"/>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(GuiModelCameraControl,LRFF13.exe,F3 0F 10 46 18 F3 0F 10 4E 2C)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(GuiModelCameraControl,GuiModelCameraControlPointer)
+
+newmem:
+mov [GuiModelCameraControlPointer], esi
+
+code:
+movss xmm0, [esi+18]
+jmp Exit
+
+GuiModelCameraControlPointer:
+dd 00000000
+
+GuiModelCameraControl:
+jmp newmem
+
+Exit:
+
+[DISABLE]
+GuiModelCameraControl:
+db F3 0F 10 46 18
+dealloc(newmem)
+unregistersymbol(GuiModelCameraControl,GuiModelCameraControlPointer)
+</AssemblerScript>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>2503</ID>
+              <Description>"Zoom/FoV"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>GuiModelCameraControlPointer</Address>
+              <Offsets>
+                <Offset>C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2504</ID>
+              <Description>"Zoom/FoV"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>GuiModelCameraControlPointer</Address>
+              <Offsets>
+                <Offset>10</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2505</ID>
+              <Description>"Zoom/FoV"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>GuiModelCameraControlPointer</Address>
+              <Offsets>
+                <Offset>14</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2506</ID>
+              <Description>"left/right"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>GuiModelCameraControlPointer</Address>
+              <Offsets>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2508</ID>
+              <Description>"up/down"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>GuiModelCameraControlPointer</Address>
+              <Offsets>
+                <Offset>20</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
           <ID>377</ID>
           <Description>"getPlayerCoords"</Description>
           <Options moHideChildren="1"/>
@@ -7770,8 +8367,10 @@ unregistersymbol(getShopInventory,ShopPointer)
               <Description>"ItemID"</Description>
               <DropDownList DisplayValueAsItem="1">:================================||Consumables||================================
 $it_atel:Ether
+$it_brave:Bravery Potion
 $it_expotion:X-Potion
 $it_grace:Holy Water
+$it_guts:Vigilance Potion
 $it_hero:Hero's Potion
 $it_hpotion:Hi-Potion
 $it_lowelxr:Refresher
@@ -7805,7 +8404,12 @@ $mat_cus_0_00:Mighty Material
 $mat_cus_0_01:Sword Polisher
 $mat_cus_0_02:Shield Polisher
 :================================||Outfitters Items||===========================
+$cos_da_05:Duelist
 $cos_ea_04:Stone and Sand
+$cos_fa_01:Black Rose
+$cos_fa_02:Crimson Bloom
+$cos_fa_03:Icy White
+$cos_fa_06:Violet Twilight
 $shi_ba_00:Prytwen
 $shi_ba_01:Pendragon
 $shi_ba_02:Dame du Lac
@@ -7923,14 +8527,56 @@ $shi_ba_00:Prytwen
 $shi_ba_01:Pendragon
 $shi_ba_02:Dame du Lac
 $shi_ba_04:Knight's Pledge
+$shi_ca_00:Double Cross
 $shi_ea_01:Hesperides
 $shi_ea_02:Juno Sospita
 $shi_ea_04:Nemesis
+$shi_ia_00:Lominsan Escutcheon
+$shi_ia_02:Gridanian Sigil
+$shi_ja_00:Guardian Corps Shield
+$shi_ka_00:Goddess's Grace
+$shi_la_00:Summoner's Shield
+$shi_ma_00:Guardian's Protector
+$shi_oa_00:SOLDIER's Band
+$shi_zb_00:Thunderstruck
+$shi_zb_01:Final Border
+$shi_zb_04:Kaminari
+$shi_zb_05:Warning Sign
+$shi_zb_06:Rasa
+$shi_zc_00:Riot Shield
+$shi_zd_00:Abyss Gate
+$shi_ze_00:Mog's Shield
 $wea_ba_03:Deucalion
 $wea_ba_04:Endymion
+$wea_ca_00:Scramasax
+$wea_da_00:Femme Fatale
 $wea_ea_01:Liberator
 $wea_ea_02:Salvation
 $wea_ea_04:Immortal Order
+$wea_fa_00:Devil's Daughter
+$wea_la_00:Lominsan Cutlass
+$wea_la_02:Gridanian Sword
+$wea_ma_00:Blazefire Saber
+$wea_oa_00:Shadow Hunter
+$wea_oa_08:Death Herald
+$wea_oa_10:Executioner's Axe
+$wea_oa_12:Brittle Bone
+$wea_oa_13:Bonecracker
+$wea_oa_15:Battleaxe of the Believer
+$wea_oa_16:Gagnrad
+$wea_pa_00:Summoner's Staff
+$wea_qa_00:Brotherhood
+$wea_zb_00:Thirteen Nights
+$wea_zb_01:Rising Sun
+$wea_zb_02:Cloud Veil
+$wea_zb_03:Treasure Hold
+$wea_zb_04:Heavenly Fan
+$wea_zb_05:Cruel Grace
+$wea_zb_06:Jikishinkage
+$wea_zc_00:Survivor's Axe
+$wea_zd_00:Crocea Mors
+$wea_ze_00:Mog's Staff
+$wea_zf_00:Excalibur
 </DropDownList>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>String</VariableType>
@@ -8069,12 +8715,10 @@ unregistersymbol(Godmode)
           <AssemblerScript>[ENABLE]
 aobscanmodule(NanCrashFix,LRFF13.exe,C7 05 00 00 00 00 00 00 00 00 8B 07 8B 90)
 alloc(newmem,$1000)
-label(code,Exit)
+label(Exit)
 registersymbol(NanCrashFix)
 
 newmem:
-
-code:
 pop  edi
 xor  ecx, ebp
 pop  esi
@@ -8099,17 +8743,35 @@ dealloc(newmem)
 unregistersymbol(NanCrashFix)
 </AssemblerScript>
         </CheatEntry>
+        <CheatEntry>
+          <ID>677</ID>
+          <Description>"Disable Collision"</Description>
+          <LastState/>
+          <VariableType>Auto Assembler Script</VariableType>
+          <AssemblerScript>[ENABLE]
+aobscanmodule(RemoveMapCollision,LRFF13.exe,0F 29 41 70 5E)
+alloc(newmem,$1000)
+label(Exit)
+registersymbol(RemoveMapCollision)
+
+newmem:
+//movaps [ecx+70], xmm0
+pop esi
+jmp Exit
+
+RemoveMapCollision:
+jmp newmem
+
+Exit:
+
+[DISABLE]
+RemoveMapCollision:
+db 0F 29 41 70 5E
+dealloc(newmem)
+unregistersymbol(RemoveMapCollision)
+</AssemblerScript>
+        </CheatEntry>
       </CheatEntries>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>629</ID>
-      <Description>"Overclock Timer"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>LRFF13.exe+20C42D0</Address>
-      <Offsets>
-        <Offset>738</Offset>
-      </Offsets>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
