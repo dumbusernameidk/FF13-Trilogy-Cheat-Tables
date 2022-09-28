@@ -1088,7 +1088,7 @@
           <GroupHeader>1</GroupHeader>
           <CheatEntries>
             <CheatEntry>
-              <ID>2995</ID>
+              <ID>3002</ID>
               <Description>"Current X Resolution"</Description>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -1105,6 +1105,39 @@
               <Address>LRFF13.exe+4D1558C</Address>
               <Offsets>
                 <Offset>14</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>2995</ID>
+              <Description>"UI Size {Resolution?} "</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>LRFF13.exe+4D1558C</Address>
+              <Offsets>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>3003</ID>
+              <Description>"UI Size {Resolution?} "</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>LRFF13.exe+4D1558C</Address>
+              <Offsets>
+                <Offset>1C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>3005</ID>
+              <Description>"Scale Display Area"</Description>
+              <DropDownList DisplayValueAsItem="1">1:Advanced || Standard
+3:No Scaling
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>LRFF13.exe+4D1558C</Address>
+              <Offsets>
+                <Offset>20</Offset>
               </Offsets>
             </CheatEntry>
             <CheatEntry>
@@ -6221,6 +6254,41 @@ cos_fa_06:Violet Twilight
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
+        <CheatEntry>
+          <ID>3015</ID>
+          <Description>"white::gui::GuiDrawTag"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>3016</ID>
+              <Description>"white::gui::GuiCinemaMessage"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <GroupHeader>1</GroupHeader>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>3014</ID>
+                  <Description>"currentActorSubtitles"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>String</VariableType>
+                  <Length>256</Length>
+                  <Unicode>0</Unicode>
+                  <CodePage>0</CodePage>
+                  <ZeroTerminate>1</ZeroTerminate>
+                  <Address>LRFF13.exe+4CF1DE8</Address>
+                  <Offsets>
+                    <Offset>0</Offset>
+                    <Offset>80</Offset>
+                    <Offset>2C</Offset>
+                    <Offset>614</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
@@ -6308,6 +6376,42 @@ NanCrashFix3:
 db C7 05 00 00 00 00 00 00 00 00
 dealloc(newmem)
 unregistersymbol(NanCrashFix3)
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>3004</ID>
+              <Description>"Scale Display Area Setting {Invalid Value} Crash"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+aobscanmodule(GraphicsManagerCrashOffset20,LRFF13.exe,A3 00 00 00 00 E9 54)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(GraphicsManagerCrashOffset20)
+
+newmem:
+pop edi
+pop esi
+xor ecx, ebp
+pop ebx
+mov esp, ebp
+pop ebp
+ret
+
+code:
+//mov [00000000],eax
+jmp Exit
+
+GraphicsManagerCrashOffset20:
+jmp newmem
+
+Exit:
+
+[DISABLE]
+GraphicsManagerCrashOffset20:
+db A3 00 00 00 00
+dealloc(newmem)
+unregistersymbol(GraphicsManagerCrashOffset20)
 </AssemblerScript>
             </CheatEntry>
             <CheatEntry>
@@ -8884,6 +8988,24 @@ dealloc(newmem)
               <Offsets>
                 <Offset>0</Offset>
               </Offsets>
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Increase Value</Action>
+                  <Keys>
+                    <Key>106</Key>
+                  </Keys>
+                  <Value>1000000</Value>
+                  <ID>0</ID>
+                </Hotkey>
+                <Hotkey>
+                  <Action>Decrease Value</Action>
+                  <Keys>
+                    <Key>109</Key>
+                  </Keys>
+                  <Value>1000000</Value>
+                  <ID>1</ID>
+                </Hotkey>
+              </Hotkeys>
             </CheatEntry>
             <CheatEntry>
               <ID>620</ID>
