@@ -1090,7 +1090,7 @@
             <CheatEntry>
               <ID>3002</ID>
               <Description>"Current X Resolution"</Description>
-              <ShowAsSigned>0</ShowAsSigned>
+              <ShowAsSigned>1</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>LRFF13.exe+4D1558C</Address>
               <Offsets>
@@ -1168,16 +1168,66 @@
             </CheatEntry>
             <CheatEntry>
               <ID>3001</ID>
-              <Description>"Colour Correction // Lighting"</Description>
-              <DropDownList DisplayValueAsItem="1">1:Standard {Colour Correction}
-256:Standard {Lighting}
-257:Advanced {Colour Correction}{Lighting}
+              <Description>"Lighting"</Description>
+              <DropDownList DisplayValueAsItem="1">0:Standard
+1:Advanced
 </DropDownList>
               <ShowAsSigned>0</ShowAsSigned>
-              <VariableType>2 Bytes</VariableType>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
               <Address>LRFF13.exe+4D1558C</Address>
               <Offsets>
                 <Offset>3C</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>3018</ID>
+              <Description>"Colour Correction"</Description>
+              <DropDownList DisplayValueAsItem="1">0:Standard
+1:Advanced
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>LRFF13.exe+4D1558C</Address>
+              <Offsets>
+                <Offset>3D</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>3020</ID>
+              <Description>"Depth of Field Adjustment"</Description>
+              <DropDownList DisplayValueAsItem="1">0:Standard
+1:Advanced
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>LRFF13.exe+4D1558C</Address>
+              <Offsets>
+                <Offset>3E</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>3019</ID>
+              <Description>"Glare Adjustment"</Description>
+              <DropDownList DisplayValueAsItem="1">0:Standard
+1:Advanced
+</DropDownList>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>LRFF13.exe+4D1558C</Address>
+              <Offsets>
+                <Offset>3F</Offset>
               </Offsets>
             </CheatEntry>
           </CheatEntries>
@@ -6318,7 +6368,6 @@ registersymbol(NanCrashFix2)
 
 newmem:
 pop edi
-xor ecx, ebp
 pop esi
 mov esp, ebp
 pop ebp
@@ -6379,6 +6428,45 @@ unregistersymbol(NanCrashFix3)
 </AssemblerScript>
             </CheatEntry>
             <CheatEntry>
+              <ID>3021</ID>
+              <Description>"NegativeResolutionCrash   {Fixes Crash but does not allow game to be playable}"</Description>
+              <LastState/>
+              <VariableType>Auto Assembler Script</VariableType>
+              <AssemblerScript>[ENABLE]
+aobscanmodule(ResolutionNegativeValCrash,LRFF13.exe,8B 08 8D 55 C8)
+alloc(newmem,$1000)
+label(code,Exit)
+registersymbol(ResolutionNegativeValCrash)
+
+newmem:
+test eax, eax
+jne code
+pop ecx
+pop edi
+pop esi
+pop ebx
+mov esp, ebp
+pop ebp
+ret
+
+code:
+mov ecx, [eax]
+lea edx, [ebp-38]
+jmp Exit
+
+ResolutionNegativeValCrash:
+jmp newmem
+
+Exit:
+
+[DISABLE]
+ResolutionNegativeValCrash:
+db 8B 08 8D 55 C8
+dealloc(newmem)
+unregistersymbol(ResolutionNegativeValCrash)
+</AssemblerScript>
+            </CheatEntry>
+            <CheatEntry>
               <ID>3004</ID>
               <Description>"Scale Display Area Setting {Invalid Value} Crash"</Description>
               <LastState/>
@@ -6392,7 +6480,6 @@ registersymbol(GraphicsManagerCrashOffset20)
 newmem:
 pop edi
 pop esi
-xor ecx, ebp
 pop ebx
 mov esp, ebp
 pop ebp
@@ -8994,7 +9081,7 @@ dealloc(newmem)
                   <Keys>
                     <Key>106</Key>
                   </Keys>
-                  <Value>1000000</Value>
+                  <Value>715200</Value>
                   <ID>0</ID>
                 </Hotkey>
                 <Hotkey>
@@ -9002,7 +9089,7 @@ dealloc(newmem)
                   <Keys>
                     <Key>109</Key>
                   </Keys>
-                  <Value>1000000</Value>
+                  <Value>715200</Value>
                   <ID>1</ID>
                 </Hotkey>
               </Hotkeys>
@@ -9094,4 +9181,28 @@ unregistersymbol(RemoveMapCollision)
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
+  <LuaScript>PROCESS_NAME = 'LRFF13.exe'
+--------
+-------- Auto Attach
+--------
+local autoAttachTimer = nil ---- variable to hold timer object
+local autoAttachTimerInterval = 1000 ---- Timer intervals are in milliseconds
+local autoAttachTimerTicks = 0 ---- variable to count number of times the timer has run
+local autoAttachTimerTickMax = 5000 ---- Set to zero to disable ticks max
+local function autoAttachTimer_tick(timer) ---- Timer tick call back
+        ---- Destroy timer if max ticks is reached
+	if autoAttachTimerTickMax &gt; 0 and autoAttachTimerTicks &gt;= autoAttachTimerTickMax then
+		timer.destroy()
+	end
+        ---- Check if process is running
+	if getProcessIDFromProcessName(PROCESS_NAME) ~= nil then
+		timer.destroy() ---- Destroy timer
+		openProcess(PROCESS_NAME) ---- Open the process
+	end
+	autoAttachTimerTicks = autoAttachTimerTicks + 1 ---- Increase ticks
+end
+autoAttachTimer = createTimer(getMainForm()) ---- Create timer with the main form as it's parent
+autoAttachTimer.Interval = autoAttachTimerInterval ---- Set timer interval
+autoAttachTimer.OnTimer = autoAttachTimer_tick ---- Set timer tick call back
+</LuaScript>
 </CheatTable>
